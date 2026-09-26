@@ -1,0 +1,13 @@
+.DS_Store
+__pycache__/
+imu_features/build/
+imu_features/build-pico/
+imu_features/build-test/
+report/*.aux
+report/*.log
+report/*.out
+report/*.fls
+report/*.fdb_latexmk
+report/report_preview.txt
+report/report_page-*.png
+report/overleaf_upload.zip
