@@ -134,9 +134,8 @@ and retains its original blocking I2C behavior.
 
 ## Saved recordings and reproduction
 
-The paths below refer to the local assignment workspace. The report and measured
-datasets are separate submission artifacts; source-code upload alone does not
-include them. The capture and analysis scripts are included as source code.
+The report, measured datasets, capture script and analysis script are included
+in the submission branch. The PDF must also be submitted to Moodle separately.
 
 The authoritative report inputs are:
 

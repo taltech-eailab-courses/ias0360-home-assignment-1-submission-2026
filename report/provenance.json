@@ -1,0 +1,50 @@
+[
+  {
+    "condition": "Stationary",
+    "file": "../results/stationary_20260926_152045.csv",
+    "sha256": "a77cb5f32f373e86be63025879e14ca693bbd486c130f057e219238d095f9d98",
+    "windows": [
+      212,
+      213,
+      214,
+      215,
+      216,
+      217,
+      218,
+      219
+    ],
+    "rows": 24
+  },
+  {
+    "condition": "Slow",
+    "file": "../results/slow_movement_20260926_152151.csv",
+    "sha256": "ed1e2673c552bcb454b72593a23cfb4f70727e5ad1fd5d9f3daf8e4c2733dc57",
+    "windows": [
+      237,
+      238,
+      239,
+      240,
+      241,
+      242,
+      243,
+      244
+    ],
+    "rows": 24
+  },
+  {
+    "condition": "Faster",
+    "file": "../results/fast_movement_20260926_152235.csv",
+    "sha256": "04c59e9e0f1bce4447a2fe7467b8b8e5b753d1e2171bd20a55d97ad43a5c9876",
+    "windows": [
+      254,
+      255,
+      256,
+      257,
+      258,
+      259,
+      260,
+      261
+    ],
+    "rows": 24
+  }
+]
