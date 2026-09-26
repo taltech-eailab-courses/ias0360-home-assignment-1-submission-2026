@@ -81,7 +81,7 @@ Features extract_features(const float x[WINDOW_N], float sample_rate) {
         if (x[i] > f.max) f.max = x[i];
     }
     f.mean = (float)(sum / WINDOW_N);
-    float centered[WINDOW_N];
+    static float centered[WINDOW_N]; /* Keep large buffers off the Pico stack. */
     for (int i = 0; i < WINDOW_N; ++i) {
         centered[i] = x[i] - f.mean;
         squared += (double)centered[i] * centered[i];
@@ -90,7 +90,7 @@ Features extract_features(const float x[WINDOW_N], float sample_rate) {
     f.stddev = sqrtf(f.variance);
     /* Remove the mean before windowing so gravity/DC does not dominate. */
     hamming_window(centered, WINDOW_N);
-    c32 spectrum[WINDOW_N];
+    static c32 spectrum[WINDOW_N];
     float window_sum = 0;
     for (int i = 0; i < WINDOW_N; ++i) {
         spectrum[i] = (c32){centered[i], 0};

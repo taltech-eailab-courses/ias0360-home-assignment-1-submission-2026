@@ -6,6 +6,11 @@
 
 **Submission branch:** `submissions/266058IV`
 
+**Revision: 500 Hz polling firmware.** The existing report PDF and three saved
+recordings describe the earlier 100 Hz firmware. They are historical results,
+not valid evidence for the revised 500 Hz requirement. Flash the new UF2, repeat
+all three recordings, and regenerate the report with new data before submission.
+
 Application: describing stillness and repeated hand movement from acceleration.
 The Pico collects data and computes all features. A computer builds the firmware
 and displays USB serial output. No activity classifier is trained here.
@@ -18,9 +23,12 @@ and displays USB serial output. No activity classifier is trained here.
    (SKU 20159) already includes this sensor; a separate IMU is not required.
 2. Read acceleration registers using checked I2C transfers in `imu_features/main.c`.
    Unlike the lab fast-read wrapper, this read does not add an 8-sample moving average.
-   The driver's existing hardware filter/configuration is retained.
+   After lab initialization, checked register writes/readback set the accelerator
+   divider to 0 (1125 Hz internal output). The +/-2 g range and DLPF6 (~5.7 Hz)
+   are retained for hand-motion measurements. 500 Hz is the Pico polling rate;
+   the internal rate cannot be exactly 500 Hz with this sensor divider.
 3. Convert counts to g using 16384 counts/g for the driver's +/-2 g setting.
-4. Collect 256 readings at a target 100 Hz (~2.56 seconds per window).
+4. Collect 1024 readings at a target 500 Hz (~2.048 seconds per window).
 5. Compute mean, sample variance (N-1 denominator), standard deviation,
    minimum and maximum per axis, adapted from `lab_1_2/statistic.c`.
 6. Subtract each axis mean, apply the Hamming window, and compute the radix-2 FFT
@@ -29,7 +37,7 @@ and displays USB serial output. No activity classifier is trained here.
 7. Print three CSV rows per window, one per axis, over USB.
 
 `features.c` is portable C so its math can be tested without the Pico.
-The FFT uses the measured polling rate; bin spacing is about 100/256 = 0.391 Hz.
+The FFT uses the measured polling rate; bin spacing is about 500/1024 = 0.48828125 Hz.
 Amplitude uses the exact Hamming window sum and correct Nyquist scaling.
 For non-bin-centered tones the amplitude is approximate. A peak in a nearly still
 signal can simply be noise: interpret frequency together with amplitude and stddev.
@@ -63,7 +71,7 @@ terminal setting; USB CDC does not use it as a physical UART bit rate).
 Use the USB connector on the Pico itself. The evaluation board's other USB
 connector is its USB-to-UART interface. This firmware enables USB output only.
 
-## Expected output
+## Expected output (500 Hz revision)
 
 After the startup message, the program prints this header and three rows per
 window (one each for `x`, `y`, `z`):
@@ -73,7 +81,10 @@ window,axis,fs_hz,min_dt_us,max_dt_us,mean_g,variance_g2,std_g,min_g,max_g,peak_
 212,y,100.000,10000,10000,0.035051,0.000000,0.000587,0.033508,0.036682,9.766,0.000278
 ```
 
-The example is an actual recorded stationary row, not a required numerical output.
+The example above is an actual **historical 100 Hz** row showing the unchanged
+CSV column structure. New recordings must report approximately `500.000` in
+`fs_hz` and approximately `2000` in the interval columns; no 500 Hz numerical
+feature results have been measured yet.
 
 | Fields | Meaning |
 |---|---|
@@ -115,12 +126,16 @@ minimum/maximum, dominant frequency, amplitude, and Nyquist scaling.
 CSV columns include measured sample rate and minimum/maximum polling interval.
 Statistics retain gravity, so a stationary axis may have a nonzero mean.
 These are polling timestamps, not sensor data-ready timestamps; sensor updates
-are asynchronous. Windows with an I2C failure or >1 ms scheduling lateness are
+are asynchronous. Windows with an I2C failure or >200 microseconds scheduling lateness are
 rejected. Acquisition pauses while processing/printing; windows are independent,
 not a continuous gap-free recording. The lab initialization code is unchanged
 and retains its original blocking I2C behavior.
 
 ## Verification status
+
+The revised 500 Hz / 1024-sample firmware builds successfully and its portable
+calculation tests pass. It must still be flashed and tested on hardware at 500 Hz. The
+physical measurements described below were made with the original 100 Hz build.
 
 - Pico firmware built successfully in the course container; output is
   `imu_features/build/imu_features.uf2` (generated build files are not committed).
@@ -159,14 +174,16 @@ python3 results/capture.py slow_movement
 python3 results/capture.py fast_movement
 ```
 
-Each capture takes about 23 seconds and writes a timestamped CSV and log.
-The script uses only Python's standard library. It is designed for macOS/POSIX.
+Each new capture takes about 19 seconds at 500 Hz and writes a timestamped CSV and log.
+The script rejects non-500 Hz output and names new files with `_500hz_`.
+It uses only Python's standard library. It is designed for macOS/POSIX.
 Updated datasets must be explicitly selected in `report/analyze_results.py`;
 new recordings do not silently replace the report evidence.
 
 ## IEEE report
 
-`report/report.pdf` is the compiled IEEE conference-format report.
+`report/report.pdf` is the **historical 100 Hz** IEEE conference-format report.
+It must be revised using new measurements before the 500 Hz submission.
 `report/report.tex` is editable LaTeX source using `IEEEtran` with its default
 conference layout. Tables and figures use all eight windows per condition.
 Motion rate is the varied experimental input; sampling/FFT parameters are fixed.
@@ -198,3 +215,16 @@ instructor's IEEE Overleaf template and set `report.tex` as the main document.
 
 Submit the report PDF to Moodle separately before the deadline. Git submission
 does not submit the report to Moodle.
+
+## Sensor rate reference
+
+TDK ICM-20948 datasheet, bank-2 ACCEL_SMPLRT_DIV and ACCEL_CONFIG (Table 18):
+https://product.tdk.com/system/files/dam/doc/product/sensor/mortion-inertial/imu/data_sheet/ds-000189-icm-20948-v1.5.pdf
+
+Divider 0 gives 1125 Hz internal output with DLPF enabled. Keeping the lab
+DLPF6 suits low-frequency hand movement; the signal bandwidth remains about
+5.7 Hz despite polling at 500 Hz. Sampling is asynchronous to sensor updates
+and pauses between windows. This is not a continuous, sensor-clock-synchronous
+500 Hz stream. A different requirement would need FIFO/data-ready acquisition
+and resampling. FFT scratch buffers are static to avoid exhausting the Pico
+stack with the larger 1024-sample window; feature extraction is single-task only.
