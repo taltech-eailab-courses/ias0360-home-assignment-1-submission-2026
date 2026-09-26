@@ -1,50 +1,68 @@
 [
   {
     "condition": "Stationary",
-    "file": "../results/stationary_20260926_152045.csv",
-    "sha256": "a77cb5f32f373e86be63025879e14ca693bbd486c130f057e219238d095f9d98",
+    "file": "../results/stationary_500hz_20260926_163332.csv",
+    "sha256": "d72e5b1a644bd4bd8ee036d66e06f9684b625526c1b5e11acf89e498ce4d69a3",
     "windows": [
-      212,
-      213,
-      214,
-      215,
-      216,
-      217,
-      218,
-      219
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41
     ],
-    "rows": 24
+    "rows": 24,
+    "sample_rate_hz": 500,
+    "window_samples": 1024,
+    "sensor_odr_hz": 1125,
+    "filter": "DLPF6",
+    "min_poll_interval_us": 2000.0,
+    "max_poll_interval_us": 2000.0
   },
   {
     "condition": "Slow",
-    "file": "../results/slow_movement_20260926_152151.csv",
-    "sha256": "ed1e2673c552bcb454b72593a23cfb4f70727e5ad1fd5d9f3daf8e4c2733dc57",
+    "file": "../results/slow_movement_500hz_20260926_163501.csv",
+    "sha256": "4dd5c1884c1fcfd2ce84e32165cfe871d6da350a7627602bea68939ef62746f4",
     "windows": [
-      237,
-      238,
-      239,
-      240,
-      241,
-      242,
-      243,
-      244
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79
     ],
-    "rows": 24
+    "rows": 24,
+    "sample_rate_hz": 500,
+    "window_samples": 1024,
+    "sensor_odr_hz": 1125,
+    "filter": "DLPF6",
+    "min_poll_interval_us": 2000.0,
+    "max_poll_interval_us": 2000.0
   },
   {
     "condition": "Faster",
-    "file": "../results/fast_movement_20260926_152235.csv",
-    "sha256": "04c59e9e0f1bce4447a2fe7467b8b8e5b753d1e2171bd20a55d97ad43a5c9876",
+    "file": "../results/fast_movement_500hz_20260926_163601.csv",
+    "sha256": "7788069721e535c15f1ccac6daab3ae5d00960323d30394184a68c6682897fa2",
     "windows": [
-      254,
-      255,
-      256,
-      257,
-      258,
-      259,
-      260,
-      261
+      98,
+      99,
+      100,
+      101,
+      102,
+      103,
+      104,
+      105
     ],
-    "rows": 24
+    "rows": 24,
+    "sample_rate_hz": 500,
+    "window_samples": 1024,
+    "sensor_odr_hz": 1125,
+    "filter": "DLPF6",
+    "min_poll_interval_us": 2000.0,
+    "max_poll_interval_us": 2000.0
   }
 ]

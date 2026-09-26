@@ -6,56 +6,53 @@
 
 **Submission branch:** `submissions/266058IV`
 
-**Revision: 500 Hz polling firmware.** The existing report PDF and three saved
-recordings describe the earlier 100 Hz firmware. They are historical results,
-not valid evidence for the revised 500 Hz requirement. Flash the new UF2, repeat
-all three recordings, and regenerate the report with new data before submission.
+## Current version: 500 Hz
 
-Application: describing stillness and repeated hand movement from acceleration.
-The Pico collects data and computes all features. A computer builds the firmware
-and displays USB serial output. No activity classifier is trained here.
+The Pico polls acceleration at **500 Hz** (every 2 ms) and extracts features
+from **1024-sample windows**. The firmware has been built, flashed, and tested
+on the physical board. The report now uses the new 500 Hz recordings.
 
-## Flow and lab sources
+Hardware: Raspberry Pi Pico with Waveshare Pico-Eval-Board, SKU 20159. This
+board includes an ICM-20948 IMU and LCD. The accelerometer is read through
+I2C1 on GP6 (SDA) and GP7 (SCL), address 0x68. The LCD is not used.
 
-1. Initialize ICM-20948 using the copied driver from
-   `lab_1_1/imu_example/icm20948` (unchanged). Its wiring is I2C1,
-   GP6=SDA and GP7=SCL, address 0x68. The tested Waveshare Pico-Eval-Board
-   (SKU 20159) already includes this sensor; a separate IMU is not required.
-2. Read acceleration registers using checked I2C transfers in `imu_features/main.c`.
-   Unlike the lab fast-read wrapper, this read does not add an 8-sample moving average.
-   After lab initialization, checked register writes/readback set the accelerator
-   divider to 0 (1125 Hz internal output). The +/-2 g range and DLPF6 (~5.7 Hz)
-   are retained for hand-motion measurements. 500 Hz is the Pico polling rate;
-   the internal rate cannot be exactly 500 Hz with this sensor divider.
-3. Convert counts to g using 16384 counts/g for the driver's +/-2 g setting.
-4. Collect 1024 readings at a target 500 Hz (~2.048 seconds per window).
-5. Compute mean, sample variance (N-1 denominator), standard deviation,
-   minimum and maximum per axis, adapted from `lab_1_2/statistic.c`.
-6. Subtract each axis mean, apply the Hamming window, and compute the radix-2 FFT
-   adapted from `lab_1_2/fft.c`. Report the strongest non-DC bin and its amplitude.
-   Mean removal reduces gravity/offset contribution but is not full gravity compensation.
-7. Print three CSV rows per window, one per axis, over USB.
+## Processing and lab sources
 
-`features.c` is portable C so its math can be tested without the Pico.
-The FFT uses the measured polling rate; bin spacing is about 500/1024 = 0.48828125 Hz.
-Amplitude uses the exact Hamming window sum and correct Nyquist scaling.
-For non-bin-centered tones the amplitude is approximate. A peak in a nearly still
-signal can simply be noise: interpret frequency together with amplitude and stddev.
+1. Initialize the sensor using the copied driver from
+   `lab_1_1/imu_example/icm20948` (unchanged).
+2. Configure and read back the accelerometer registers in `imu_features/main.c`:
+   divider 0 gives **1125 Hz internal output**. The Pico polls asynchronously at
+   **500 Hz**; the sensor divider cannot produce exactly 500 Hz internally.
+3. Retain the lab +/-2 g range and DLPF6 (~5.7 Hz bandwidth), suitable for slow
+   hand motion. 500 Hz polling does not imply a 250 Hz measurement bandwidth.
+4. Read six acceleration bytes using checked I2C transfers, without the lab
+   fast-read wrapper's additional moving average. Convert counts to g using
+   16384 counts/g.
+5. Collect 1024 samples per axis, representing 2.048 seconds of nominal sampled
+   time. Compute mean, sample variance (N-1 denominator), standard deviation,
+   minimum and maximum, adapted from `lab_1_2/statistic.c`.
+6. Subtract each axis mean, apply the Hamming window and radix-2 FFT adapted
+   from `lab_1_2/fft.c`, and report the strongest non-DC bin and amplitude.
+   FFT-bin spacing is **500/1024 = 0.48828125 Hz**. Amplitude uses the exact
+   Hamming-window sum, with no doubling at Nyquist. Off-bin amplitudes are
+   approximate. Mean removal is not full gravity compensation.
+7. Send one CSV row per axis through USB. A host script captures the output;
+   the feature calculations run on the Pico.
 
-## Build
+Large FFT scratch buffers are static to avoid stack exhaustion. Feature
+extraction must run on a single task/core. Acquisition pauses during processing
+and printing, so windows are separate rather than a continuous gap-free stream.
 
-The project uses the Pico C/C++ SDK, CMake and ARM compiler provided by the
-course Docker image. The firmware CMake board target is `pico_w` (the lab default).
-The experiment uses no Wi-Fi features. For a plain Pico target, configure a fresh
-build directory with `cmake -S . -B build-pico -DPICO_BOARD=pico`.
+## Build and flash
 
-From the lab repository root, start the existing Docker environment:
+The course Docker image provides the Pico SDK, CMake and ARM compiler.
+Start Docker Desktop, then from the **main lab repository root** on the host:
 
 ```sh
 ./build_in_docker.sh
 ```
 
-Inside its shell:
+Inside the container:
 
 ```sh
 cd ~/submission/ias0360-home-assignment-1-submission-2026/imu_features
@@ -63,110 +60,86 @@ cmake -S . -B build
 cmake --build build -j2
 ```
 
-The output is `build/imu_features.uf2`. Hold BOOTSEL while connecting the Pico,
-then copy that UF2 to its RPI-RP2 drive using the host computer, or use the
-repository's flash script in an environment with Pico USB access.
-Open the Pico USB serial port with a serial terminal (115200 is a conventional
-terminal setting; USB CDC does not use it as a physical UART bit rate).
-Use the USB connector on the Pico itself. The evaluation board's other USB
-connector is its USB-to-UART interface. This firmware enables USB output only.
+The output is `imu_features/build/imu_features.uf2`. Hold BOOTSEL while
+connecting the Pico's own USB port, release it, and copy the UF2 onto the
+RPI-RP2 drive. The Pico restarts. Use the Pico USB connector for serial output;
+the evaluation board's other USB connector is USB-to-UART and is not used here.
+Generated firmware/build files are excluded from Git.
 
-## Expected output (500 Hz revision)
+The CMake board target is `pico_w`, inherited from the lab. No Wi-Fi functions
+are used. For a plain Pico configuration, use a fresh build directory:
+`cmake -S . -B build-pico -DPICO_BOARD=pico`, then build that directory.
 
-After the startup message, the program prints this header and three rows per
-window (one each for `x`, `y`, `z`):
+## Expected output
 
-```csv
+The program emits a startup message, CSV header and three rows per window.
+`#` prefixes diagnostics. CSV columns are:
+
+```text
 window,axis,fs_hz,min_dt_us,max_dt_us,mean_g,variance_g2,std_g,min_g,max_g,peak_hz,peak_g
-212,y,100.000,10000,10000,0.035051,0.000000,0.000587,0.033508,0.036682,9.766,0.000278
 ```
-
-The example above is an actual **historical 100 Hz** row showing the unchanged
-CSV column structure. New recordings must report approximately `500.000` in
-`fs_hz` and approximately `2000` in the interval columns; no 500 Hz numerical
-feature results have been measured yet.
 
 | Fields | Meaning |
 |---|---|
-| `window`, `axis` | Window counter and acceleration axis |
-| `fs_hz` | Measured software polling rate in Hz |
-| `min_dt_us`, `max_dt_us` | Minimum/maximum interval between poll timestamps, in microseconds |
+| `window`, `axis` | Window counter and acceleration axis (`x`, `y`, `z`) |
+| `fs_hz` | Measured software polling rate, approximately 500 Hz |
+| `min_dt_us`, `max_dt_us` | Minimum/maximum polling interval, approximately 2000 microseconds |
 | `mean_g`, `std_g`, `min_g`, `max_g` | Acceleration statistics in g |
-| `variance_g2` | Sample variance in g squared (N-1 denominator) |
-| `peak_hz`, `peak_g` | Strongest non-DC FFT bin frequency and corrected amplitude |
+| `variance_g2` | Sample variance in g squared |
+| `peak_hz`, `peak_g` | Strongest non-DC frequency bin and corrected amplitude |
 
-Startup/diagnostic messages begin with `#`. An absent sensor triggers a repeated
-error message. Read failures or missed deadlines discard the affected window.
-Stationary peaks can represent noise; interpret frequency with its amplitude.
-Small variances can round to zero in the six-decimal serial format.
+A missing sensor or failed configuration/readback produces an error message.
+A read failure or scheduling lateness above 200 microseconds discards a window.
+The original lab initialization still uses blocking I2C calls. Polling timestamps
+are not sensor data-ready timestamps. Tiny stationary spectral peaks can be
+noise; interpret frequency with amplitude. Six-decimal output can round small
+variances to zero even when standard deviation is nonzero.
 
-## Validate the calculations on a computer
+## Verification
 
-From `imu_features`, in an environment with a C compiler:
+The 500 Hz firmware build and these portable C tests passed:
 
 ```sh
+cd imu_features
 mkdir -p build-test
 cc -std=c11 -Wall -Wextra -Werror features.c test_features.c -lm -o build-test/test_features
 ./build-test/test_features
 ```
 
-The tests check a constant signal, known biased sinusoid, sample variance,
-minimum/maximum, dominant frequency, amplitude, and Nyquist scaling.
+Tests cover constant input, a biased sinusoid, sample variance, standard
+deviation, minimum/maximum, FFT frequency/amplitude and Nyquist scaling.
 
-## Hardware experiment and report
+Hardware tests collected eight complete windows for each of three conditions
+on 2026-09-26. The current report inputs are:
 
-1. Keep the sensor stationary; save at least five windows of USB output.
-2. Move it gently back and forth at a steady rhythm; save at least five windows.
-3. Repeat with faster motion. Avoid impacts that saturate the +/-2 g sensor range.
-4. Compare standard deviation, minimum/maximum and spectral peak amplitude/frequency.
-   Report measured values and explain how they change. Do not invent results.
-5. Include your wiring/photo, sample rate, window length, lab sources, build steps,
-   saved outputs, and a short discussion of limitations in your submission.
+| Condition | File in `results/` | Windows |
+|---|---|---|
+| Stationary | `stationary_500hz_20260926_163332.csv` | 34–41 |
+| Slow movement | `slow_movement_500hz_20260926_163501.csv` | 72–79 |
+| Faster movement | `fast_movement_500hz_20260926_163601.csv` | 98–105 |
 
-CSV columns include measured sample rate and minimum/maximum polling interval.
-Statistics retain gravity, so a stationary axis may have a nonzero mean.
-These are polling timestamps, not sensor data-ready timestamps; sensor updates
-are asynchronous. Windows with an I2C failure or >200 microseconds scheduling lateness are
-rejected. Acquisition pauses while processing/printing; windows are independent,
-not a continuous gap-free recording. The lab initialization code is unchanged
-and retains its original blocking I2C behavior.
+Each file has 24 feature rows (XYZ for eight windows), representing 8192
+sampled acceleration vectors and 16.384 seconds of nominal sampled time.
+All retained rows report 500.000 Hz and 2000-microsecond min/max intervals.
+Matching `.log` files preserve incoming serial output, including the omitted
+first window. These are feature logs, not raw acceleration waveforms.
 
-## Verification status
+The X axis shows the strongest motion variation in both movement recordings.
+Its mean window standard deviation is 0.000650 g at rest, 0.154299 g during slow
+movement, and 0.612748 g during faster movement. Slow and faster X peak bins
+are 0.488 Hz and 1.465 Hz, respectively. These are coarse spectral estimates,
+not independently calibrated movement rates or classifier accuracy results.
 
-The revised 500 Hz / 1024-sample firmware builds successfully and its portable
-calculation tests pass. It must still be flashed and tested on hardware at 500 Hz. The
-physical measurements described below were made with the original 100 Hz build.
+Earlier files without `_500hz_` are retained as **historical 100 Hz evidence**.
+They are not included in the current report; the previous report is available
+in Git history. Do not mix the two firmware configurations in one comparison.
 
-- Pico firmware built successfully in the course container; output is
-  `imu_features/build/imu_features.uf2` (generated build files are not committed).
-- Portable C tests passed: constant input, biased sine statistics/FFT, and Nyquist scaling.
-- Firmware was flashed and exercised on the physical Pico/ICM-20948 board.
-- Three USB recordings were captured on 2026-09-26, with eight complete windows
-  and 24 XYZ rows per condition. They represent 2048 sampled vectors per condition.
-- `report/analyze_results.py` verifies completeness, numeric values, timing,
-  variance/std consistency within output rounding, and FFT frequency-bin alignment.
-- The LCD is not used by this implementation.
+## Record new experiments (macOS)
 
-## Saved recordings and reproduction
-
-The report, measured datasets, capture script and analysis script are included
-in the submission branch. The PDF must also be submitted to Moodle separately.
-
-The authoritative report inputs are:
-
-- `results/stationary_20260926_152045.csv` (windows 212–219)
-- `results/slow_movement_20260926_152151.csv` (windows 237–244)
-- `results/fast_movement_20260926_152235.csv` (windows 254–261)
-
-Matching `.log` files preserve the incoming serial text, including the first
-window omitted from the clean CSV. Earlier values pasted into chat are separate
-trials and are not mixed into the report. The report's faster Y frequency is
-1.562 Hz, not the 1.953 Hz observed in an earlier trial.
-
-To collect new recordings on macOS, close other serial terminals first, find
-the port with `ls /dev/cu.usbmodem*`, and edit the port in `results/capture.py`
-if it differs from `/dev/cu.usbmodem1401`. From this repository root, run one
-command at a time while performing the corresponding action:
+Close other serial terminals. Find the port with `ls /dev/cu.usbmodem*` and
+edit `/dev/cu.usbmodem1401` in `results/capture.py` if needed. From this
+submission repository root, run one command at a time while performing the
+corresponding action for about 19 seconds:
 
 ```sh
 python3 results/capture.py stationary
@@ -174,33 +147,32 @@ python3 results/capture.py slow_movement
 python3 results/capture.py fast_movement
 ```
 
-Each new capture takes about 19 seconds at 500 Hz and writes a timestamped CSV and log.
-The script rejects non-500 Hz output and names new files with `_500hz_`.
-It uses only Python's standard library. It is designed for macOS/POSIX.
-Updated datasets must be explicitly selected in `report/analyze_results.py`;
-new recordings do not silently replace the report evidence.
+The script uses only Python's standard library, rejects non-500 Hz output,
+discards the first encountered window and saves eight complete XYZ windows.
+It uses timestamped filenames, so recordings are not overwritten.
 
-## IEEE report
+## Reproduce the IEEE report
 
-`report/report.pdf` is the **historical 100 Hz** IEEE conference-format report.
-It must be revised using new measurements before the 500 Hz submission.
-`report/report.tex` is editable LaTeX source using `IEEEtran` with its default
-conference layout. Tables and figures use all eight windows per condition.
-Motion rate is the varied experimental input; sampling/FFT parameters are fixed.
-The report does not claim an algorithm-parameter sweep or measured classifier accuracy.
+`report/report.pdf` is the current three-page IEEE conference-format report.
+`report/report.tex` uses the standard `IEEEtran` conference layout. It includes
+methods, experiment design, a table, a figure, results, limitations and references.
+Motion rate is the varied experimental input; sampling and FFT parameters are
+fixed within the current experiment. No algorithm-parameter sweep is claimed.
 
-Regenerate the analysis inside the course container (Python and matplotlib):
+Inside an environment with Python and matplotlib (such as the course image):
 
 ```sh
 python report/analyze_results.py
 ```
 
-It generates `report/summary.csv`, `report/provenance.json`, LaTeX table/numeric
-fragments and the PDF/PNG comparison figure. Provenance includes SHA-256 hashes
-of the exact source CSV files. Summary values are means of per-window features,
-not statistics recomputed from unavailable raw acceleration samples.
+The script explicitly selects the three 500 Hz datasets. It checks completeness,
+finite numeric values, timing, variance/std consistency within rounding, and
+FFT-bin alignment. It generates `summary.csv`, `provenance.json`, LaTeX numeric
+fragments and PDF/PNG figures. Provenance includes file hashes and acquisition
+settings. Summaries are means of per-window features, not recomputed statistics
+from raw acceleration. New captures must be explicitly selected in the script.
 
-With LaTeX installed, compile twice to resolve references:
+Compile using LaTeX with the IEEE class:
 
 ```sh
 cd report
@@ -208,23 +180,16 @@ pdflatex -interaction=nonstopmode -halt-on-error report.tex
 pdflatex -interaction=nonstopmode -halt-on-error report.tex
 ```
 
-Required Debian packages are `texlive-latex-base`, `texlive-latex-recommended`,
-`texlive-publishers`, and `texlive-fonts-recommended`. Alternatively, upload
-`report.tex`, `metrics.tex`, `table_rows.tex`, and `results_comparison.pdf` to the
-instructor's IEEE Overleaf template and set `report.tex` as the main document.
+Debian packages: `texlive-latex-base`, `texlive-latex-recommended`,
+`texlive-publishers`, `texlive-fonts-recommended`. Alternatively upload
+`report.tex`, `metrics.tex`, `table_rows.tex` and `results_comparison.pdf`
+to the supplied IEEE Overleaf template and set `report.tex` as the main file.
 
-Submit the report PDF to Moodle separately before the deadline. Git submission
-does not submit the report to Moodle.
+Submit the PDF to Moodle before the deadline. Uploading the Git branch does
+not submit the report to Moodle. Repository upload requires write access to
+the instructor's GitHub repository.
 
-## Sensor rate reference
+## Sensor reference
 
-TDK ICM-20948 datasheet, bank-2 ACCEL_SMPLRT_DIV and ACCEL_CONFIG (Table 18):
+TDK ICM-20948 datasheet, DS-000189 rev. 1.5, Table 18 and bank-2 accelerometer registers:
 https://product.tdk.com/system/files/dam/doc/product/sensor/mortion-inertial/imu/data_sheet/ds-000189-icm-20948-v1.5.pdf
-
-Divider 0 gives 1125 Hz internal output with DLPF enabled. Keeping the lab
-DLPF6 suits low-frequency hand movement; the signal bandwidth remains about
-5.7 Hz despite polling at 500 Hz. Sampling is asynchronous to sensor updates
-and pauses between windows. This is not a continuous, sensor-clock-synchronous
-500 Hz stream. A different requirement would need FIFO/data-ready acquisition
-and resampling. FFT scratch buffers are static to avoid exhausting the Pico
-stack with the larger 1024-sample window; feature extraction is single-task only.
