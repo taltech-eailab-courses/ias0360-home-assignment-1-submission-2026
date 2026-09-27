@@ -67,7 +67,7 @@ The build environment is pre-configured in the Docker container `ias0360-2026`.
 ```bash
 cd /root/homework1
 mkdir -p build && cd build
-cmake ..
+cmake -DPICO_BOARD=pico2_w ..
 make -j$(nproc)
 ```
 
