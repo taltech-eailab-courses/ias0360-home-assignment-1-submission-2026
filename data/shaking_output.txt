@@ -1,0 +1,468 @@
+========================================================
+  IAS0360 Homework 1 - IMU DSP & Feature Extraction
+  Author: Miguel Robledo | Sampling: 500 Hz | N = 256
+========================================================
+
+[SD WARN] Could not open files on SD card: 2 / 0
+[IMU] Motion sensor ICM-20948 initialized successfully!
+[CORE1] Launched IMU sampling task @ 500 Hz
+
+[DSP] Starting real-time feature extraction pipeline...
+
+----------------------------------------------------------------------------------
+[WINDOW #0 | t = 2.86 s | Rate = 501.6 Hz]
+  Orientation / Mean (g) : ax=-0.382, ay=-0.031, az=+0.220
+  Magnitude Stats (g)    : mean=1.778, std=0.8683, min=0.129, max=3.031, range=2.902, rms=1.978
+  Spectral Features (FFT): Dom=2.0 Hz | Energy=4.479e+00 | Top Peaks:
+    Peak 1:    2.0 Hz (amp = 1.5955 g)
+    Peak 2:    7.8 Hz (amp = 0.7383 g)
+    Peak 3:    3.9 Hz (amp = 0.6616 g)
+  Q15 Quantization       : SNR=53.19 dB | RMS_err=0.001275 | Compression=2.0x (1024 -> 512 B)
+----------------------------------------------------------------------------------
+[WINDOW #1 | t = 3.37 s | Rate = 468.0 Hz]
+  Orientation / Mean (g) : ax=-0.633, ay=+0.112, az=+0.061
+  Magnitude Stats (g)    : mean=1.409, std=0.7131, min=0.664, max=3.022, range=2.358, rms=1.579
+  Spectral Features (FFT): Dom=2.0 Hz | Energy=1.064e+00 | Top Peaks:
+    Peak 1:    2.0 Hz (amp = 0.7748 g)
+    Peak 2:    3.9 Hz (amp = 0.5500 g)
+    Peak 3:    5.9 Hz (amp = 0.2627 g)
+  Q15 Quantization       : SNR=52.26 dB | RMS_err=0.001001 | Compression=2.0x (1024 -> 512 B)
+----------------------------------------------------------------------------------
+[WINDOW #2 | t = 3.88 s | Rate = 536.6 Hz]
+  Orientation / Mean (g) : ax=-0.995, ay=+0.043, az=+0.119
+  Magnitude Stats (g)    : mean=1.003, std=0.0185, min=0.963, max=1.037, range=0.074, rms=1.003
+  Spectral Features (FFT): Dom=2.0 Hz | Energy=7.378e-01 | Top Peaks:
+    Peak 1:    2.0 Hz (amp = 0.8587 g)
+    Peak 2:    5.9 Hz (amp = 0.0136 g)
+    Peak 3:    9.8 Hz (amp = 0.0117 g)
+  Q15 Quantization       : SNR=60.47 dB | RMS_err=0.000009 | Compression=2.0x (1024 -> 512 B)
+----------------------------------------------------------------------------------
+[WINDOW #3 | t = 4.39 s | Rate = 500.0 Hz]
+  Orientation / Mean (g) : ax=-0.693, ay=+0.089, az=+0.221
+  Magnitude Stats (g)    : mean=1.522, std=0.7731, min=0.237, max=3.318, range=3.081, rms=1.707
+  Spectral Features (FFT): Dom=2.0 Hz | Energy=2.106e+00 | Top Peaks:
+    Peak 1:    2.0 Hz (amp = 1.2277 g)
+    Peak 2:    5.9 Hz (amp = 0.4831 g)
+    Peak 3:    7.8 Hz (amp = 0.4118 g)
+  Q15 Quantization       : SNR=23.71 dB | RMS_err=0.030393 | Compression=2.0x (1024 -> 512 B)
+----------------------------------------------------------------------------------
+[WINDOW #4 | t = 4.91 s | Rate = 500.0 Hz]
+  Orientation / Mean (g) : ax=-0.110, ay=-0.231, az=+0.480
+  Magnitude Stats (g)    : mean=2.280, std=0.8626, min=0.620, max=3.323, range=2.703, rms=2.437
+  Spectral Features (FFT): Dom=2.0 Hz | Energy=6.130e+00 | Top Peaks:
+    Peak 1:    2.0 Hz (amp = 2.0390 g)
+    Peak 2:    9.8 Hz (amp = 0.9363 g)
+    Peak 3:    7.8 Hz (amp = 0.6010 g)
+  Q15 Quantization       : SNR=24.16 dB | RMS_err=0.047805 | Compression=2.0x (1024 -> 512 B)
+----------------------------------------------------------------------------------
+[WINDOW #5 | t = 5.42 s | Rate = 500.0 Hz]
+  Orientation / Mean (g) : ax=+0.271, ay=-0.042, az=+0.058
+  Magnitude Stats (g)    : mean=2.372, std=0.8752, min=0.492, max=3.461, range=2.969, rms=2.528
+  Spectral Features (FFT): Dom=2.0 Hz | Energy=6.333e+00 | Top Peaks:
+    Peak 1:    2.0 Hz (amp = 2.0181 g)
+    Peak 2:    9.8 Hz (amp = 0.9745 g)
+    Peak 3:    3.9 Hz (amp = 0.5954 g)
+  Q15 Quantization       : SNR=20.72 dB | RMS_err=0.074822 | Compression=2.0x (1024 -> 512 B)
+----------------------------------------------------------------------------------
+[WINDOW #6 | t = 5.93 s | Rate = 500.0 Hz]
+  Orientation / Mean (g) : ax=-0.215, ay=-0.309, az=+0.523
+  Magnitude Stats (g)    : mean=2.355, std=0.8793, min=0.434, max=3.365, range=2.931, rms=2.513
+  Spectral Features (FFT): Dom=2.0 Hz | Energy=6.059e+00 | Top Peaks:
+    Peak 1:    2.0 Hz (amp = 2.0278 g)
+    Peak 2:    9.8 Hz (amp = 0.9296 g)
+    Peak 3:    3.9 Hz (amp = 0.5343 g)
+  Q15 Quantization       : SNR=22.42 dB | RMS_err=0.061066 | Compression=2.0x (1024 -> 512 B)
+----------------------------------------------------------------------------------
+[WINDOW #7 | t = 6.44 s | Rate = 500.0 Hz]
+  Orientation / Mean (g) : ax=+0.323, ay=-0.022, az=+0.145
+  Magnitude Stats (g)    : mean=2.436, std=0.7132, min=0.380, max=3.242, range=2.862, rms=2.538
+  Spectral Features (FFT): Dom=2.0 Hz | Energy=5.515e+00 | Top Peaks:
+    Peak 1:    2.0 Hz (amp = 2.0154 g)
+    Peak 2:   11.7 Hz (amp = 0.7608 g)
+    Peak 3:    9.8 Hz (amp = 0.5033 g)
+  Q15 Quantization       : SNR=27.48 dB | RMS_err=0.033878 | Compression=2.0x (1024 -> 512 B)
+----------------------------------------------------------------------------------
+[WINDOW #8 | t = 6.95 s | Rate = 500.0 Hz]
+  Orientation / Mean (g) : ax=+0.269, ay=+0.042, az=+0.107
+  Magnitude Stats (g)    : mean=2.373, std=0.7109, min=0.551, max=3.246, range=2.695, rms=2.477
+  Spectral Features (FFT): Dom=2.0 Hz | Energy=5.550e+00 | Top Peaks:
+    Peak 1:    2.0 Hz (amp = 2.0344 g)
+    Peak 2:   11.7 Hz (amp = 0.8103 g)
+    Peak 3:    9.8 Hz (amp = 0.4429 g)
+  Q15 Quantization       : SNR=27.71 dB | RMS_err=0.031789 | Compression=2.0x (1024 -> 512 B)
+----------------------------------------------------------------------------------
+[WINDOW #9 | t = 7.47 s | Rate = 500.0 Hz]
+  Orientation / Mean (g) : ax=+0.320, ay=-0.017, az=+0.125
+  Magnitude Stats (g)    : mean=2.412, std=0.6633, min=0.691, max=3.256, range=2.565, rms=2.501
+  Spectral Features (FFT): Dom=2.0 Hz | Energy=5.503e+00 | Top Peaks:
+    Peak 1:    2.0 Hz (amp = 2.0987 g)
+    Peak 2:   11.7 Hz (amp = 0.7381 g)
+    Peak 3:    9.8 Hz (amp = 0.3649 g)
+  Q15 Quantization       : SNR=29.97 dB | RMS_err=0.024737 | Compression=2.0x (1024 -> 512 B)
+----------------------------------------------------------------------------------
+[WINDOW #10 | t = 7.98 s | Rate = 500.0 Hz]
+  Orientation / Mean (g) : ax=+0.451, ay=-0.180, az=+0.090
+  Magnitude Stats (g)    : mean=2.386, std=0.6553, min=0.885, max=3.375, range=2.490, rms=2.474
+  Spectral Features (FFT): Dom=2.0 Hz | Energy=5.296e+00 | Top Peaks:
+    Peak 1:    2.0 Hz (amp = 2.0092 g)
+    Peak 2:   11.7 Hz (amp = 0.6228 g)
+    Peak 3:    9.8 Hz (amp = 0.6147 g)
+  Q15 Quantization       : SNR=28.80 dB | RMS_err=0.027826 | Compression=2.0x (1024 -> 512 B)
+----------------------------------------------------------------------------------
+[WINDOW #11 | t = 8.49 s | Rate = 500.0 Hz]
+  Orientation / Mean (g) : ax=+0.130, ay=-0.694, az=+0.517
+  Magnitude Stats (g)    : mean=2.488, std=0.5941, min=1.176, max=3.464, range=2.288, rms=2.557
+  Spectral Features (FFT): Dom=2.0 Hz | Energy=5.312e+00 | Top Peaks:
+    Peak 1:    2.0 Hz (amp = 2.1257 g)
+    Peak 2:    9.8 Hz (amp = 0.5757 g)
+    Peak 3:   11.7 Hz (amp = 0.3741 g)
+  Q15 Quantization       : SNR=22.30 dB | RMS_err=0.061432 | Compression=2.0x (1024 -> 512 B)
+----------------------------------------------------------------------------------
+[WINDOW #12 | t = 9.00 s | Rate = 500.0 Hz]
+  Orientation / Mean (g) : ax=+0.052, ay=-0.200, az=+0.257
+  Magnitude Stats (g)    : mean=2.283, std=0.8007, min=0.468, max=3.428, range=2.960, rms=2.419
+  Spectral Features (FFT): Dom=2.0 Hz | Energy=5.218e+00 | Top Peaks:
+    Peak 1:    2.0 Hz (amp = 1.8709 g)
+    Peak 2:   11.7 Hz (amp = 0.7394 g)
+    Peak 3:    9.8 Hz (amp = 0.7034 g)
+  Q15 Quantization       : SNR=24.31 dB | RMS_err=0.045996 | Compression=2.0x (1024 -> 512 B)
+----------------------------------------------------------------------------------
+[WINDOW #13 | t = 9.51 s | Rate = 500.0 Hz]
+  Orientation / Mean (g) : ax=+0.248, ay=-0.160, az=+0.055
+  Magnitude Stats (g)    : mean=2.204, std=0.7364, min=0.442, max=2.935, range=2.493, rms=2.323
+  Spectral Features (FFT): Dom=2.0 Hz | Energy=5.153e+00 | Top Peaks:
+    Peak 1:    2.0 Hz (amp = 1.8768 g)
+    Peak 2:    9.8 Hz (amp = 0.7737 g)
+    Peak 3:    5.9 Hz (amp = 0.5400 g)
+  Q15 Quantization       : SNR=97.87 dB | RMS_err=0.000009 | Compression=2.0x (1024 -> 512 B)
+----------------------------------------------------------------------------------
+[WINDOW #14 | t = 10.03 s | Rate = 500.0 Hz]
+  Orientation / Mean (g) : ax=+0.213, ay=-0.042, az=+0.150
+  Magnitude Stats (g)    : mean=2.208, std=0.8024, min=0.427, max=3.177, range=2.750, rms=2.349
+  Spectral Features (FFT): Dom=2.0 Hz | Energy=5.811e+00 | Top Peaks:
+    Peak 1:    2.0 Hz (amp = 2.0401 g)
+    Peak 2:   11.7 Hz (amp = 0.7821 g)
+    Peak 3:    9.8 Hz (amp = 0.6983 g)
+  Q15 Quantization       : SNR=31.76 dB | RMS_err=0.018714 | Compression=2.0x (1024 -> 512 B)
+----------------------------------------------------------------------------------
+[WINDOW #15 | t = 10.54 s | Rate = 500.0 Hz]
+  Orientation / Mean (g) : ax=+0.033, ay=-0.314, az=+0.557
+  Magnitude Stats (g)    : mean=2.335, std=0.5900, min=1.030, max=3.116, range=2.086, rms=2.408
+  Spectral Features (FFT): Dom=2.0 Hz | Energy=5.345e+00 | Top Peaks:
+    Peak 1:    2.0 Hz (amp = 2.1295 g)
+    Peak 2:   11.7 Hz (amp = 0.5055 g)
+    Peak 3:    9.8 Hz (amp = 0.5020 g)
+  Q15 Quantization       : SNR=40.07 dB | RMS_err=0.007240 | Compression=2.0x (1024 -> 512 B)
+----------------------------------------------------------------------------------
+[WINDOW #16 | t = 11.05 s | Rate = 500.0 Hz]
+  Orientation / Mean (g) : ax=+0.154, ay=-0.229, az=+0.401
+  Magnitude Stats (g)    : mean=2.409, std=0.5578, min=0.686, max=3.115, range=2.429, rms=2.472
+  Spectral Features (FFT): Dom=2.0 Hz | Energy=4.794e+00 | Top Peaks:
+    Peak 1:    2.0 Hz (amp = 1.9933 g)
+    Peak 2:   11.7 Hz (amp = 0.5537 g)
+    Peak 3:    9.8 Hz (amp = 0.4219 g)
+  Q15 Quantization       : SNR=40.85 dB | RMS_err=0.006868 | Compression=2.0x (1024 -> 512 B)
+----------------------------------------------------------------------------------
+[WINDOW #17 | t = 11.56 s | Rate = 500.0 Hz]
+  Orientation / Mean (g) : ax=+0.319, ay=-0.367, az=+0.298
+  Magnitude Stats (g)    : mean=2.388, std=0.6151, min=1.044, max=3.329, range=2.286, rms=2.466
+  Spectral Features (FFT): Dom=2.0 Hz | Energy=5.094e+00 | Top Peaks:
+    Peak 1:    2.0 Hz (amp = 1.9972 g)
+    Peak 2:   11.7 Hz (amp = 0.6208 g)
+    Peak 3:    9.8 Hz (amp = 0.5292 g)
+  Q15 Quantization       : SNR=27.61 dB | RMS_err=0.031618 | Compression=2.0x (1024 -> 512 B)
+----------------------------------------------------------------------------------
+[WINDOW #18 | t = 12.07 s | Rate = 500.0 Hz]
+  Orientation / Mean (g) : ax=+0.365, ay=-0.486, az=+0.379
+  Magnitude Stats (g)    : mean=2.359, std=0.5049, min=1.327, max=3.107, range=1.780, rms=2.412
+  Spectral Features (FFT): Dom=2.0 Hz | Energy=4.816e+00 | Top Peaks:
+    Peak 1:    2.0 Hz (amp = 2.0471 g)
+    Peak 2:   11.7 Hz (amp = 0.4774 g)
+    Peak 3:    9.8 Hz (amp = 0.4205 g)
+  Q15 Quantization       : SNR=41.93 dB | RMS_err=0.005800 | Compression=2.0x (1024 -> 512 B)
+----------------------------------------------------------------------------------
+[WINDOW #19 | t = 12.59 s | Rate = 500.0 Hz]
+  Orientation / Mean (g) : ax=+0.244, ay=-0.340, az=+0.291
+  Magnitude Stats (g)    : mean=2.404, std=0.6090, min=0.897, max=3.223, range=2.325, rms=2.480
+  Spectral Features (FFT): Dom=2.0 Hz | Energy=4.886e+00 | Top Peaks:
+    Peak 1:    2.0 Hz (amp = 1.9297 g)
+    Peak 2:   11.7 Hz (amp = 0.5902 g)
+    Peak 3:    9.8 Hz (amp = 0.5301 g)
+  Q15 Quantization       : SNR=31.98 dB | RMS_err=0.019257 | Compression=2.0x (1024 -> 512 B)
+----------------------------------------------------------------------------------
+[WINDOW #20 | t = 13.10 s | Rate = 500.0 Hz]
+  Orientation / Mean (g) : ax=+0.070, ay=-0.631, az=+0.524
+  Magnitude Stats (g)    : mean=2.420, std=0.6955, min=1.092, max=3.464, range=2.372, rms=2.517
+  Spectral Features (FFT): Dom=2.0 Hz | Energy=5.847e+00 | Top Peaks:
+    Peak 1:    2.0 Hz (amp = 2.1479 g)
+    Peak 2:    9.8 Hz (amp = 0.6448 g)
+    Peak 3:   11.7 Hz (amp = 0.5454 g)
+  Q15 Quantization       : SNR=20.74 dB | RMS_err=0.072570 | Compression=2.0x (1024 -> 512 B)
+----------------------------------------------------------------------------------
+[WINDOW #21 | t = 13.61 s | Rate = 500.0 Hz]
+  Orientation / Mean (g) : ax=+0.354, ay=-0.401, az=+0.384
+  Magnitude Stats (g)    : mean=2.569, std=0.5520, min=1.290, max=3.426, range=2.136, rms=2.628
+  Spectral Features (FFT): Dom=2.0 Hz | Energy=5.594e+00 | Top Peaks:
+    Peak 1:    2.0 Hz (amp = 2.1840 g)
+    Peak 2:    9.8 Hz (amp = 0.5761 g)
+    Peak 3:   11.7 Hz (amp = 0.3997 g)
+  Q15 Quantization       : SNR=22.00 dB | RMS_err=0.066066 | Compression=2.0x (1024 -> 512 B)
+----------------------------------------------------------------------------------
+[WINDOW #22 | t = 14.12 s | Rate = 500.0 Hz]
+  Orientation / Mean (g) : ax=+0.545, ay=-0.486, az=+0.193
+  Magnitude Stats (g)    : mean=2.475, std=0.5721, min=1.241, max=3.464, range=2.223, rms=2.540
+  Spectral Features (FFT): Dom=2.0 Hz | Energy=5.484e+00 | Top Peaks:
+    Peak 1:    2.0 Hz (amp = 2.1349 g)
+    Peak 2:    9.8 Hz (amp = 0.5457 g)
+    Peak 3:   11.7 Hz (amp = 0.4908 g)
+  Q15 Quantization       : SNR=22.42 dB | RMS_err=0.059841 | Compression=2.0x (1024 -> 512 B)
+----------------------------------------------------------------------------------
+[WINDOW #23 | t = 14.63 s | Rate = 500.0 Hz]
+  Orientation / Mean (g) : ax=+0.205, ay=-0.490, az=+0.569
+  Magnitude Stats (g)    : mean=2.465, std=0.4792, min=1.321, max=3.281, range=1.959, rms=2.511
+  Spectral Features (FFT): Dom=2.0 Hz | Energy=4.996e+00 | Top Peaks:
+    Peak 1:    2.0 Hz (amp = 2.0982 g)
+    Peak 2:   11.7 Hz (amp = 0.4129 g)
+    Peak 3:    9.8 Hz (amp = 0.3891 g)
+  Q15 Quantization       : SNR=30.28 dB | RMS_err=0.023584 | Compression=2.0x (1024 -> 512 B)
+----------------------------------------------------------------------------------
+[WINDOW #24 | t = 15.15 s | Rate = 500.0 Hz]
+  Orientation / Mean (g) : ax=+0.154, ay=-0.478, az=+0.567
+  Magnitude Stats (g)    : mean=2.485, std=0.5024, min=1.285, max=3.464, range=2.179, rms=2.535
+  Spectral Features (FFT): Dom=2.0 Hz | Energy=4.763e+00 | Top Peaks:
+    Peak 1:    2.0 Hz (amp = 2.0564 g)
+    Peak 2:   11.7 Hz (amp = 0.4244 g)
+    Peak 3:    9.8 Hz (amp = 0.3227 g)
+  Q15 Quantization       : SNR=24.20 dB | RMS_err=0.048332 | Compression=2.0x (1024 -> 512 B)
+----------------------------------------------------------------------------------
+[WINDOW #25 | t = 15.66 s | Rate = 500.0 Hz]
+  Orientation / Mean (g) : ax=+0.026, ay=-0.380, az=+0.220
+  Magnitude Stats (g)    : mean=1.974, std=0.8596, min=0.598, max=3.052, range=2.454, rms=2.152
+  Spectral Features (FFT): Dom=2.0 Hz | Energy=5.932e+00 | Top Peaks:
+    Peak 1:    2.0 Hz (amp = 2.3162 g)
+    Peak 2:    3.9 Hz (amp = 0.3956 g)
+    Peak 3:    5.9 Hz (amp = 0.3760 g)
+  Q15 Quantization       : SNR=47.88 dB | RMS_err=0.002621 | Compression=2.0x (1024 -> 512 B)
+----------------------------------------------------------------------------------
+[WINDOW #26 | t = 16.17 s | Rate = 500.0 Hz]
+  Orientation / Mean (g) : ax=-1.027, ay=+0.149, az=-0.174
+  Magnitude Stats (g)    : mean=1.059, std=0.1189, min=0.926, max=1.420, range=0.495, rms=1.066
+  Spectral Features (FFT): Dom=2.0 Hz | Energy=7.512e-01 | Top Peaks:
+    Peak 1:    2.0 Hz (amp = 0.8636 g)
+    Peak 2:    3.9 Hz (amp = 0.0586 g)
+    Peak 3:    7.8 Hz (amp = 0.0371 g)
+  Q15 Quantization       : SNR=77.67 dB | RMS_err=0.000009 | Compression=2.0x (1024 -> 512 B)
+----------------------------------------------------------------------------------
+[WINDOW #27 | t = 16.68 s | Rate = 500.0 Hz]
+  Orientation / Mean (g) : ax=-0.977, ay=+0.106, az=-0.177
+  Magnitude Stats (g)    : mean=0.999, std=0.0205, min=0.967, max=1.040, range=0.073, rms=0.999
+  Spectral Features (FFT): Dom=2.0 Hz | Energy=7.703e-01 | Top Peaks:
+    Peak 1:    2.0 Hz (amp = 0.8771 g)
+    Peak 2:    3.9 Hz (amp = 0.0286 g)
+    Peak 3:    5.9 Hz (amp = 0.0095 g)
+  Q15 Quantization       : SNR=61.16 dB | RMS_err=0.000009 | Compression=2.0x (1024 -> 512 B)
+----------------------------------------------------------------------------------
+[WINDOW #28 | t = 17.19 s | Rate = 500.0 Hz]
+  Orientation / Mean (g) : ax=-0.984, ay=+0.112, az=-0.196
+  Magnitude Stats (g)    : mean=1.010, std=0.0298, min=0.959, max=1.073, range=0.115, rms=1.011
+  Spectral Features (FFT): Dom=2.0 Hz | Energy=7.084e-01 | Top Peaks:
+    Peak 1:    2.0 Hz (amp = 0.8409 g)
+    Peak 2:    3.9 Hz (amp = 0.0327 g)
+    Peak 3:    5.9 Hz (amp = 0.0138 g)
+  Q15 Quantization       : SNR=64.64 dB | RMS_err=0.000009 | Compression=2.0x (1024 -> 512 B)
+----------------------------------------------------------------------------------
+[WINDOW #29 | t = 17.71 s | Rate = 500.0 Hz]
+  Orientation / Mean (g) : ax=-0.983, ay=+0.116, az=-0.185
+  Magnitude Stats (g)    : mean=1.008, std=0.0095, min=0.989, max=1.022, range=0.033, rms=1.008
+  Spectral Features (FFT): Dom=2.0 Hz | Energy=7.397e-01 | Top Peaks:
+    Peak 1:    2.0 Hz (amp = 0.8599 g)
+    Peak 2:    5.9 Hz (amp = 0.0115 g)
+    Peak 3:    7.8 Hz (amp = 0.0088 g)
+  Q15 Quantization       : SNR=57.40 dB | RMS_err=0.000008 | Compression=2.0x (1024 -> 512 B)
+----------------------------------------------------------------------------------
+[WINDOW #30 | t = 18.22 s | Rate = 500.0 Hz]
+  Orientation / Mean (g) : ax=-0.984, ay=+0.119, az=-0.175
+  Magnitude Stats (g)    : mean=1.007, std=0.0173, min=0.961, max=1.032, range=0.071, rms=1.007
+  Spectral Features (FFT): Dom=2.0 Hz | Energy=7.333e-01 | Top Peaks:
+    Peak 1:    2.0 Hz (amp = 0.8558 g)
+    Peak 2:    3.9 Hz (amp = 0.0182 g)
+    Peak 3:    7.8 Hz (amp = 0.0165 g)
+  Q15 Quantization       : SNR=60.72 dB | RMS_err=0.000008 | Compression=2.0x (1024 -> 512 B)
+----------------------------------------------------------------------------------
+[WINDOW #31 | t = 18.73 s | Rate = 500.0 Hz]
+  Orientation / Mean (g) : ax=-0.986, ay=+0.124, az=-0.163
+  Magnitude Stats (g)    : mean=1.007, std=0.0079, min=0.993, max=1.027, range=0.034, rms=1.007
+  Spectral Features (FFT): Dom=2.0 Hz | Energy=7.428e-01 | Top Peaks:
+    Peak 1:    2.0 Hz (amp = 0.8618 g)
+    Peak 2:    5.9 Hz (amp = 0.0074 g)
+    Peak 3:    3.9 Hz (amp = 0.0063 g)
+  Q15 Quantization       : SNR=55.72 dB | RMS_err=0.000009 | Compression=2.0x (1024 -> 512 B)
+----------------------------------------------------------------------------------
+[WINDOW #32 | t = 19.24 s | Rate = 500.0 Hz]
+  Orientation / Mean (g) : ax=-0.238, ay=+0.038, az=+0.011
+  Magnitude Stats (g)    : mean=1.889, std=0.8095, min=0.721, max=3.246, range=2.525, rms=2.054
+  Spectral Features (FFT): Dom=2.0 Hz | Energy=4.746e+00 | Top Peaks:
+    Peak 1:    2.0 Hz (amp = 1.8812 g)
+    Peak 2:    9.8 Hz (amp = 0.6205 g)
+    Peak 3:    5.9 Hz (amp = 0.4832 g)
+  Q15 Quantization       : SNR=26.49 dB | RMS_err=0.028456 | Compression=2.0x (1024 -> 512 B)
+----------------------------------------------------------------------------------
+[WINDOW #33 | t = 19.75 s | Rate = 500.0 Hz]
+  Orientation / Mean (g) : ax=+0.135, ay=-0.514, az=+0.582
+  Magnitude Stats (g)    : mean=2.431, std=0.5973, min=0.980, max=3.305, range=2.325, rms=2.503
+  Spectral Features (FFT): Dom=2.0 Hz | Energy=5.451e+00 | Top Peaks:
+    Peak 1:    2.0 Hz (amp = 2.1735 g)
+    Peak 2:    9.8 Hz (amp = 0.5165 g)
+    Peak 3:   11.7 Hz (amp = 0.3716 g)
+  Q15 Quantization       : SNR=26.82 dB | RMS_err=0.035327 | Compression=2.0x (1024 -> 512 B)
+----------------------------------------------------------------------------------
+[WINDOW #34 | t = 20.27 s | Rate = 500.0 Hz]
+  Orientation / Mean (g) : ax=+0.242, ay=-0.274, az=+0.301
+  Magnitude Stats (g)    : mean=2.513, std=0.5033, min=1.338, max=3.186, range=1.849, rms=2.563
+  Spectral Features (FFT): Dom=2.0 Hz | Energy=5.241e+00 | Top Peaks:
+    Peak 1:    2.0 Hz (amp = 2.1194 g)
+    Peak 2:   11.7 Hz (amp = 0.5776 g)
+    Peak 3:    9.8 Hz (amp = 0.4466 g)
+  Q15 Quantization       : SNR=33.76 dB | RMS_err=0.016350 | Compression=2.0x (1024 -> 512 B)
+----------------------------------------------------------------------------------
+[WINDOW #35 | t = 20.78 s | Rate = 500.0 Hz]
+  Orientation / Mean (g) : ax=+0.442, ay=-0.269, az=+0.159
+  Magnitude Stats (g)    : mean=2.384, std=0.5875, min=0.972, max=3.256, range=2.283, rms=2.455
+  Spectral Features (FFT): Dom=2.0 Hz | Energy=5.348e+00 | Top Peaks:
+    Peak 1:    2.0 Hz (amp = 2.1228 g)
+    Peak 2:    9.8 Hz (amp = 0.5194 g)
+    Peak 3:   11.7 Hz (amp = 0.5144 g)
+  Q15 Quantization       : SNR=31.46 dB | RMS_err=0.020095 | Compression=2.0x (1024 -> 512 B)
+----------------------------------------------------------------------------------
+[WINDOW #36 | t = 21.29 s | Rate = 500.0 Hz]
+  Orientation / Mean (g) : ax=+0.336, ay=-0.315, az=+0.168
+  Magnitude Stats (g)    : mean=2.313, std=0.6259, min=0.728, max=2.948, range=2.220, rms=2.396
+  Spectral Features (FFT): Dom=2.0 Hz | Energy=4.837e+00 | Top Peaks:
+    Peak 1:    2.0 Hz (amp = 1.9205 g)
+    Peak 2:    9.8 Hz (amp = 0.5855 g)
+    Peak 3:   11.7 Hz (amp = 0.5111 g)
+  Q15 Quantization       : SNR=98.49 dB | RMS_err=0.000009 | Compression=2.0x (1024 -> 512 B)
+----------------------------------------------------------------------------------
+[WINDOW #37 | t = 21.80 s | Rate = 500.0 Hz]
+  Orientation / Mean (g) : ax=+0.039, ay=-0.342, az=+0.598
+  Magnitude Stats (g)    : mean=2.393, std=0.5226, min=0.731, max=2.968, range=2.237, rms=2.450
+  Spectral Features (FFT): Dom=2.0 Hz | Energy=5.073e+00 | Top Peaks:
+    Peak 1:    2.0 Hz (amp = 2.1244 g)
+    Peak 2:    9.8 Hz (amp = 0.4815 g)
+    Peak 3:   11.7 Hz (amp = 0.3906 g)
+  Q15 Quantization       : SNR=98.73 dB | RMS_err=0.000009 | Compression=2.0x (1024 -> 512 B)
+----------------------------------------------------------------------------------
+[WINDOW #38 | t = 22.31 s | Rate = 500.0 Hz]
+  Orientation / Mean (g) : ax=+0.319, ay=-0.261, az=+0.318
+  Magnitude Stats (g)    : mean=2.429, std=0.5117, min=0.970, max=3.015, range=2.045, rms=2.482
+  Spectral Features (FFT): Dom=2.0 Hz | Energy=4.658e+00 | Top Peaks:
+    Peak 1:    2.0 Hz (amp = 1.9680 g)
+    Peak 2:    9.8 Hz (amp = 0.5084 g)
+    Peak 3:   11.7 Hz (amp = 0.4014 g)
+  Q15 Quantization       : SNR=58.93 dB | RMS_err=0.000859 | Compression=2.0x (1024 -> 512 B)
+----------------------------------------------------------------------------------
+[WINDOW #39 | t = 22.83 s | Rate = 500.0 Hz]
+  Orientation / Mean (g) : ax=+0.368, ay=-0.325, az=+0.352
+  Magnitude Stats (g)    : mean=2.457, std=0.5019, min=1.259, max=3.134, range=1.875, rms=2.508
+  Spectral Features (FFT): Dom=2.0 Hz | Energy=5.175e+00 | Top Peaks:
+    Peak 1:    2.0 Hz (amp = 2.1296 g)
+    Peak 2:    9.8 Hz (amp = 0.5284 g)
+    Peak 3:   11.7 Hz (amp = 0.2685 g)
+  Q15 Quantization       : SNR=35.48 dB | RMS_err=0.012972 | Compression=2.0x (1024 -> 512 B)
+----------------------------------------------------------------------------------
+[WINDOW #40 | t = 23.34 s | Rate = 500.0 Hz]
+  Orientation / Mean (g) : ax=+0.150, ay=-0.243, az=+0.595
+  Magnitude Stats (g)    : mean=2.536, std=0.5512, min=1.328, max=3.464, range=2.136, rms=2.595
+  Spectral Features (FFT): Dom=2.0 Hz | Energy=6.183e+00 | Top Peaks:
+    Peak 1:    2.0 Hz (amp = 2.3298 g)
+    Peak 2:   11.7 Hz (amp = 0.6220 g)
+    Peak 3:    9.8 Hz (amp = 0.4395 g)
+  Q15 Quantization       : SNR=23.73 dB | RMS_err=0.053103 | Compression=2.0x (1024 -> 512 B)
+----------------------------------------------------------------------------------
+[WINDOW #41 | t = 23.85 s | Rate = 500.0 Hz]
+  Orientation / Mean (g) : ax=+0.380, ay=-0.196, az=+0.241
+  Magnitude Stats (g)    : mean=2.523, std=0.4517, min=1.069, max=3.025, range=1.956, rms=2.563
+  Spectral Features (FFT): Dom=2.0 Hz | Energy=5.115e+00 | Top Peaks:
+    Peak 1:    2.0 Hz (amp = 2.1379 g)
+    Peak 2:    9.8 Hz (amp = 0.4139 g)
+    Peak 3:   11.7 Hz (amp = 0.3613 g)
+  Q15 Quantization       : SNR=57.14 dB | RMS_err=0.001103 | Compression=2.0x (1024 -> 512 B)
+----------------------------------------------------------------------------------
+[WINDOW #42 | t = 24.36 s | Rate = 500.0 Hz]
+  Orientation / Mean (g) : ax=+0.460, ay=-0.486, az=+0.442
+  Magnitude Stats (g)    : mean=2.651, std=0.5077, min=1.416, max=3.464, range=2.048, rms=2.699
+  Spectral Features (FFT): Dom=2.0 Hz | Energy=6.164e+00 | Top Peaks:
+    Peak 1:    2.0 Hz (amp = 2.3292 g)
+    Peak 2:    9.8 Hz (amp = 0.6198 g)
+    Peak 3:   11.7 Hz (amp = 0.4813 g)
+  Q15 Quantization       : SNR=23.43 dB | RMS_err=0.058167 | Compression=2.0x (1024 -> 512 B)
+----------------------------------------------------------------------------------
+[WINDOW #43 | t = 24.87 s | Rate = 500.0 Hz]
+  Orientation / Mean (g) : ax=-0.806, ay=-0.029, az=+0.128
+  Magnitude Stats (g)    : mean=1.286, std=0.6379, min=0.705, max=2.940, range=2.235, rms=1.435
+  Spectral Features (FFT): Dom=2.0 Hz | Energy=7.744e-01 | Top Peaks:
+    Peak 1:    2.0 Hz (amp = 0.7607 g)
+    Peak 2:    3.9 Hz (amp = 0.3931 g)
+    Peak 3:    7.8 Hz (amp = 0.1508 g)
+  Q15 Quantization       : SNR=91.59 dB | RMS_err=0.000009 | Compression=2.0x (1024 -> 512 B)
+----------------------------------------------------------------------------------
+[WINDOW #44 | t = 25.39 s | Rate = 500.0 Hz]
+  Orientation / Mean (g) : ax=-1.010, ay=+0.065, az=-0.056
+  Magnitude Stats (g)    : mean=1.015, std=0.0400, min=0.951, max=1.136, range=0.185, rms=1.016
+  Spectral Features (FFT): Dom=2.0 Hz | Energy=7.369e-01 | Top Peaks:
+    Peak 1:    2.0 Hz (amp = 0.8575 g)
+    Peak 2:    5.9 Hz (amp = 0.0355 g)
+    Peak 3:    3.9 Hz (amp = 0.0162 g)
+  Q15 Quantization       : SNR=67.76 dB | RMS_err=0.000009 | Compression=2.0x (1024 -> 512 B)
+----------------------------------------------------------------------------------
+[WINDOW #45 | t = 25.90 s | Rate = 500.0 Hz]
+  Orientation / Mean (g) : ax=-1.002, ay=+0.100, az=-0.030
+  Magnitude Stats (g)    : mean=1.008, std=0.0284, min=0.955, max=1.066, range=0.112, rms=1.008
+  Spectral Features (FFT): Dom=2.0 Hz | Energy=7.329e-01 | Top Peaks:
+    Peak 1:    2.0 Hz (amp = 0.8542 g)
+    Peak 2:    3.9 Hz (amp = 0.0381 g)
+    Peak 3:    5.9 Hz (amp = 0.0373 g)
+  Q15 Quantization       : SNR=64.62 dB | RMS_err=0.000009 | Compression=2.0x (1024 -> 512 B)
+----------------------------------------------------------------------------------
+[WINDOW #46 | t = 26.41 s | Rate = 500.0 Hz]
+  Orientation / Mean (g) : ax=-0.945, ay=-0.026, az=+0.178
+  Magnitude Stats (g)    : mean=1.002, std=0.0525, min=0.915, max=1.106, range=0.191, rms=1.003
+  Spectral Features (FFT): Dom=2.0 Hz | Energy=6.567e-01 | Top Peaks:
+    Peak 1:    2.0 Hz (amp = 0.8083 g)
+    Peak 2:    3.9 Hz (amp = 0.0524 g)
+    Peak 3:   11.7 Hz (amp = 0.0154 g)
+  Q15 Quantization       : SNR=69.26 dB | RMS_err=0.000009 | Compression=2.0x (1024 -> 512 B)
+----------------------------------------------------------------------------------
+[WINDOW #47 | t = 26.92 s | Rate = 500.0 Hz]
+  Orientation / Mean (g) : ax=-0.640, ay=+0.002, az=+0.645
+  Magnitude Stats (g)    : mean=0.956, std=0.1279, min=0.674, max=1.196, range=0.522, rms=0.964
+  Spectral Features (FFT): Dom=2.0 Hz | Energy=7.975e-01 | Top Peaks:
+    Peak 1:    2.0 Hz (amp = 0.8702 g)
+    Peak 2:    3.9 Hz (amp = 0.1366 g)
+    Peak 3:    5.9 Hz (amp = 0.1078 g)
+  Q15 Quantization       : SNR=77.55 dB | RMS_err=0.000009 | Compression=2.0x (1024 -> 512 B)
+----------------------------------------------------------------------------------
+[WINDOW #48 | t = 27.43 s | Rate = 500.0 Hz]
+  Orientation / Mean (g) : ax=-0.088, ay=+0.249, az=+1.057
+  Magnitude Stats (g)    : mean=1.102, std=0.1412, min=0.875, max=1.505, range=0.630, rms=1.111
+  Spectral Features (FFT): Dom=2.0 Hz | Energy=7.717e-01 | Top Peaks:
+    Peak 1:    2.0 Hz (amp = 0.8606 g)
+    Peak 2:    3.9 Hz (amp = 0.0955 g)
+    Peak 3:    5.9 Hz (amp = 0.0923 g)
+  Q15 Quantization       : SNR=79.90 dB | RMS_err=0.000009 | Compression=2.0x (1024 -> 512 B)
+----------------------------------------------------------------------------------
+[WINDOW #49 | t = 27.95 s | Rate = 500.0 Hz]
+  Orientation / Mean (g) : ax=-0.007, ay=+0.005, az=+1.017
+  Magnitude Stats (g)    : mean=1.017, std=0.0068, min=1.013, max=1.051, range=0.038, rms=1.017
+  Spectral Features (FFT): Dom=2.0 Hz | Energy=7.480e-01 | Top Peaks:
+    Peak 1:    2.0 Hz (amp = 0.8649 g)
+    Peak 2:    3.9 Hz (amp = 0.0025 g)
+    Peak 3:    5.9 Hz (amp = 0.0014 g)
+  Q15 Quantization       : SNR=61.61 dB | RMS_err=0.000008 | Compression=2.0x (1024 -> 512 B)
+----------------------------------------------------------------------------------
+[WINDOW #50 | t = 28.46 s | Rate = 500.0 Hz]
+  Orientation / Mean (g) : ax=-0.000, ay=+0.003, az=+1.016
+  Magnitude Stats (g)    : mean=1.017, std=0.0010, min=1.014, max=1.019, range=0.004, rms=1.017
+  Spectral Features (FFT): Dom=2.0 Hz | Energy=7.539e-01 | Top Peaks:
+    Peak 1:    2.0 Hz (amp = 0.8683 g)
+    Peak 2:    3.9 Hz (amp = 0.0028 g)
