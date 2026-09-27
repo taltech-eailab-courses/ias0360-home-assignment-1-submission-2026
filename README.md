@@ -73,7 +73,7 @@ make -j$(nproc)
 
 ### Option B: From the host machine via Docker exec
 ```bash
-docker exec ias0360-2026 bash -c "cd /root/homework1 && mkdir -p build && cd build && cmake .. && make -j\$(nproc)"
+docker exec ias0360-2026 bash -c "cd /root/homework1 && mkdir -p build && cd build && cmake -DPICO_BOARD=pico2_w .. && make -j\$(nproc)"
 ```
 
 The resulting executable binary will be generated at:
