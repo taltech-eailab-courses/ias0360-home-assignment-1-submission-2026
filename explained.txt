@@ -1,0 +1,15 @@
+HA1 in short (Joosep Parts, 256780IAXD). ./run.sh builds, flashes, then records the board still, shaken and rocked.
+
+1. Read the sensor 1000 times a second for 1 s: ax, ay, az (g) and gx, gy, gz (deg/s). record_window()
+2. Subtract each axis's average, so gravity and offsets do not hide the movement. remove_dc_offset()
+3. Scale each axis to -1..+1 and to average 0, spread 1. normalise_min_max(), normalise_z_score()
+4. Smallest, largest, average, middle, most common value and spread per axis. compute_axis_stats()
+5. Store with 16, 8 and 4 bits and measure the rounding error: each bit less doubles it. run_quantization()
+6. Count zero crossings, a quick guess of how fast the board moves back and forth. zero_crossings()
+7. Tilt from the direction of gravity, smoothed with the gyroscope. compute_orientation()
+8. Average every 4 samples, giving 250 samples a second. downsample()
+9. FFT: which frequencies are in the movement, and the 5 strongest. fft_amplitude(), top_peaks()
+10. Time every step and print everything over USB. host.py saves it and checks the FFT with NumPy.
+The big arrays are global because the Pico's stack is only 2 KB.
+The statistics are the slowest step (about 4 s): the median sorts slowly, the mode compares every pair.
+Results are in report/ha1_report.pdf, recordings and overall_data.txt in output/.
