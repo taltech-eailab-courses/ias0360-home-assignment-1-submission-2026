@@ -1,0 +1,54 @@
+
+# Operating system files
+.DS_Store
+Thumbs.db
+.bash_history
+
+# IDE and editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Python cache and build files
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+build/
+dist/
+
+# Virtual environments and local configuration
+.venv/
+venv/
+env/
+.env
+.env.*
+!.env.example
+
+# Coverage and test reports
+.coverage
+htmlcov/
+coverage.xml
+build/
+build_*/
+
+
+/pico-sdk/
+/picotool/
+
+# Auto-cloned by entrypoint.sh on container start - a separate repo in its
+# own right, not part of this one.
+/submission/
+
+# Written by entrypoint.sh from SSH_PRIVATE_KEY in .env - contains a real
+# private key, must never be committed.
+/.ssh/
+
+# Written by `git config --global` inside the container, since $HOME there
+# is this repo's root - holds your name/email, not a secret, but not part
+# of this repo either.
+/.gitconfig
