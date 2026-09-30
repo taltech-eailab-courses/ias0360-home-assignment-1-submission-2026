@@ -12,6 +12,18 @@ The pipeline starts with handwritten-digit images from scikit-learn and demonstr
 4. Reduction to 28 x 28 using 3 x 3 block averaging.
 5. An 8-bit representation and its reconstructed image.
 
+### What Each Stage Does
+
+The scikit-learn digit samples contain 8 x 8 grayscale pixels with values from 0 to 16. The script divides by 16 to normalize them, then uses bilinear interpolation to enlarge each image to 28 x 28. It enlarges that result to 84 x 84 to represent the touchscreen buffer used by the embedded application.
+
+The 84 x 84 image is reduced by averaging each non-overlapping 3 x 3 block. Each output pixel is therefore the local mean:
+
+$$
+I_{28}(i,j) = \frac{1}{9}\sum_{u=0}^{2}\sum_{v=0}^{2} I_{84}(3i+u,3j+v).
+$$
+
+This reduces the pixel count by a factor of nine while smoothing small variations in the drawn signal. The visualizer then demonstrates an 8-bit round trip by mapping normalized intensities to signed values from -128 to 127 and reconstructing the image. This visualization is not the model's runtime quantization: firmware reads the actual input scale and zero point from the TFLite model.
+
 ## Generate Visual Comparisons
 
 Run this inside the course Docker container, starting from the workspace root:
@@ -32,7 +44,7 @@ The plots are reproducible preprocessing results, not photographs of the Pico de
 
 ### Filter Experiment
 
-Each filter is applied to the 84 x 84 image, then resized back to 84 x 84 for comparison with the original. The default experiment produced:
+The filter experiment applies non-overlapping 2 x 2, 3 x 3, and 5 x 5 averages to the touch-like image, resizes each result back to 84 x 84, and compares it with the original. It measures pixel error (MAE and PSNR), signal correlation, and gradient error. The default experiment produced:
 
 | Filter | MAE | PSNR (dB) | Correlation | Gradient RMSE |
 | --- | ---: | ---: | ---: | ---: |
