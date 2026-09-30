@@ -1,5 +1,7 @@
 # Home Assignment 1: Image Preprocessing
 
+The project reached the stage of deploying the code to the Raspberry Pi Pico. The main focus of this assignment is the image-preprocessing pipeline and the comparison of its intermediate results; the CNN firmware is an extension of that work.
+
 This project implements and evaluates an image-preprocessing pipeline. The main deliverable is the visualization and comparison of its intermediate stages. The CNN and Raspberry Pi Pico firmware are optional extensions.
 
 ## Main Work: Preprocessing
