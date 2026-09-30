@@ -1,119 +1,75 @@
-# Home Assignment 1: Image Preprocessing and Intermediate Comparisons
+# Home Assignment 1: Image Preprocessing
 
-The main work in this assignment is the implementation and visualization of an image-preprocessing pipeline. It includes normalization, resizing, spatial averaging, downsampling, and 8-bit representation, together with comparisons of the intermediate image outputs. As an optional extension, the processed image was also used for handwritten-digit recognition in a Raspberry Pi Pico firmware with a compact CNN.
+This project implements and evaluates an image-preprocessing pipeline. The main deliverable is the visualization and comparison of its intermediate stages. The CNN and Raspberry Pi Pico firmware are optional extensions.
 
-The C/C++ implementation is an optional embedded deployment of the image-processing pipeline. The main assignment evaluation focuses on preprocessing and intermediate image comparisons.
+## Main Work: Preprocessing
 
-## Selected application domain
+The pipeline starts with handwritten-digit images from scikit-learn and demonstrates:
 
-The selected application domain is image processing. The main deliverable is the preprocessing pipeline and its intermediate image comparisons. The optional extension is handwritten-digit recognition: the same 28 x 28 representation is passed to a compact fully-int8-quantized CNN and can be deployed as Raspberry Pi Pico firmware.
+1. Normalization of pixel values to the range [0, 1].
+2. Bilinear resizing from 8 x 8 to 28 x 28 pixels.
+3. Resizing to an 84 x 84 touch-like buffer.
+4. Reduction to 28 x 28 using 3 x 3 block averaging.
+5. An 8-bit representation and its reconstructed image.
 
-The implemented processing pipeline is:
+## Generate Visual Comparisons
 
-1. Source image: load a handwritten digit sample.
-2. Normalization: convert each value to [0, 1].
-3. Spatial processing: resize to 28 x 28 and reduce larger buffers with 3 x 3 averaging.
-4. Quantization: map normalized values to the input tensor's int8 scale and zero point.
-5. Feature extraction: the CNN applies two convolution and max-pooling stages.
+Run this inside the course Docker container, starting from the workspace root:
 
-The CNN provides the feature extraction algorithm. It is suitable for this domain because convolutional filters learn local stroke, edge, and shape patterns without requiring hand-written features such as Sobel filters.
+```sh
+cd submission/ias0360-home-assignment-1-submission-2026
+python3 tools/visualize_preprocessing.py --digit 7
+```
 
-## Included model
+The script writes the results to `report/images/preprocessing/`:
 
-`models/digit_model.tflite` and its embedded C representation in `models/mnist_model_data.cpp` are already included. The model is 20,152 bytes, uses int8 input/output tensors, and was trained on the local scikit-learn handwritten-digit dataset after resizing its images to 28 x 28. Its held-out validation accuracy was 96.39%.
+- `digit_7_pipeline.png` shows the five intermediate image stages.
+- `digits_reduced_comparison.png` compares ten digit images after reduction.
+- `filter_comparison.png` compares 2 x 2, 3 x 3, and 5 x 5 average filters.
+- `filter_metrics.csv` records MSE, RMSE, MAE, maximum absolute error, PSNR, correlation, and gradient RMSE.
 
-To regenerate the model in the course Docker container:
+The plots are reproducible preprocessing results, not photographs of the Pico demonstration. Use `--digit` to select another digit, `--index` to select a dataset sample directly, or `--output-dir` to write results elsewhere. The default digit is 7.
+
+### Filter Experiment
+
+Each filter is applied to the 84 x 84 image, then resized back to 84 x 84 for comparison with the original. The default experiment produced:
+
+| Filter | MAE | PSNR (dB) | Correlation | Gradient RMSE |
+| --- | ---: | ---: | ---: | ---: |
+| 2 x 2 | 0.002862 | 44.54 | 0.9998 | 0.002820 |
+| 3 x 3 | 0.004856 | 41.89 | 0.9998 | 0.002336 |
+| 5 x 5 | 0.065237 | 20.41 | 0.9516 | 0.013683 |
+
+The 2 x 2 filter has the lowest pixel error, while the 3 x 3 filter gives the lowest gradient error and stronger smoothing. The 5 x 5 filter loses noticeably more image structure. These measurements make the trade-off between smoothing and detail preservation explicit.
+
+## Optional Extension: CNN Model
+
+The repository includes a fully int8-quantized model at `models/digit_model.tflite` and its embedded C array at `models/mnist_model_data.cpp`. The model was trained on the scikit-learn handwritten-digit dataset and reached 96.39% held-out validation accuracy. This classifier is an extension; it is not required to generate or evaluate the preprocessing comparisons.
+
+To retrain and regenerate the model in the course Docker container:
 
 ```sh
 python3 tools/train_quantized_model.py
 ```
 
-The generator exports the `.tflite` model and the embedded C array with the correct names and alignment. The resulting model uses `CONV_2D`, `MAX_POOL_2D`, `RESHAPE`, `FULLY_CONNECTED`, and `SOFTMAX`.
+The script overwrites the default model files. Use `--model-output` and `--cpp-output` to keep alternate experiments separate. The model uses `CONV_2D`, `MAX_POOL_2D`, `RESHAPE`, `FULLY_CONNECTED`, and `SOFTMAX` operators.
 
-To train a different architecture, pass the filter counts for the two convolution layers and the hidden dense-layer size. For example, train the small configuration and keep its outputs separate from the default model:
+## Optional Extension: Raspberry Pi Pico
 
-```sh
-python3 tools/train_quantized_model.py \
-	--conv-filters 4 8 \
-	--dense-units 32 \
-	--model-output models/digit_model_small.tflite \
-	--cpp-output models/mnist_model_data_small.cpp
-```
-
-The defaults are `--conv-filters 8 16` and `--dense-units 32`. If output paths are omitted, the script overwrites the default model files.
-
-## Preprocessing Comparisons
-
-The final hardware photographs are separate from the preprocessing evidence. To generate intermediate image comparisons, run:
-
-```sh
-python3 tools/visualize_preprocessing.py --digit 7
-```
-
-The script creates these files in `report/images/preprocessing/`:
-
-- `digit_7_pipeline.png` - original 8 x 8 sample, resized 28 x 28 image, 84 x 84 touch-like buffer, 3 x 3 reduction, and the resulting 8-bit visualization.
-- `digits_reduced_comparison.png` - the ten digit classes after the 84 x 84 to 28 x 28 reduction.
-- `filter_comparison.png` - visual comparison of 2 x 2, 3 x 3, and 5 x 5 average filters.
-- `filter_metrics.csv` - MSE, RMSE, MAE, maximum absolute error, PSNR, correlation, and gradient RMSE for the three filters after reconstruction to 84 x 84.
-
-These figures show the image-processing stages only; they are not photographs of the final Raspberry Pi demonstration. The 84 x 84 image is a reproducible visualization of the touch-buffer stage, and the last panel illustrates 8-bit representation. The exact model `int8` scale and zero point are read from the exported TFLite model by the firmware during inference.
-
-The default experiment records MSE, RMSE, MAE, maximum absolute error, PSNR, signal correlation, and gradient RMSE. It produced PSNR values of 44.54 dB for the 2 x 2 filter, 41.89 dB for the 3 x 3 filter, and 20.41 dB for the 5 x 5 filter. Correlation was 0.9998 for the 2 x 2 and 3 x 3 filters and 0.9516 for the 5 x 5 filter. The 3 x 3 filter is therefore a useful compromise between smoothing and preservation of image structure.
-
-## Optional Pico Deployment
-
-The preprocessing comparisons do not require a Raspberry Pi Pico. The firmware deployment is optional and can be built inside the course Docker container, where CMake and the Pico SDK are installed:
+The firmware runs the CNN on a touchscreen drawing. Build the `digit_recognition` target from the workspace root inside the course Docker container:
 
 ```sh
 cd submission/ias0360-home-assignment-1-submission-2026
-mkdir -p build
 cmake -S . -B build
-cmake --build build -j$(nproc)
+cmake --build build --target digit_recognition -j$(nproc)
 cd ../../..
-./flash.sh "submission/ias0360-home-assignment-1-submission-2026/build/digit_recognition.uf2"
+./flash.sh submission/ias0360-home-assignment-1-submission-2026/build/digit_recognition.uf2
 ```
 
-If the model does not fit, first keep the default tensor arena size. Then report `interpreter->arena_used_bytes()` and set `kTensorArenaSize` in `src/model_settings.h` to that value plus a small safety margin.
-
-## Firmware Files and Final Sizes
-
-The firmware is built as the `digit_recognition` target. Its main project files are:
-
-- `main.cpp` - initializes the Pico, runs the touchscreen interface on one core, and performs inference on the other.
-- `src/model.cpp`, `src/model.h`, and `src/model_settings.h` - configure and run the TensorFlow Lite Micro model.
-- `models/mnist_model_data.cpp` and `models/mnist_model_data.h` - embed the quantized model bytes into the firmware. The original model is `models/digit_model.tflite`.
-- `lib/lcd/`, `lib/config/`, `lib/font/`, and `lib/pico-tflmicro/` - the LCD, touch, board configuration, font, and TensorFlow Lite Micro libraries required by CMake. These dependencies are included in this repository.
-
-Flash this file to the Raspberry Pi Pico:
-
-```text
-build/digit_recognition.uf2
-```
-
-From the workspace root, the flash command is `./flash.sh "Home assignment 1/build/digit_recognition.uf2"`. The compiled files currently in `build/` and `models/` have these sizes:
-
-| File | Size | Purpose |
-| --- | ---: | --- |
-| `build/digit_recognition.uf2` | 347,648 bytes (339.50 KiB) | Firmware image to flash to the Pico |
-| `models/digit_model.tflite` | 20,152 bytes (19.68 KiB) | Quantized model before embedding |
-| `models/mnist_model_data.cpp` | 124,400 bytes (121.48 KiB) | C++ source representation of the model bytes |
-| `build/digit_recognition.elf` | 7,040,344 bytes (6.71 MiB) | Build/debug executable; do not flash this file |
-
-These are the sizes of the artifacts currently present in this workspace; rebuilding or retraining can change them.
-
-## Optional LCD Interface
-
-The Waveshare LCD touchscreen is an optional input interface. If the firmware is used, it reduces the drawing to a 28 x 28 grayscale image and passes it to the same CNN used by the project.
-
-The expected display output has this structure:
+The expected LCD output is:
 
 ```text
 Prediction: <0-9>  Confidence: <0-100>%
 ```
 
-Tap `CLEAR` after a prediction to erase the drawing and classify another digit.
-
-## Report Summary
-
-The report focuses on the image-processing algorithms used for handwritten digit recognition. It explains normalization, bilinear resizing, 3 x 3 block averaging, downsampling, 8-bit representation, and the comparison of intermediate outputs. It then describes convolution and max-pooling as learned feature-extraction stages. The Pico firmware and LCD interface are documented as optional deployment support, not as the main evaluation target.
+Tap `CLEAR` to erase the drawing and classify another digit. The build output is ignored by Git. The required Pico SDK libraries, LCD/touch code, and TFLite Micro dependency are included under `lib/`.
