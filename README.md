@@ -4,25 +4,13 @@ This project implements and evaluates an image-preprocessing pipeline. The main 
 
 ## Main Work: Preprocessing
 
-The pipeline starts with handwritten-digit images from scikit-learn and demonstrates:
+The pipeline starts with handwritten-digit images from scikit-learn. Each sample is an 8 x 8 grayscale image with pixel values from 0 to 16. The script processes it in these stages:
 
-1. Normalization of pixel values to the range [0, 1].
-2. Bilinear resizing from 8 x 8 to 28 x 28 pixels.
-3. Resizing to an 84 x 84 touch-like buffer.
-4. Reduction to 28 x 28 using 3 x 3 block averaging.
-5. An 8-bit representation and its reconstructed image.
-
-### What Each Stage Does
-
-The scikit-learn digit samples contain 8 x 8 grayscale pixels with values from 0 to 16. The script divides by 16 to normalize them, then uses bilinear interpolation to enlarge each image to 28 x 28. It enlarges that result to 84 x 84 to represent the touchscreen buffer used by the embedded application.
-
-The 84 x 84 image is reduced by averaging each non-overlapping 3 x 3 block. Each output pixel is therefore the local mean:
-
-$$
-I_{28}(i,j) = \frac{1}{9}\sum_{u=0}^{2}\sum_{v=0}^{2} I_{84}(3i+u,3j+v).
-$$
-
-This reduces the pixel count by a factor of nine while smoothing small variations in the drawn signal. The visualizer then demonstrates an 8-bit round trip by mapping normalized intensities to signed values from -128 to 127 and reconstructing the image. This visualization is not the model's runtime quantization: firmware reads the actual input scale and zero point from the TFLite model.
+1. **Normalize:** divide each pixel by 16 to map the original intensities to the range [0, 1]. This makes images with different intensity values comparable.
+2. **Resize to 28 x 28:** use bilinear interpolation to enlarge the small sample while creating intermediate pixel values between its original pixels. This matches the classifier's input dimensions.
+3. **Create the touch-like buffer:** resize the 28 x 28 image to 84 x 84 to represent the larger image collected by the touchscreen.
+4. **Reduce with a 3 x 3 average:** average each non-overlapping block of nine pixels to return the 84 x 84 buffer to 28 x 28. This reduces the amount of data and smooths small variations in the drawn signal.
+5. **Show an 8-bit round trip:** map normalized intensities to signed values from -128 to 127, then reconstruct the image to show the effect of limited precision. This is a visualization; firmware uses the TFLite model's actual input scale and zero point for inference.
 
 ## Generate Visual Comparisons
 
