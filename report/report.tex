@@ -1,0 +1,239 @@
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+
+\usepackage{cite}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{textcomp}
+
+\begin{document}
+
+\title{Feature Extraction and Signal Processing\\of IMU Data on a Raspberry Pi Pico}
+
+\author{\IEEEauthorblockN{Markkus Koddala}
+\IEEEauthorblockA{Student code 253101IAPM\\
+IAS0360 Machine Learning for Embedded Systems\\
+Tallinn University of Technology\\
+markkus.koddala@taltech.ee}}
+
+\maketitle
+
+\begin{abstract}
+Three motions were recorded with an ICM-20948 at 500\,Hz and processed on the
+Raspberry Pi Pico itself: a Butterworth low-pass, quantisation at 16, 8 and 4
+bits, descriptive statistics and a 2048-point FFT. Gyroscope variance separates
+the motions by six orders of magnitude and the dominant spectral component
+identifies the shaking rate, while variance alone cannot distinguish walking
+from shaking. The on-device transform agrees with a NumPy reference to within
+0.03\,\% of the largest bin, and the full pipeline consumes 3.9\,\% of the
+available sample-period budget.
+\end{abstract}
+
+\begin{IEEEkeywords}
+IMU, feature extraction, quantisation, FFT, embedded systems
+\end{IEEEkeywords}
+
+\section{Method}
+
+The selected application domain is the inertial measurement unit. The Lab 1.1
+logger samples the ICM-20948 over I\textsuperscript{2}C at 500\,Hz and writes
+16-byte records to an SD card. Three recordings of 15\,s were acquired: the
+board at rest, carried during walking, and shaken by hand, each of 7500
+samples with none dropped.
+
+A second program reads a recording back on the Pico, converts the raw counts to
+g and dps, and processes the first 2048 samples: DC removal and peak
+normalisation; a second-order Butterworth low-pass designed by bilinear
+transform and applied in the forward direction only; quantisation at 16, 8 and 4
+bits with dequantisation and error measurement; per-axis mean, variance,
+standard deviation, minimum, maximum, median and mode; and a 2048-point radix-2
+FFT with a Hamming window. Each stage is timed with \texttt{time\_us\_64()}. The
+analysed block and the resulting spectrum are written back as CSV, and a
+host-side script recomputes the transform in NumPy over identical samples. The
+Sobel and Canny operators were omitted as they are defined on images.
+
+Two consistency checks validate the data. With the board flat the mean of $a_z$
+is $-1.00048$\,g, i.e.\ gravity; the gyroscope means in the same recording,
+$-0.195$, $-0.106$ and $-0.142$\,dps, are the sensor bias.
+
+\begin{figure*}[t]
+\centerline{\includegraphics[width=0.80\textwidth]{figs/comparison.png}}
+\caption{Accelerometer X for the three recordings (left) and the corresponding
+single-sided spectra (right). The dominant bin is annotated.}
+\label{fig:overview}
+\end{figure*}
+
+\section{Results}
+
+Table~\ref{tab:stats} reports the variance of every axis across the three
+recordings; the accelerometer is expressed in g and the gyroscope in dps, so the
+two groups are not directly comparable in magnitude.
+Table~\ref{tab:filter} gives the effect of an identical 5\,Hz cutoff on all
+three recordings, that value being chosen as an intermediate point between the
+walking band below 1.5\,Hz and the shaking component at 7.57\,Hz.
+Table~\ref{tab:quant} gives the quantisation error for $a_x$ of the shaking
+recording, the other two behaving equivalently.
+Table~\ref{tab:fft} states the agreement between the on-device transform and the
+NumPy reference, with the deviation expressed relative to the largest bin of the
+reference spectrum, together with the measured cost of each processing stage.
+Fig.~\ref{fig:overview} presents all three recordings with their spectra and
+Fig.~\ref{fig:shaking} overlays the two implementations for the shaking case.
+
+\begin{table}[htbp]
+\caption{Variance per axis, 2048 samples at 500\,Hz}
+\label{tab:stats}
+\centering
+\begin{tabular}{lrrr}
+\toprule
+Axis & still & walking & shaking\\
+\midrule
+$a_x$ [g$^2$]     & 0.0000 & 0.0087 & 0.0095\\
+$a_y$ [g$^2$]     & 0.0000 & 0.0070 & 0.0606\\
+$a_z$ [g$^2$]     & 0.0000 & 0.0143 & 0.0766\\
+$g_x$ [dps$^2$]   & 0.0013 & 127.7  & 3615.9\\
+$g_y$ [dps$^2$]   & 0.0010 & 129.9  & 1245.0\\
+$g_z$ [dps$^2$]   & 0.0010 & 1024.5 & 323.1\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+\caption{Butterworth low-pass, $f_c = 5$\,Hz, applied to $a_x$}
+\label{tab:filter}
+\centering
+\begin{tabular}{lrrr}
+\toprule
+Recording & Std before & Std after & Removed\\
+\midrule
+still    & 0.000588 & 0.000427 & 27.3\,\%\\
+walking  & 0.093340 & 0.091487 & 2.0\,\%\\
+shaking  & 0.097659 & 0.056659 & 42.0\,\%\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+\caption{Quantisation of $a_x$, shaking, 2048 samples}
+\label{tab:quant}
+\centering
+\begin{tabular}{rrrrr}
+\toprule
+Bits & SNR [dB] & RMS error & Max error & Clipped\\
+\midrule
+16 & 91.61 & $8.88\times10^{-6}$ & $1.53\times10^{-5}$ & 0\\
+8  & 43.43 & $2.28\times10^{-3}$ & $3.91\times10^{-3}$ & 0\\
+4  & 19.45 & $3.60\times10^{-2}$ & $6.24\times10^{-2}$ & 6\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+\caption{On-device FFT against NumPy, and stage cost per 2048-sample block}
+\label{tab:fft}
+\centering
+\begin{tabular}{lrrr}
+\toprule
+Recording & Peak [Hz] & Max diff. & Rel. diff.\\
+\midrule
+still    & 0.49 & $4.1\times10^{-8}$ & 0.0231\,\%\\
+walking  & 0.49 & $3.6\times10^{-7}$ & 0.0008\,\%\\
+shaking  & 7.57 & $3.0\times10^{-7}$ & 0.0006\,\%\\
+\midrule
+\multicolumn{2}{l}{Low-pass}          & 11.8\,ms  & 5.8\,\textmu s/sa.\\
+\multicolumn{2}{l}{Quantise + dequantise} & 12.0\,ms  & 5.9\,\textmu s/sa.\\
+\multicolumn{2}{l}{FFT, 2048 points}  & 160.3\,ms & 78.3\,\textmu s/sa.\\
+\multicolumn{2}{l}{Statistics, six axes} & 3.08\,s & 250\,\textmu s/sa.\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{figure}[htbp]
+\centerline{\includegraphics[width=0.90\columnwidth]{figs/shaking_spec.png}}
+\caption{Shaking recording. The on-device spectrum (dashed) coincides with the
+NumPy spectrum (solid) across the whole band.}
+\label{fig:shaking}
+\end{figure}
+
+\section{Analysis}
+
+\subsection{Feature selection}
+
+Gyroscope X variance spans 0.0013 at rest, 127.7 during walking and 3615.9
+during shaking (Table~\ref{tab:stats}). The separation approaches six orders of
+magnitude and exceeds the measurement noise by a wide margin, so any threshold
+between 1 and 50 distinguishes motion from rest without tuning.
+
+Variance alone is nevertheless insufficient. The $a_x$ variances for walking and
+shaking, 0.0087 and 0.0095, are effectively identical, whereas the spectra are
+not: walking concentrates its energy below 1.5\,Hz, while shaking peaks at
+7.57\,Hz with a first harmonic near 15\,Hz arising because a manual shake is not
+sinusoidal (Fig.~\ref{fig:overview}). Variance describes the magnitude of
+motion and the dominant spectral component its rate of repetition; the two are
+complementary and neither is individually sufficient.
+
+The filter results in Table~\ref{tab:filter} are governed by the same
+consideration. Walking lies inside the 5\,Hz passband and loses 2\,\% of its
+spread; the still recording contains only noise, of which 27\,\% is removed;
+shaking peaks above the cutoff and loses 42\,\%, taking the signal of interest
+with it. The cutoff is therefore a property of the motion under investigation,
+not of the sensor.
+
+\subsection{Quantisation and numerical accuracy}
+
+The SNR falls by 48.18\,dB between 16 and 8 bits and by 23.98\,dB between 8 and
+4 bits, i.e.\ 6.02 and 6.00\,dB per bit, reproducing the expected halving of
+quantisation error per additional bit.
+
+The on-device FFT deviates from the NumPy reference by at most
+$3.6\times10^{-7}$, or 0.0008\,\% of the largest bin, with all five strongest
+peaks agreeing in bin index, frequency and amplitude to six decimal places
+(Table~\ref{tab:fft}, Fig.~\ref{fig:shaking}). The residual is attributable to
+single- against double-precision arithmetic. The relative error is largest for
+the still recording only because the reference bin it is normalised against is
+itself very small.
+
+\subsection{Execution cost}
+
+The 2048-point transform requires 160.3\,ms against the 4.096\,s needed to
+acquire the same block, so processing occupies 3.9\,\% of the available time and
+a single core sustains both concurrently. The per-sample cost of
+78.3\,\textmu s places the theoretical ceiling near 12.8\,kHz; in practice
+sensor readout and card writes reduce this, the worst observed
+\texttt{f\_write} being 3.9\,ms against a 2\,ms sample period, tolerable only
+because the logger buffers 4\,kB per write and samples on the second core.
+
+The statistics dominate at 3.08\,s for six axes, almost entirely due to the
+median's $O(n^2)$ insertion sort. Mean, variance, minimum and maximum are
+single-pass and negligible. For $a_x$ at rest the mean is $-0.02161$ and the
+median $-0.02155$, a difference of 0.3\,\%, so the median does not justify its
+cost outside outlier rejection.
+
+\section{Issues and Discussion}
+
+Clipping occurred in two distinct forms. The first shaking recording saturated
+the sensor: configured for $\pm2$\,g, samples reached 32767, the 16-bit maximum.
+Such peaks are unrecoverable and the recording was repeated with a gentler
+motion; the appropriate remedy is a $\pm8$ or $\pm16$\,g range, trading
+resolution for headroom. The second form is implementation-side. Normalisation
+places the largest sample at 0.999, which is representable at 16 bits
+($32767/32768$) but not at 4 bits ($7/8 = 0.875$), where six samples fall
+outside. The normalisation target should be a function of bit depth; it was
+retained as the effect is instructive, though it inflates the 4-bit error
+slightly.
+
+The mode was expected to be uninformative for continuous data on the assumption
+that measured values rarely repeat. The raw output is an integer count, and at
+rest the signal traverses so few counts that values repeat between 103 and 777
+times; in the moving recordings this falls to between 3 and 7. The mode is thus informative
+only where the signal is nearly static, which is where it carries least
+information.
+
+Two improvements follow. The median should be replaced by a counting approach
+over the integer counts, or dropped in favour of variance, eliminating almost
+all of the 3.08\,s. Secondly, the analysis operates on a stored file rather than
+a live stream, which ensured repeatable results across experiments but does not
+demonstrate sustained real-time operation; executing the same code against the
+live sensor is the natural continuation.
+
+\end{document}
