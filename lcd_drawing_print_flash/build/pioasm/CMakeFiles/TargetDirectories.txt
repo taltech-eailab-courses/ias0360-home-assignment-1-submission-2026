@@ -1,0 +1,7 @@
+/root/lab_1_1/lcd_sd_card_example/build/pioasm/CMakeFiles/pioasm.dir
+/root/lab_1_1/lcd_sd_card_example/build/pioasm/CMakeFiles/edit_cache.dir
+/root/lab_1_1/lcd_sd_card_example/build/pioasm/CMakeFiles/rebuild_cache.dir
+/root/lab_1_1/lcd_sd_card_example/build/pioasm/CMakeFiles/list_install_components.dir
+/root/lab_1_1/lcd_sd_card_example/build/pioasm/CMakeFiles/install.dir
+/root/lab_1_1/lcd_sd_card_example/build/pioasm/CMakeFiles/install/local.dir
+/root/lab_1_1/lcd_sd_card_example/build/pioasm/CMakeFiles/install/strip.dir
