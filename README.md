@@ -34,3 +34,7 @@ This process will generate a `.uf2` executable file inside the `build` directory
 * **Hardware Interaction:** The program displays an interface on the connected LCD. You can interact with it by drawing directly on the screen.
 * **Saving Data:** When you press the "save" button on the LCD screen, the application processes the input.
 * **Serial Output:** After saving, the output times and related execution data will be printed to the terminal via the serial connection (visible in `minicom`).
+
+## The visualizer script
+I used this code to visualize the data you will have to extract the data from the SD card using an SD card reader
+https://colab.research.google.com/drive/1U6FMriQCytrHC-NzbCYpi5QTAUX-D-fs?usp=sharing
