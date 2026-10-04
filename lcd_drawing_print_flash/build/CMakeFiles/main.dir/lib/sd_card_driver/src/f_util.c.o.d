@@ -1,5 +1,5 @@
 CMakeFiles/main.dir/lib/sd_card_driver/src/f_util.c.o: \
- /root/lab_1_1/lcd_sd_card_example/lib/sd_card_driver/src/f_util.c \
+ /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/lib/sd_card_driver/src/f_util.c \
  /usr/include/newlib/assert.h /usr/include/newlib/_ansi.h \
  /usr/include/newlib/newlib.h /usr/include/newlib/_newlib_version.h \
  /usr/include/newlib/sys/config.h /usr/include/newlib/machine/ieeefp.h \
@@ -11,6 +11,6 @@ CMakeFiles/main.dir/lib/sd_card_driver/src/f_util.c.o: \
  /usr/include/newlib/sys/reent.h /usr/include/newlib/_ansi.h \
  /usr/include/newlib/sys/_types.h /usr/include/newlib/machine/_types.h \
  /usr/include/newlib/sys/lock.h /usr/include/newlib/sys/stdio.h \
- /root/lab_1_1/lcd_sd_card_example/lib/sd_card_driver/ff15/source/ff.h \
- /root/lab_1_1/lcd_sd_card_example/lib/sd_card_driver/include/ffconf.h \
+ /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/lib/sd_card_driver/ff15/source/ff.h \
+ /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/lib/sd_card_driver/include/ffconf.h \
  /usr/lib/gcc/arm-none-eabi/13.2.1/include/stdint.h

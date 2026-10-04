@@ -1,4 +1,4 @@
-# Install script for directory: /opt/pico-sdk
+# Install script for directory: /home/student/.pico-sdk/sdk/2.3.1
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,16 +39,16 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/root/lab_1_1/lcd_sd_card_example/build/pico-sdk/tools/cmake_install.cmake")
+  include("/home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build/pico-sdk/tools/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/root/lab_1_1/lcd_sd_card_example/build/pico-sdk/src/cmake_install.cmake")
+  include("/home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build/pico-sdk/src/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/root/lab_1_1/lcd_sd_card_example/build/pico-sdk/docs/cmake_install.cmake")
+  include("/home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build/pico-sdk/docs/cmake_install.cmake")
 endif()
 

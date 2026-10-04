@@ -6,5 +6,5 @@ ASM_DEFINES =
 
 ASM_INCLUDES = 
 
-ASM_FLAGS = -mcpu=cortex-m0plus -mthumb -mfloat-abi=soft -g -O3 -DNDEBUG
+ASM_FLAGS = -mcpu=cortex-m0plus -mthumb -mfloat-abi=soft -ftls-model=local-exec -g -O3 -DNDEBUG
 

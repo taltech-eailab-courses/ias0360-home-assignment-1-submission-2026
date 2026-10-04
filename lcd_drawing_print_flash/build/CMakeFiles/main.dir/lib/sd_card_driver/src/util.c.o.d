@@ -1,5 +1,5 @@
 CMakeFiles/main.dir/lib/sd_card_driver/src/util.c.o: \
- /root/lab_1_1/lcd_sd_card_example/lib/sd_card_driver/src/util.c \
+ /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/lib/sd_card_driver/src/util.c \
  /usr/lib/gcc/arm-none-eabi/13.2.1/include/stdbool.h \
  /usr/lib/gcc/arm-none-eabi/13.2.1/include/stdint.h \
  /usr/include/newlib/string.h /usr/include/newlib/_ansi.h \
@@ -16,14 +16,14 @@ CMakeFiles/main.dir/lib/sd_card_driver/src/util.c.o: \
  /usr/include/newlib/stdio.h \
  /usr/lib/gcc/arm-none-eabi/13.2.1/include/stdarg.h \
  /usr/include/newlib/sys/stdio.h \
- /root/lab_1_1/lcd_sd_card_example/lib/sd_card_driver/include/util.h \
- /opt/pico-sdk/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Include/RP2040.h \
- /opt/pico-sdk/src/rp2_common/cmsis/stub/CMSIS/Core/Include/core_cm0plus.h \
- /opt/pico-sdk/src/rp2_common/cmsis/stub/CMSIS/Core/Include/cmsis_version.h \
- /opt/pico-sdk/src/rp2_common/cmsis/stub/CMSIS/Core/Include/cmsis_compiler.h \
- /opt/pico-sdk/src/rp2_common/cmsis/stub/CMSIS/Core/Include/cmsis_gcc.h \
+ /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/lib/sd_card_driver/include/util.h \
+ /home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Include/RP2040.h \
+ /home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/cmsis/stub/CMSIS/Core/Include/core_cm0plus.h \
+ /home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/cmsis/stub/CMSIS/Core/Include/cmsis_version.h \
+ /home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/cmsis/stub/CMSIS/Core/Include/cmsis_compiler.h \
+ /home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/cmsis/stub/CMSIS/Core/Include/cmsis_gcc.h \
  /usr/lib/gcc/arm-none-eabi/13.2.1/include/arm_acle.h \
- /opt/pico-sdk/src/rp2_common/cmsis/stub/CMSIS/Core/Include/m-profile/cmsis_gcc_m.h \
- /opt/pico-sdk/src/rp2_common/cmsis/stub/CMSIS/Core/Include/m-profile/armv7m_mpu.h \
- /opt/pico-sdk/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Include/system_RP2040.h \
- /root/lab_1_1/lcd_sd_card_example/lib/sd_card_driver/include/my_debug.h
+ /home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/cmsis/stub/CMSIS/Core/Include/m-profile/cmsis_gcc_m.h \
+ /home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/cmsis/stub/CMSIS/Core/Include/m-profile/armv7m_mpu.h \
+ /home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Include/system_RP2040.h \
+ /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/lib/sd_card_driver/include/my_debug.h

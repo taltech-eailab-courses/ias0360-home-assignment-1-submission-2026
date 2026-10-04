@@ -250,30 +250,30 @@ static FRESULT write_bitmap_as_bmp(
     uint8_t header[54];
     memset(header, 0, sizeof(header));
 
-    // Signature BMP
+    // BMP Signature
     header[0] = 'B';
     header[1] = 'M';
 
-    // Taille fichier
+    // File size
     le32(&header[2], file_size);
 
-    // Offset vers pixels
+    // Offset to pixels
     le32(&header[10], 54);
 
-    // Taille DIB header
+    // DIB header size
     le32(&header[14], 40);
 
-    // Largeur / hauteur
+    // Width / height
     le32(&header[18], width);
     le32(&header[22], height);
 
     // Plans
     le16(&header[26], 1);
 
-    // Bits par pixel
+    // Bits by pixel
     le16(&header[28], 24);
 
-    // Taille des données pixels
+    // Pixel data size
     le32(&header[34], pixel_data_size);
 
     FRESULT fr = write_all(file, header, sizeof(header));
@@ -286,13 +286,12 @@ static FRESULT write_bitmap_as_bmp(
         return FR_NOT_ENOUGH_CORE;
     }
 
-    // BMP stocke les lignes de bas en haut
     for (int32_t y = (int32_t)height - 1; y >= 0; y--) {
 
         for (uint32_t x = 0; x < width; x++) {
             uint8_t pixel = bitmap[(uint32_t)y * width + x];
 
-            // 1 = noir dessiné, 0 = blanc fond
+            // 1 = black (drawn), 0 = white
             uint8_t c = pixel ? 0x00 : 0xFF;
 
             row[x * 3 + 0] = c; // B
@@ -317,133 +316,6 @@ static FRESULT write_bitmap_as_bmp(
 
 
 // ------------------------------ Main -------------------------------------
-
-// void core1_entry() {
-
-//     printf("Core 1 entry: write to SD card\n");
-//     sleep_ms(2000);
-
-//     // 1) Init + mount
-//     if (!sd_init_and_mount()) {
-//         loop_forever_msg("SD init/mount failed.");
-//     }
-
-//     int count = 0;
-//     FRESULT fr;
-
-//     while (count < MAX_FILE_WRITE) {
-
-//         uint32_t msg = multicore_fifo_pop_blocking();
-//         if (msg != DATA_READY_FLAG) {
-//             printf("Core 1 received unexpected message: 0x%08lX\n", msg);
-//             continue;
-//         }
-
-//         printf("Writing data to a file\n");
-
-//         // Build absolute file path: <drive>/lcd_sd_card_example_<iteration>.txt
-//         char path[PATH_MAX_LEN];
-//         char name[64];
-//         snprintf(name, sizeof(name), "lcd_sd_card_example_%d.txt", count);
-//         join_path(path, sizeof path, g_drive, name);
-
-//         printf("Core 1: Creating and writing to file: %s\n", path);
-//         // 2) Create the file
-//         FIL f;
-//         fr = create_file(path, &f);
-//         if (fr != FR_OK) die(fr, "f_open(create)");
-
-//         mutex_enter_blocking(&mutex);
-
-//         // 3) Write data
-//         UINT bw = 0;
-
-//         // Check if data is valid
-//         printf("Core 1: tp_data.data_len = %zu\n", tp_data.data_len);
-//         printf("Core 1: tp_data.data pointer = %p\n", (void*)tp_data.data);
-        
-//         if (tp_data.data == NULL || tp_data.data_len == 0) {
-//             printf("ERROR: tp_data.data is NULL or data_len is 0!\n");
-//             mutex_exit(&mutex);
-//             f_close(&f);
-//             continue;
-//         }
-
-//         // Print all the data stored in tp_data.data
-//         printf("Data contents (%zu bytes): ", tp_data.data_len);
-//         for (size_t i = 0; i < tp_data.data_len; i++) {
-//             printf("%u ", tp_data.data[i]);
-//             if ((i + 1) % BOX_W == 0) printf("\n");
-//         }
-//         if (tp_data.data_len % 16 != 0) printf("\n");
-
-//         // Convert binary 0/1 to ASCII '0'/'1' for human-readable text file
-//         char *ascii_buffer = (char *)malloc(tp_data.data_len);
-//         if (ascii_buffer == NULL) {
-//             printf("ERROR: Failed to allocate ASCII buffer\n");
-//             mutex_exit(&mutex);
-//             f_close(&f);
-//             die(FR_NOT_ENOUGH_CORE, "malloc");
-//         }
-        
-//         for (size_t i = 0; i < tp_data.data_len; i++) {
-//             ascii_buffer[i] = tp_data.data[i] ? '1' : '0';  // Convert to ASCII '0' or '1'
-//         }
-        
-//         fr = write_to_file(&f, ascii_buffer, (UINT)tp_data.data_len, &bw);
-//         free(ascii_buffer);
-        
-//         printf("Core 1: write_to_file returned FR=%d, bytes_written=%u (expected %zu)\n", 
-//                fr, bw, tp_data.data_len);
-//         if (fr != FR_OK || bw != tp_data.data_len) {
-//             printf("ERROR: Write failed or incomplete! FR=%d, wrote %u/%zu bytes\n", 
-//                    fr, bw, tp_data.data_len);
-//             die(fr, "f_write/f_sync");
-//         }
-        
-//         // // Close the file
-//         // f_close(&f);
-
-
-//         // mutex_exit(&mutex);
-        
-//         // count++;
-//         // printf("----- File write iteration %d -----\n", count);
-
-//         // Close the file
-
-//         // New way to close the file and handle errors (possibility to save another file )
-//         fr = f_close(&f);
-
-//         if (fr != FR_OK) {
-//             die(fr, "f_close");
-//         }
-
-//         mutex_exit(&mutex);
-
-//         // La sauvegarde est terminée.
-//         // Un nouvel appui sur SAVE est maintenant autorisé.
-//         TP_SetSavePending(false);
-
-//         count++;
-
-//         printf(
-//             "----- File write iteration %d -----\n",
-//             count
-//         );
-//     }
-
-//     // Optional: unmount
-//     fr = f_unmount(g_drive);
-//     printf("f_unmount -> %s (%d)\n", FRESULT_str(fr), fr);
-
-//     sleep_ms(1000);  // optional flush delay
-//     multicore_fifo_push_blocking(TASK_COMPLETE_FLAG); // acknowledge successful send
-
-//     printf("Core 1 task complete.\n");
-
-//     while (1) { tight_loop_contents(); }
-// }
 
 void core1_entry() {
 
@@ -599,9 +471,8 @@ void core1_entry() {
             tp_data.data,
             tp_data.data_len
         );
-
+        // error management
         if (fr != FR_OK) {
-            // gestion erreur
         }
 
 
@@ -615,9 +486,8 @@ void core1_entry() {
             BOX_W,
             BOX_H
         );
-
+        // error management
         if (fr != FR_OK) {
-            // gestion erreur
         }
 
 
@@ -631,13 +501,12 @@ void core1_entry() {
             BOX_W,
             BOX_H
         );
-
+        // error management
         if (fr != FR_OK) {
-            // gestion erreur
         }
 
 
-        // Tout est terminé
+        // All done
         TP_SetSavePending(false);
 
         count++;
@@ -678,15 +547,6 @@ int main(void) {
                 loop_forever_msg("Write failed on Core 1.");
             }
         } 
-        // else {
-        //     // Pendant une écriture SD, Core 0 ne touche pas au SPI.
-        //     if (!TP_IsSavePending()) {
-        //         LCD_SetBackLight(1000);
-        //         TP_DrawBoard();
-        //     }
-
-        //     tight_loop_contents();
-        // }
         else {
 
             bool save_pending =
@@ -694,16 +554,12 @@ int main(void) {
 
 
             // --------------------------------------------------------
-            // Sauvegarde en cours
+            // "Save is pending" management
             // --------------------------------------------------------
 
             if (save_pending)
             {
-                /*
-                * Ne surtout pas appeler TP_DrawBoard().
-                *
-                * Core 1 utilise le SPI pour écrire sur la SD.
-                */
+
                 save_was_pending = true;
 
                 tight_loop_contents();
@@ -713,7 +569,7 @@ int main(void) {
 
 
             // --------------------------------------------------------
-            // La sauvegarde vient de finir
+            // End of saving
             // --------------------------------------------------------
 
             if (save_was_pending)
@@ -725,7 +581,7 @@ int main(void) {
 
 
             // --------------------------------------------------------
-            // Fonctionnement normal
+            // Back to normal
             // --------------------------------------------------------
 
             LCD_SetBackLight(1000);

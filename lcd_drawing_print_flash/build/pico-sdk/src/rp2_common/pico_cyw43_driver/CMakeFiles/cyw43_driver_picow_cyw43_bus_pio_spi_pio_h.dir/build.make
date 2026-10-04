@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/lab_1_1/lcd_sd_card_example
+CMAKE_SOURCE_DIR = /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/lab_1_1/lcd_sd_card_example/build
+CMAKE_BINARY_DIR = /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build
 
 # Utility rule file for cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.
 
@@ -68,9 +68,9 @@ include pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_
 
 pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h: pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.pio.h
 
-pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.pio.h: /opt/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.pio
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/root/lab_1_1/lcd_sd_card_example/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating cyw43_bus_pio_spi.pio.h"
-	cd /root/lab_1_1/lcd_sd_card_example/build/pico-sdk/src/rp2_common/pico_cyw43_driver && ../../../../pioasm-install/pioasm/pioasm -o c-sdk -v 0 /opt/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.pio /root/lab_1_1/lcd_sd_card_example/build/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.pio.h
+pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.pio.h: /home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.pio
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating cyw43_bus_pio_spi.pio.h"
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build/pico-sdk/src/rp2_common/pico_cyw43_driver && /home/student/.pico-sdk/tools/2.3.1/pioasm/pioasm -o c-sdk -v 0 /home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.pio /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.pio.h
 
 cyw43_driver_picow_cyw43_bus_pio_spi_pio_h: pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h
 cyw43_driver_picow_cyw43_bus_pio_spi_pio_h: pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.pio.h
@@ -82,10 +82,10 @@ pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bu
 .PHONY : pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/build
 
 pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/clean:
-	cd /root/lab_1_1/lcd_sd_card_example/build/pico-sdk/src/rp2_common/pico_cyw43_driver && $(CMAKE_COMMAND) -P CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/cmake_clean.cmake
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build/pico-sdk/src/rp2_common/pico_cyw43_driver && $(CMAKE_COMMAND) -P CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/cmake_clean.cmake
 .PHONY : pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/clean
 
 pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/depend:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/lab_1_1/lcd_sd_card_example /opt/pico-sdk/src/rp2_common/pico_cyw43_driver /root/lab_1_1/lcd_sd_card_example/build /root/lab_1_1/lcd_sd_card_example/build/pico-sdk/src/rp2_common/pico_cyw43_driver /root/lab_1_1/lcd_sd_card_example/build/pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash /home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_cyw43_driver /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build/pico-sdk/src/rp2_common/pico_cyw43_driver /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build/pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/depend
 

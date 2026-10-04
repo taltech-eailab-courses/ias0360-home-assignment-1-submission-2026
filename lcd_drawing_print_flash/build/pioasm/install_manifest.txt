@@ -1,5 +1,0 @@
-/root/lab_1_1/lcd_sd_card_example/build/pioasm-install/pioasm/pioasm
-/root/lab_1_1/lcd_sd_card_example/build/pioasm-install/pioasm/pioasmTargets.cmake
-/root/lab_1_1/lcd_sd_card_example/build/pioasm-install/pioasm/pioasmTargets-release.cmake
-/root/lab_1_1/lcd_sd_card_example/build/pioasm-install/pioasm/pioasmConfig.cmake
-/root/lab_1_1/lcd_sd_card_example/build/pioasm-install/pioasm/pioasmConfigVersion.cmake

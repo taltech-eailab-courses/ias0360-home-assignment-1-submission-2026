@@ -1,6 +1,6 @@
 CMakeFiles/main.dir/lib/lab12_integrated/lab12_filters.c.o: \
- /root/lab_1_1/lcd_sd_card_example/lib/lab12_integrated/lab12_filters.c \
- /root/lab_1_1/lcd_sd_card_example/lib/lab12_integrated/lab12_filters.h \
+ /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/lib/lab12_integrated/lab12_filters.c \
+ /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/lib/lab12_integrated/lab12_filters.h \
  /usr/lib/gcc/arm-none-eabi/13.2.1/include/stddef.h \
  /usr/lib/gcc/arm-none-eabi/13.2.1/include/stdint.h \
  /usr/include/newlib/math.h /usr/include/newlib/sys/reent.h \

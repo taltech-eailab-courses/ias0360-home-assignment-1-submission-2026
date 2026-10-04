@@ -6,5 +6,5 @@ C_DEFINES =
 
 C_INCLUDES = 
 
-C_FLAGS = -mcpu=cortex-m0plus -mthumb -mfloat-abi=soft -g -O3 -DNDEBUG
+C_FLAGS = -mcpu=cortex-m0plus -mthumb -mfloat-abi=soft -ftls-model=local-exec -g -O3 -DNDEBUG
 

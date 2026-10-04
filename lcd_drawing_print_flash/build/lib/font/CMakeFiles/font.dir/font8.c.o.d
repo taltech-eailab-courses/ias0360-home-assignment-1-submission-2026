@@ -1,4 +1,4 @@
 lib/font/CMakeFiles/font.dir/font8.c.o: \
- /root/lab_1_1/lcd_sd_card_example/lib/font/font8.c \
- /root/lab_1_1/lcd_sd_card_example/lib/font/fonts.h \
+ /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/lib/font/font8.c \
+ /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/lib/font/fonts.h \
  /usr/lib/gcc/arm-none-eabi/13.2.1/include/stdint.h

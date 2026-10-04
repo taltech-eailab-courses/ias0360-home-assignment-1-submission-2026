@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/lab_1_1/lcd_sd_card_example
+CMAKE_SOURCE_DIR = /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/lab_1_1/lcd_sd_card_example/build
+CMAKE_BINARY_DIR = /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build
 
 # Utility rule file for sd_custom_driver_rp2040_sdio_pio_h.
 
@@ -68,9 +68,9 @@ include build/CMakeFiles/sd_custom_driver_rp2040_sdio_pio_h.dir/progress.make
 
 build/CMakeFiles/sd_custom_driver_rp2040_sdio_pio_h: build/rp2040_sdio.pio.h
 
-build/rp2040_sdio.pio.h: /root/lab_1_1/lcd_sd_card_example/lib/sd_card_driver/sd_driver/SDIO/rp2040_sdio.pio
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/root/lab_1_1/lcd_sd_card_example/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating rp2040_sdio.pio.h"
-	cd /root/lab_1_1/lcd_sd_card_example/build/build && ../pioasm-install/pioasm/pioasm -o c-sdk -v 0 /root/lab_1_1/lcd_sd_card_example/lib/sd_card_driver/sd_driver/SDIO/rp2040_sdio.pio /root/lab_1_1/lcd_sd_card_example/build/build/rp2040_sdio.pio.h
+build/rp2040_sdio.pio.h: /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/lib/sd_card_driver/sd_driver/SDIO/rp2040_sdio.pio
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating rp2040_sdio.pio.h"
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build/build && /home/student/.pico-sdk/tools/2.3.1/pioasm/pioasm -o c-sdk -v 0 /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/lib/sd_card_driver/sd_driver/SDIO/rp2040_sdio.pio /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build/build/rp2040_sdio.pio.h
 
 sd_custom_driver_rp2040_sdio_pio_h: build/CMakeFiles/sd_custom_driver_rp2040_sdio_pio_h
 sd_custom_driver_rp2040_sdio_pio_h: build/rp2040_sdio.pio.h
@@ -82,10 +82,10 @@ build/CMakeFiles/sd_custom_driver_rp2040_sdio_pio_h.dir/build: sd_custom_driver_
 .PHONY : build/CMakeFiles/sd_custom_driver_rp2040_sdio_pio_h.dir/build
 
 build/CMakeFiles/sd_custom_driver_rp2040_sdio_pio_h.dir/clean:
-	cd /root/lab_1_1/lcd_sd_card_example/build/build && $(CMAKE_COMMAND) -P CMakeFiles/sd_custom_driver_rp2040_sdio_pio_h.dir/cmake_clean.cmake
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build/build && $(CMAKE_COMMAND) -P CMakeFiles/sd_custom_driver_rp2040_sdio_pio_h.dir/cmake_clean.cmake
 .PHONY : build/CMakeFiles/sd_custom_driver_rp2040_sdio_pio_h.dir/clean
 
 build/CMakeFiles/sd_custom_driver_rp2040_sdio_pio_h.dir/depend:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/lab_1_1/lcd_sd_card_example /root/lab_1_1/lcd_sd_card_example/lib/sd_card_driver /root/lab_1_1/lcd_sd_card_example/build /root/lab_1_1/lcd_sd_card_example/build/build /root/lab_1_1/lcd_sd_card_example/build/build/CMakeFiles/sd_custom_driver_rp2040_sdio_pio_h.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/lib/sd_card_driver /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build/build /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build/build/CMakeFiles/sd_custom_driver_rp2040_sdio_pio_h.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : build/CMakeFiles/sd_custom_driver_rp2040_sdio_pio_h.dir/depend
 

@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/lab_1_1/lcd_sd_card_example
+CMAKE_SOURCE_DIR = /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/lab_1_1/lcd_sd_card_example/build
+CMAKE_BINARY_DIR = /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(CMAKE_COMMAND) -E cmake_progress_start /root/lab_1_1/lcd_sd_card_example/build/CMakeFiles /root/lab_1_1/lcd_sd_card_example/build/lib/lcd//CMakeFiles/progress.marks
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/lcd/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/lab_1_1/lcd_sd_card_example/build/CMakeFiles 0
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build/CMakeFiles /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build/lib/lcd//CMakeFiles/progress.marks
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/lcd/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/lcd/clean
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/lcd/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,22 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/lcd/preinstall
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/lcd/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/lcd/preinstall
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/lcd/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 lib/lcd/CMakeFiles/lcd.dir/rule:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/lcd/CMakeFiles/lcd.dir/rule
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/lcd/CMakeFiles/lcd.dir/rule
 .PHONY : lib/lcd/CMakeFiles/lcd.dir/rule
 
 # Convenience name for target.
@@ -127,7 +127,7 @@ lcd: lib/lcd/CMakeFiles/lcd.dir/rule
 
 # fast build rule for target.
 lcd/fast:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/build
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/build
 .PHONY : lcd/fast
 
 LCD_Driver.o: LCD_Driver.c.o
@@ -135,7 +135,7 @@ LCD_Driver.o: LCD_Driver.c.o
 
 # target to build an object file
 LCD_Driver.c.o:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/LCD_Driver.c.o
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/LCD_Driver.c.o
 .PHONY : LCD_Driver.c.o
 
 LCD_Driver.i: LCD_Driver.c.i
@@ -143,7 +143,7 @@ LCD_Driver.i: LCD_Driver.c.i
 
 # target to preprocess a source file
 LCD_Driver.c.i:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/LCD_Driver.c.i
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/LCD_Driver.c.i
 .PHONY : LCD_Driver.c.i
 
 LCD_Driver.s: LCD_Driver.c.s
@@ -151,7 +151,7 @@ LCD_Driver.s: LCD_Driver.c.s
 
 # target to generate assembly for a file
 LCD_Driver.c.s:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/LCD_Driver.c.s
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/LCD_Driver.c.s
 .PHONY : LCD_Driver.c.s
 
 LCD_GUI.o: LCD_GUI.c.o
@@ -159,7 +159,7 @@ LCD_GUI.o: LCD_GUI.c.o
 
 # target to build an object file
 LCD_GUI.c.o:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/LCD_GUI.c.o
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/LCD_GUI.c.o
 .PHONY : LCD_GUI.c.o
 
 LCD_GUI.i: LCD_GUI.c.i
@@ -167,7 +167,7 @@ LCD_GUI.i: LCD_GUI.c.i
 
 # target to preprocess a source file
 LCD_GUI.c.i:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/LCD_GUI.c.i
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/LCD_GUI.c.i
 .PHONY : LCD_GUI.c.i
 
 LCD_GUI.s: LCD_GUI.c.s
@@ -175,7 +175,7 @@ LCD_GUI.s: LCD_GUI.c.s
 
 # target to generate assembly for a file
 LCD_GUI.c.s:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/LCD_GUI.c.s
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/LCD_GUI.c.s
 .PHONY : LCD_GUI.c.s
 
 LCD_Touch.o: LCD_Touch.c.o
@@ -183,7 +183,7 @@ LCD_Touch.o: LCD_Touch.c.o
 
 # target to build an object file
 LCD_Touch.c.o:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/LCD_Touch.c.o
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/LCD_Touch.c.o
 .PHONY : LCD_Touch.c.o
 
 LCD_Touch.i: LCD_Touch.c.i
@@ -191,7 +191,7 @@ LCD_Touch.i: LCD_Touch.c.i
 
 # target to preprocess a source file
 LCD_Touch.c.i:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/LCD_Touch.c.i
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/LCD_Touch.c.i
 .PHONY : LCD_Touch.c.i
 
 LCD_Touch.s: LCD_Touch.c.s
@@ -199,1328 +199,1328 @@ LCD_Touch.s: LCD_Touch.c.s
 
 # target to generate assembly for a file
 LCD_Touch.c.s:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/LCD_Touch.c.s
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/LCD_Touch.c.s
 .PHONY : LCD_Touch.c.s
 
-opt/pico-sdk/src/common/hardware_claim/claim.o: opt/pico-sdk/src/common/hardware_claim/claim.c.o
-.PHONY : opt/pico-sdk/src/common/hardware_claim/claim.o
+home/student/.pico-sdk/sdk/2.3.1/src/common/hardware_claim/claim.o: home/student/.pico-sdk/sdk/2.3.1/src/common/hardware_claim/claim.c.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/common/hardware_claim/claim.o
 
 # target to build an object file
-opt/pico-sdk/src/common/hardware_claim/claim.c.o:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/common/hardware_claim/claim.c.o
-.PHONY : opt/pico-sdk/src/common/hardware_claim/claim.c.o
+home/student/.pico-sdk/sdk/2.3.1/src/common/hardware_claim/claim.c.o:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/common/hardware_claim/claim.c.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/common/hardware_claim/claim.c.o
 
-opt/pico-sdk/src/common/hardware_claim/claim.i: opt/pico-sdk/src/common/hardware_claim/claim.c.i
-.PHONY : opt/pico-sdk/src/common/hardware_claim/claim.i
+home/student/.pico-sdk/sdk/2.3.1/src/common/hardware_claim/claim.i: home/student/.pico-sdk/sdk/2.3.1/src/common/hardware_claim/claim.c.i
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/common/hardware_claim/claim.i
 
 # target to preprocess a source file
-opt/pico-sdk/src/common/hardware_claim/claim.c.i:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/common/hardware_claim/claim.c.i
-.PHONY : opt/pico-sdk/src/common/hardware_claim/claim.c.i
+home/student/.pico-sdk/sdk/2.3.1/src/common/hardware_claim/claim.c.i:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/common/hardware_claim/claim.c.i
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/common/hardware_claim/claim.c.i
 
-opt/pico-sdk/src/common/hardware_claim/claim.s: opt/pico-sdk/src/common/hardware_claim/claim.c.s
-.PHONY : opt/pico-sdk/src/common/hardware_claim/claim.s
+home/student/.pico-sdk/sdk/2.3.1/src/common/hardware_claim/claim.s: home/student/.pico-sdk/sdk/2.3.1/src/common/hardware_claim/claim.c.s
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/common/hardware_claim/claim.s
 
 # target to generate assembly for a file
-opt/pico-sdk/src/common/hardware_claim/claim.c.s:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/common/hardware_claim/claim.c.s
-.PHONY : opt/pico-sdk/src/common/hardware_claim/claim.c.s
+home/student/.pico-sdk/sdk/2.3.1/src/common/hardware_claim/claim.c.s:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/common/hardware_claim/claim.c.s
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/common/hardware_claim/claim.c.s
 
-opt/pico-sdk/src/common/pico_sync/critical_section.o: opt/pico-sdk/src/common/pico_sync/critical_section.c.o
-.PHONY : opt/pico-sdk/src/common/pico_sync/critical_section.o
+home/student/.pico-sdk/sdk/2.3.1/src/common/pico_sync/critical_section.o: home/student/.pico-sdk/sdk/2.3.1/src/common/pico_sync/critical_section.c.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/common/pico_sync/critical_section.o
 
 # target to build an object file
-opt/pico-sdk/src/common/pico_sync/critical_section.c.o:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/common/pico_sync/critical_section.c.o
-.PHONY : opt/pico-sdk/src/common/pico_sync/critical_section.c.o
+home/student/.pico-sdk/sdk/2.3.1/src/common/pico_sync/critical_section.c.o:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/common/pico_sync/critical_section.c.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/common/pico_sync/critical_section.c.o
 
-opt/pico-sdk/src/common/pico_sync/critical_section.i: opt/pico-sdk/src/common/pico_sync/critical_section.c.i
-.PHONY : opt/pico-sdk/src/common/pico_sync/critical_section.i
+home/student/.pico-sdk/sdk/2.3.1/src/common/pico_sync/critical_section.i: home/student/.pico-sdk/sdk/2.3.1/src/common/pico_sync/critical_section.c.i
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/common/pico_sync/critical_section.i
 
 # target to preprocess a source file
-opt/pico-sdk/src/common/pico_sync/critical_section.c.i:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/common/pico_sync/critical_section.c.i
-.PHONY : opt/pico-sdk/src/common/pico_sync/critical_section.c.i
+home/student/.pico-sdk/sdk/2.3.1/src/common/pico_sync/critical_section.c.i:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/common/pico_sync/critical_section.c.i
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/common/pico_sync/critical_section.c.i
 
-opt/pico-sdk/src/common/pico_sync/critical_section.s: opt/pico-sdk/src/common/pico_sync/critical_section.c.s
-.PHONY : opt/pico-sdk/src/common/pico_sync/critical_section.s
+home/student/.pico-sdk/sdk/2.3.1/src/common/pico_sync/critical_section.s: home/student/.pico-sdk/sdk/2.3.1/src/common/pico_sync/critical_section.c.s
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/common/pico_sync/critical_section.s
 
 # target to generate assembly for a file
-opt/pico-sdk/src/common/pico_sync/critical_section.c.s:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/common/pico_sync/critical_section.c.s
-.PHONY : opt/pico-sdk/src/common/pico_sync/critical_section.c.s
+home/student/.pico-sdk/sdk/2.3.1/src/common/pico_sync/critical_section.c.s:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/common/pico_sync/critical_section.c.s
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/common/pico_sync/critical_section.c.s
 
-opt/pico-sdk/src/common/pico_sync/lock_core.o: opt/pico-sdk/src/common/pico_sync/lock_core.c.o
-.PHONY : opt/pico-sdk/src/common/pico_sync/lock_core.o
+home/student/.pico-sdk/sdk/2.3.1/src/common/pico_sync/lock_core.o: home/student/.pico-sdk/sdk/2.3.1/src/common/pico_sync/lock_core.c.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/common/pico_sync/lock_core.o
 
 # target to build an object file
-opt/pico-sdk/src/common/pico_sync/lock_core.c.o:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/common/pico_sync/lock_core.c.o
-.PHONY : opt/pico-sdk/src/common/pico_sync/lock_core.c.o
+home/student/.pico-sdk/sdk/2.3.1/src/common/pico_sync/lock_core.c.o:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/common/pico_sync/lock_core.c.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/common/pico_sync/lock_core.c.o
 
-opt/pico-sdk/src/common/pico_sync/lock_core.i: opt/pico-sdk/src/common/pico_sync/lock_core.c.i
-.PHONY : opt/pico-sdk/src/common/pico_sync/lock_core.i
+home/student/.pico-sdk/sdk/2.3.1/src/common/pico_sync/lock_core.i: home/student/.pico-sdk/sdk/2.3.1/src/common/pico_sync/lock_core.c.i
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/common/pico_sync/lock_core.i
 
 # target to preprocess a source file
-opt/pico-sdk/src/common/pico_sync/lock_core.c.i:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/common/pico_sync/lock_core.c.i
-.PHONY : opt/pico-sdk/src/common/pico_sync/lock_core.c.i
+home/student/.pico-sdk/sdk/2.3.1/src/common/pico_sync/lock_core.c.i:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/common/pico_sync/lock_core.c.i
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/common/pico_sync/lock_core.c.i
 
-opt/pico-sdk/src/common/pico_sync/lock_core.s: opt/pico-sdk/src/common/pico_sync/lock_core.c.s
-.PHONY : opt/pico-sdk/src/common/pico_sync/lock_core.s
+home/student/.pico-sdk/sdk/2.3.1/src/common/pico_sync/lock_core.s: home/student/.pico-sdk/sdk/2.3.1/src/common/pico_sync/lock_core.c.s
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/common/pico_sync/lock_core.s
 
 # target to generate assembly for a file
-opt/pico-sdk/src/common/pico_sync/lock_core.c.s:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/common/pico_sync/lock_core.c.s
-.PHONY : opt/pico-sdk/src/common/pico_sync/lock_core.c.s
+home/student/.pico-sdk/sdk/2.3.1/src/common/pico_sync/lock_core.c.s:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/common/pico_sync/lock_core.c.s
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/common/pico_sync/lock_core.c.s
 
-opt/pico-sdk/src/common/pico_sync/mutex.o: opt/pico-sdk/src/common/pico_sync/mutex.c.o
-.PHONY : opt/pico-sdk/src/common/pico_sync/mutex.o
+home/student/.pico-sdk/sdk/2.3.1/src/common/pico_sync/mutex.o: home/student/.pico-sdk/sdk/2.3.1/src/common/pico_sync/mutex.c.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/common/pico_sync/mutex.o
 
 # target to build an object file
-opt/pico-sdk/src/common/pico_sync/mutex.c.o:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/common/pico_sync/mutex.c.o
-.PHONY : opt/pico-sdk/src/common/pico_sync/mutex.c.o
+home/student/.pico-sdk/sdk/2.3.1/src/common/pico_sync/mutex.c.o:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/common/pico_sync/mutex.c.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/common/pico_sync/mutex.c.o
 
-opt/pico-sdk/src/common/pico_sync/mutex.i: opt/pico-sdk/src/common/pico_sync/mutex.c.i
-.PHONY : opt/pico-sdk/src/common/pico_sync/mutex.i
+home/student/.pico-sdk/sdk/2.3.1/src/common/pico_sync/mutex.i: home/student/.pico-sdk/sdk/2.3.1/src/common/pico_sync/mutex.c.i
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/common/pico_sync/mutex.i
 
 # target to preprocess a source file
-opt/pico-sdk/src/common/pico_sync/mutex.c.i:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/common/pico_sync/mutex.c.i
-.PHONY : opt/pico-sdk/src/common/pico_sync/mutex.c.i
+home/student/.pico-sdk/sdk/2.3.1/src/common/pico_sync/mutex.c.i:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/common/pico_sync/mutex.c.i
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/common/pico_sync/mutex.c.i
 
-opt/pico-sdk/src/common/pico_sync/mutex.s: opt/pico-sdk/src/common/pico_sync/mutex.c.s
-.PHONY : opt/pico-sdk/src/common/pico_sync/mutex.s
+home/student/.pico-sdk/sdk/2.3.1/src/common/pico_sync/mutex.s: home/student/.pico-sdk/sdk/2.3.1/src/common/pico_sync/mutex.c.s
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/common/pico_sync/mutex.s
 
 # target to generate assembly for a file
-opt/pico-sdk/src/common/pico_sync/mutex.c.s:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/common/pico_sync/mutex.c.s
-.PHONY : opt/pico-sdk/src/common/pico_sync/mutex.c.s
+home/student/.pico-sdk/sdk/2.3.1/src/common/pico_sync/mutex.c.s:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/common/pico_sync/mutex.c.s
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/common/pico_sync/mutex.c.s
 
-opt/pico-sdk/src/common/pico_sync/sem.o: opt/pico-sdk/src/common/pico_sync/sem.c.o
-.PHONY : opt/pico-sdk/src/common/pico_sync/sem.o
+home/student/.pico-sdk/sdk/2.3.1/src/common/pico_sync/sem.o: home/student/.pico-sdk/sdk/2.3.1/src/common/pico_sync/sem.c.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/common/pico_sync/sem.o
 
 # target to build an object file
-opt/pico-sdk/src/common/pico_sync/sem.c.o:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/common/pico_sync/sem.c.o
-.PHONY : opt/pico-sdk/src/common/pico_sync/sem.c.o
+home/student/.pico-sdk/sdk/2.3.1/src/common/pico_sync/sem.c.o:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/common/pico_sync/sem.c.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/common/pico_sync/sem.c.o
 
-opt/pico-sdk/src/common/pico_sync/sem.i: opt/pico-sdk/src/common/pico_sync/sem.c.i
-.PHONY : opt/pico-sdk/src/common/pico_sync/sem.i
+home/student/.pico-sdk/sdk/2.3.1/src/common/pico_sync/sem.i: home/student/.pico-sdk/sdk/2.3.1/src/common/pico_sync/sem.c.i
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/common/pico_sync/sem.i
 
 # target to preprocess a source file
-opt/pico-sdk/src/common/pico_sync/sem.c.i:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/common/pico_sync/sem.c.i
-.PHONY : opt/pico-sdk/src/common/pico_sync/sem.c.i
+home/student/.pico-sdk/sdk/2.3.1/src/common/pico_sync/sem.c.i:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/common/pico_sync/sem.c.i
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/common/pico_sync/sem.c.i
 
-opt/pico-sdk/src/common/pico_sync/sem.s: opt/pico-sdk/src/common/pico_sync/sem.c.s
-.PHONY : opt/pico-sdk/src/common/pico_sync/sem.s
+home/student/.pico-sdk/sdk/2.3.1/src/common/pico_sync/sem.s: home/student/.pico-sdk/sdk/2.3.1/src/common/pico_sync/sem.c.s
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/common/pico_sync/sem.s
 
 # target to generate assembly for a file
-opt/pico-sdk/src/common/pico_sync/sem.c.s:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/common/pico_sync/sem.c.s
-.PHONY : opt/pico-sdk/src/common/pico_sync/sem.c.s
+home/student/.pico-sdk/sdk/2.3.1/src/common/pico_sync/sem.c.s:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/common/pico_sync/sem.c.s
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/common/pico_sync/sem.c.s
 
-opt/pico-sdk/src/common/pico_time/time.o: opt/pico-sdk/src/common/pico_time/time.c.o
-.PHONY : opt/pico-sdk/src/common/pico_time/time.o
+home/student/.pico-sdk/sdk/2.3.1/src/common/pico_time/time.o: home/student/.pico-sdk/sdk/2.3.1/src/common/pico_time/time.c.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/common/pico_time/time.o
 
 # target to build an object file
-opt/pico-sdk/src/common/pico_time/time.c.o:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/common/pico_time/time.c.o
-.PHONY : opt/pico-sdk/src/common/pico_time/time.c.o
+home/student/.pico-sdk/sdk/2.3.1/src/common/pico_time/time.c.o:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/common/pico_time/time.c.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/common/pico_time/time.c.o
 
-opt/pico-sdk/src/common/pico_time/time.i: opt/pico-sdk/src/common/pico_time/time.c.i
-.PHONY : opt/pico-sdk/src/common/pico_time/time.i
+home/student/.pico-sdk/sdk/2.3.1/src/common/pico_time/time.i: home/student/.pico-sdk/sdk/2.3.1/src/common/pico_time/time.c.i
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/common/pico_time/time.i
 
 # target to preprocess a source file
-opt/pico-sdk/src/common/pico_time/time.c.i:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/common/pico_time/time.c.i
-.PHONY : opt/pico-sdk/src/common/pico_time/time.c.i
+home/student/.pico-sdk/sdk/2.3.1/src/common/pico_time/time.c.i:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/common/pico_time/time.c.i
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/common/pico_time/time.c.i
 
-opt/pico-sdk/src/common/pico_time/time.s: opt/pico-sdk/src/common/pico_time/time.c.s
-.PHONY : opt/pico-sdk/src/common/pico_time/time.s
+home/student/.pico-sdk/sdk/2.3.1/src/common/pico_time/time.s: home/student/.pico-sdk/sdk/2.3.1/src/common/pico_time/time.c.s
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/common/pico_time/time.s
 
 # target to generate assembly for a file
-opt/pico-sdk/src/common/pico_time/time.c.s:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/common/pico_time/time.c.s
-.PHONY : opt/pico-sdk/src/common/pico_time/time.c.s
+home/student/.pico-sdk/sdk/2.3.1/src/common/pico_time/time.c.s:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/common/pico_time/time.c.s
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/common/pico_time/time.c.s
 
-opt/pico-sdk/src/common/pico_time/timeout_helper.o: opt/pico-sdk/src/common/pico_time/timeout_helper.c.o
-.PHONY : opt/pico-sdk/src/common/pico_time/timeout_helper.o
+home/student/.pico-sdk/sdk/2.3.1/src/common/pico_time/timeout_helper.o: home/student/.pico-sdk/sdk/2.3.1/src/common/pico_time/timeout_helper.c.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/common/pico_time/timeout_helper.o
 
 # target to build an object file
-opt/pico-sdk/src/common/pico_time/timeout_helper.c.o:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/common/pico_time/timeout_helper.c.o
-.PHONY : opt/pico-sdk/src/common/pico_time/timeout_helper.c.o
+home/student/.pico-sdk/sdk/2.3.1/src/common/pico_time/timeout_helper.c.o:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/common/pico_time/timeout_helper.c.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/common/pico_time/timeout_helper.c.o
 
-opt/pico-sdk/src/common/pico_time/timeout_helper.i: opt/pico-sdk/src/common/pico_time/timeout_helper.c.i
-.PHONY : opt/pico-sdk/src/common/pico_time/timeout_helper.i
+home/student/.pico-sdk/sdk/2.3.1/src/common/pico_time/timeout_helper.i: home/student/.pico-sdk/sdk/2.3.1/src/common/pico_time/timeout_helper.c.i
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/common/pico_time/timeout_helper.i
 
 # target to preprocess a source file
-opt/pico-sdk/src/common/pico_time/timeout_helper.c.i:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/common/pico_time/timeout_helper.c.i
-.PHONY : opt/pico-sdk/src/common/pico_time/timeout_helper.c.i
+home/student/.pico-sdk/sdk/2.3.1/src/common/pico_time/timeout_helper.c.i:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/common/pico_time/timeout_helper.c.i
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/common/pico_time/timeout_helper.c.i
 
-opt/pico-sdk/src/common/pico_time/timeout_helper.s: opt/pico-sdk/src/common/pico_time/timeout_helper.c.s
-.PHONY : opt/pico-sdk/src/common/pico_time/timeout_helper.s
+home/student/.pico-sdk/sdk/2.3.1/src/common/pico_time/timeout_helper.s: home/student/.pico-sdk/sdk/2.3.1/src/common/pico_time/timeout_helper.c.s
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/common/pico_time/timeout_helper.s
 
 # target to generate assembly for a file
-opt/pico-sdk/src/common/pico_time/timeout_helper.c.s:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/common/pico_time/timeout_helper.c.s
-.PHONY : opt/pico-sdk/src/common/pico_time/timeout_helper.c.s
+home/student/.pico-sdk/sdk/2.3.1/src/common/pico_time/timeout_helper.c.s:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/common/pico_time/timeout_helper.c.s
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/common/pico_time/timeout_helper.c.s
 
-opt/pico-sdk/src/common/pico_util/datetime.o: opt/pico-sdk/src/common/pico_util/datetime.c.o
-.PHONY : opt/pico-sdk/src/common/pico_util/datetime.o
+home/student/.pico-sdk/sdk/2.3.1/src/common/pico_util/datetime.o: home/student/.pico-sdk/sdk/2.3.1/src/common/pico_util/datetime.c.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/common/pico_util/datetime.o
 
 # target to build an object file
-opt/pico-sdk/src/common/pico_util/datetime.c.o:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/common/pico_util/datetime.c.o
-.PHONY : opt/pico-sdk/src/common/pico_util/datetime.c.o
+home/student/.pico-sdk/sdk/2.3.1/src/common/pico_util/datetime.c.o:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/common/pico_util/datetime.c.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/common/pico_util/datetime.c.o
 
-opt/pico-sdk/src/common/pico_util/datetime.i: opt/pico-sdk/src/common/pico_util/datetime.c.i
-.PHONY : opt/pico-sdk/src/common/pico_util/datetime.i
+home/student/.pico-sdk/sdk/2.3.1/src/common/pico_util/datetime.i: home/student/.pico-sdk/sdk/2.3.1/src/common/pico_util/datetime.c.i
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/common/pico_util/datetime.i
 
 # target to preprocess a source file
-opt/pico-sdk/src/common/pico_util/datetime.c.i:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/common/pico_util/datetime.c.i
-.PHONY : opt/pico-sdk/src/common/pico_util/datetime.c.i
+home/student/.pico-sdk/sdk/2.3.1/src/common/pico_util/datetime.c.i:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/common/pico_util/datetime.c.i
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/common/pico_util/datetime.c.i
 
-opt/pico-sdk/src/common/pico_util/datetime.s: opt/pico-sdk/src/common/pico_util/datetime.c.s
-.PHONY : opt/pico-sdk/src/common/pico_util/datetime.s
+home/student/.pico-sdk/sdk/2.3.1/src/common/pico_util/datetime.s: home/student/.pico-sdk/sdk/2.3.1/src/common/pico_util/datetime.c.s
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/common/pico_util/datetime.s
 
 # target to generate assembly for a file
-opt/pico-sdk/src/common/pico_util/datetime.c.s:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/common/pico_util/datetime.c.s
-.PHONY : opt/pico-sdk/src/common/pico_util/datetime.c.s
+home/student/.pico-sdk/sdk/2.3.1/src/common/pico_util/datetime.c.s:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/common/pico_util/datetime.c.s
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/common/pico_util/datetime.c.s
 
-opt/pico-sdk/src/common/pico_util/fixed_bitset.o: opt/pico-sdk/src/common/pico_util/fixed_bitset.c.o
-.PHONY : opt/pico-sdk/src/common/pico_util/fixed_bitset.o
+home/student/.pico-sdk/sdk/2.3.1/src/common/pico_util/fixed_bitset.o: home/student/.pico-sdk/sdk/2.3.1/src/common/pico_util/fixed_bitset.c.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/common/pico_util/fixed_bitset.o
 
 # target to build an object file
-opt/pico-sdk/src/common/pico_util/fixed_bitset.c.o:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/common/pico_util/fixed_bitset.c.o
-.PHONY : opt/pico-sdk/src/common/pico_util/fixed_bitset.c.o
+home/student/.pico-sdk/sdk/2.3.1/src/common/pico_util/fixed_bitset.c.o:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/common/pico_util/fixed_bitset.c.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/common/pico_util/fixed_bitset.c.o
 
-opt/pico-sdk/src/common/pico_util/fixed_bitset.i: opt/pico-sdk/src/common/pico_util/fixed_bitset.c.i
-.PHONY : opt/pico-sdk/src/common/pico_util/fixed_bitset.i
+home/student/.pico-sdk/sdk/2.3.1/src/common/pico_util/fixed_bitset.i: home/student/.pico-sdk/sdk/2.3.1/src/common/pico_util/fixed_bitset.c.i
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/common/pico_util/fixed_bitset.i
 
 # target to preprocess a source file
-opt/pico-sdk/src/common/pico_util/fixed_bitset.c.i:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/common/pico_util/fixed_bitset.c.i
-.PHONY : opt/pico-sdk/src/common/pico_util/fixed_bitset.c.i
+home/student/.pico-sdk/sdk/2.3.1/src/common/pico_util/fixed_bitset.c.i:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/common/pico_util/fixed_bitset.c.i
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/common/pico_util/fixed_bitset.c.i
 
-opt/pico-sdk/src/common/pico_util/fixed_bitset.s: opt/pico-sdk/src/common/pico_util/fixed_bitset.c.s
-.PHONY : opt/pico-sdk/src/common/pico_util/fixed_bitset.s
+home/student/.pico-sdk/sdk/2.3.1/src/common/pico_util/fixed_bitset.s: home/student/.pico-sdk/sdk/2.3.1/src/common/pico_util/fixed_bitset.c.s
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/common/pico_util/fixed_bitset.s
 
 # target to generate assembly for a file
-opt/pico-sdk/src/common/pico_util/fixed_bitset.c.s:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/common/pico_util/fixed_bitset.c.s
-.PHONY : opt/pico-sdk/src/common/pico_util/fixed_bitset.c.s
+home/student/.pico-sdk/sdk/2.3.1/src/common/pico_util/fixed_bitset.c.s:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/common/pico_util/fixed_bitset.c.s
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/common/pico_util/fixed_bitset.c.s
 
-opt/pico-sdk/src/common/pico_util/pheap.o: opt/pico-sdk/src/common/pico_util/pheap.c.o
-.PHONY : opt/pico-sdk/src/common/pico_util/pheap.o
+home/student/.pico-sdk/sdk/2.3.1/src/common/pico_util/pheap.o: home/student/.pico-sdk/sdk/2.3.1/src/common/pico_util/pheap.c.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/common/pico_util/pheap.o
 
 # target to build an object file
-opt/pico-sdk/src/common/pico_util/pheap.c.o:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/common/pico_util/pheap.c.o
-.PHONY : opt/pico-sdk/src/common/pico_util/pheap.c.o
+home/student/.pico-sdk/sdk/2.3.1/src/common/pico_util/pheap.c.o:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/common/pico_util/pheap.c.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/common/pico_util/pheap.c.o
 
-opt/pico-sdk/src/common/pico_util/pheap.i: opt/pico-sdk/src/common/pico_util/pheap.c.i
-.PHONY : opt/pico-sdk/src/common/pico_util/pheap.i
+home/student/.pico-sdk/sdk/2.3.1/src/common/pico_util/pheap.i: home/student/.pico-sdk/sdk/2.3.1/src/common/pico_util/pheap.c.i
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/common/pico_util/pheap.i
 
 # target to preprocess a source file
-opt/pico-sdk/src/common/pico_util/pheap.c.i:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/common/pico_util/pheap.c.i
-.PHONY : opt/pico-sdk/src/common/pico_util/pheap.c.i
+home/student/.pico-sdk/sdk/2.3.1/src/common/pico_util/pheap.c.i:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/common/pico_util/pheap.c.i
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/common/pico_util/pheap.c.i
 
-opt/pico-sdk/src/common/pico_util/pheap.s: opt/pico-sdk/src/common/pico_util/pheap.c.s
-.PHONY : opt/pico-sdk/src/common/pico_util/pheap.s
+home/student/.pico-sdk/sdk/2.3.1/src/common/pico_util/pheap.s: home/student/.pico-sdk/sdk/2.3.1/src/common/pico_util/pheap.c.s
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/common/pico_util/pheap.s
 
 # target to generate assembly for a file
-opt/pico-sdk/src/common/pico_util/pheap.c.s:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/common/pico_util/pheap.c.s
-.PHONY : opt/pico-sdk/src/common/pico_util/pheap.c.s
+home/student/.pico-sdk/sdk/2.3.1/src/common/pico_util/pheap.c.s:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/common/pico_util/pheap.c.s
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/common/pico_util/pheap.c.s
 
-opt/pico-sdk/src/common/pico_util/queue.o: opt/pico-sdk/src/common/pico_util/queue.c.o
-.PHONY : opt/pico-sdk/src/common/pico_util/queue.o
+home/student/.pico-sdk/sdk/2.3.1/src/common/pico_util/queue.o: home/student/.pico-sdk/sdk/2.3.1/src/common/pico_util/queue.c.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/common/pico_util/queue.o
 
 # target to build an object file
-opt/pico-sdk/src/common/pico_util/queue.c.o:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/common/pico_util/queue.c.o
-.PHONY : opt/pico-sdk/src/common/pico_util/queue.c.o
+home/student/.pico-sdk/sdk/2.3.1/src/common/pico_util/queue.c.o:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/common/pico_util/queue.c.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/common/pico_util/queue.c.o
 
-opt/pico-sdk/src/common/pico_util/queue.i: opt/pico-sdk/src/common/pico_util/queue.c.i
-.PHONY : opt/pico-sdk/src/common/pico_util/queue.i
+home/student/.pico-sdk/sdk/2.3.1/src/common/pico_util/queue.i: home/student/.pico-sdk/sdk/2.3.1/src/common/pico_util/queue.c.i
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/common/pico_util/queue.i
 
 # target to preprocess a source file
-opt/pico-sdk/src/common/pico_util/queue.c.i:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/common/pico_util/queue.c.i
-.PHONY : opt/pico-sdk/src/common/pico_util/queue.c.i
+home/student/.pico-sdk/sdk/2.3.1/src/common/pico_util/queue.c.i:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/common/pico_util/queue.c.i
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/common/pico_util/queue.c.i
 
-opt/pico-sdk/src/common/pico_util/queue.s: opt/pico-sdk/src/common/pico_util/queue.c.s
-.PHONY : opt/pico-sdk/src/common/pico_util/queue.s
+home/student/.pico-sdk/sdk/2.3.1/src/common/pico_util/queue.s: home/student/.pico-sdk/sdk/2.3.1/src/common/pico_util/queue.c.s
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/common/pico_util/queue.s
 
 # target to generate assembly for a file
-opt/pico-sdk/src/common/pico_util/queue.c.s:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/common/pico_util/queue.c.s
-.PHONY : opt/pico-sdk/src/common/pico_util/queue.c.s
+home/student/.pico-sdk/sdk/2.3.1/src/common/pico_util/queue.c.s:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/common/pico_util/queue.c.s
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/common/pico_util/queue.c.s
 
-opt/pico-sdk/src/rp2040/pico_platform/platform.o: opt/pico-sdk/src/rp2040/pico_platform/platform.c.o
-.PHONY : opt/pico-sdk/src/rp2040/pico_platform/platform.o
+home/student/.pico-sdk/sdk/2.3.1/src/rp2040/pico_platform/platform.o: home/student/.pico-sdk/sdk/2.3.1/src/rp2040/pico_platform/platform.c.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2040/pico_platform/platform.o
 
 # target to build an object file
-opt/pico-sdk/src/rp2040/pico_platform/platform.c.o:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2040/pico_platform/platform.c.o
-.PHONY : opt/pico-sdk/src/rp2040/pico_platform/platform.c.o
+home/student/.pico-sdk/sdk/2.3.1/src/rp2040/pico_platform/platform.c.o:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2040/pico_platform/platform.c.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2040/pico_platform/platform.c.o
 
-opt/pico-sdk/src/rp2040/pico_platform/platform.i: opt/pico-sdk/src/rp2040/pico_platform/platform.c.i
-.PHONY : opt/pico-sdk/src/rp2040/pico_platform/platform.i
+home/student/.pico-sdk/sdk/2.3.1/src/rp2040/pico_platform/platform.i: home/student/.pico-sdk/sdk/2.3.1/src/rp2040/pico_platform/platform.c.i
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2040/pico_platform/platform.i
 
 # target to preprocess a source file
-opt/pico-sdk/src/rp2040/pico_platform/platform.c.i:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2040/pico_platform/platform.c.i
-.PHONY : opt/pico-sdk/src/rp2040/pico_platform/platform.c.i
+home/student/.pico-sdk/sdk/2.3.1/src/rp2040/pico_platform/platform.c.i:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2040/pico_platform/platform.c.i
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2040/pico_platform/platform.c.i
 
-opt/pico-sdk/src/rp2040/pico_platform/platform.s: opt/pico-sdk/src/rp2040/pico_platform/platform.c.s
-.PHONY : opt/pico-sdk/src/rp2040/pico_platform/platform.s
+home/student/.pico-sdk/sdk/2.3.1/src/rp2040/pico_platform/platform.s: home/student/.pico-sdk/sdk/2.3.1/src/rp2040/pico_platform/platform.c.s
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2040/pico_platform/platform.s
 
 # target to generate assembly for a file
-opt/pico-sdk/src/rp2040/pico_platform/platform.c.s:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2040/pico_platform/platform.c.s
-.PHONY : opt/pico-sdk/src/rp2040/pico_platform/platform.c.s
+home/student/.pico-sdk/sdk/2.3.1/src/rp2040/pico_platform/platform.c.s:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2040/pico_platform/platform.c.s
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2040/pico_platform/platform.c.s
 
-opt/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.o: opt/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o
-.PHONY : opt/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.o
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_boot_lock/boot_lock.o: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_boot_lock/boot_lock.c.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_boot_lock/boot_lock.o
 
 # target to build an object file
-opt/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o
-.PHONY : opt/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_boot_lock/boot_lock.c.o:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_boot_lock/boot_lock.c.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_boot_lock/boot_lock.c.o
 
-opt/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.i: opt/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.i
-.PHONY : opt/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.i
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_boot_lock/boot_lock.i: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_boot_lock/boot_lock.c.i
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_boot_lock/boot_lock.i
 
 # target to preprocess a source file
-opt/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.i:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.i
-.PHONY : opt/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.i
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_boot_lock/boot_lock.c.i:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_boot_lock/boot_lock.c.i
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_boot_lock/boot_lock.c.i
 
-opt/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.s: opt/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.s
-.PHONY : opt/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.s
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_boot_lock/boot_lock.s: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_boot_lock/boot_lock.c.s
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_boot_lock/boot_lock.s
 
 # target to generate assembly for a file
-opt/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.s:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.s
-.PHONY : opt/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.s
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_boot_lock/boot_lock.c.s:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_boot_lock/boot_lock.c.s
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_boot_lock/boot_lock.c.s
 
-opt/pico-sdk/src/rp2_common/hardware_clocks/clocks.o: opt/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
-.PHONY : opt/pico-sdk/src/rp2_common/hardware_clocks/clocks.o
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_clocks/clocks.o: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_clocks/clocks.c.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_clocks/clocks.o
 
 # target to build an object file
-opt/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
-.PHONY : opt/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_clocks/clocks.c.o:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_clocks/clocks.c.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_clocks/clocks.c.o
 
-opt/pico-sdk/src/rp2_common/hardware_clocks/clocks.i: opt/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
-.PHONY : opt/pico-sdk/src/rp2_common/hardware_clocks/clocks.i
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_clocks/clocks.i: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_clocks/clocks.c.i
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_clocks/clocks.i
 
 # target to preprocess a source file
-opt/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
-.PHONY : opt/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_clocks/clocks.c.i:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_clocks/clocks.c.i
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_clocks/clocks.c.i
 
-opt/pico-sdk/src/rp2_common/hardware_clocks/clocks.s: opt/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
-.PHONY : opt/pico-sdk/src/rp2_common/hardware_clocks/clocks.s
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_clocks/clocks.s: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_clocks/clocks.c.s
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_clocks/clocks.s
 
 # target to generate assembly for a file
-opt/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
-.PHONY : opt/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_clocks/clocks.c.s:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_clocks/clocks.c.s
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_clocks/clocks.c.s
 
-opt/pico-sdk/src/rp2_common/hardware_divider/divider.o: opt/pico-sdk/src/rp2_common/hardware_divider/divider.S.o
-.PHONY : opt/pico-sdk/src/rp2_common/hardware_divider/divider.o
-
-# target to build an object file
-opt/pico-sdk/src/rp2_common/hardware_divider/divider.S.o:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/hardware_divider/divider.S.o
-.PHONY : opt/pico-sdk/src/rp2_common/hardware_divider/divider.S.o
-
-opt/pico-sdk/src/rp2_common/hardware_gpio/gpio.o: opt/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
-.PHONY : opt/pico-sdk/src/rp2_common/hardware_gpio/gpio.o
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_divider/divider.o: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_divider/divider.S.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_divider/divider.o
 
 # target to build an object file
-opt/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
-.PHONY : opt/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_divider/divider.S.o:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_divider/divider.S.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_divider/divider.S.o
 
-opt/pico-sdk/src/rp2_common/hardware_gpio/gpio.i: opt/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
-.PHONY : opt/pico-sdk/src/rp2_common/hardware_gpio/gpio.i
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_gpio/gpio.o: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_gpio/gpio.c.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_gpio/gpio.o
+
+# target to build an object file
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_gpio/gpio.c.o:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_gpio/gpio.c.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_gpio/gpio.c.o
+
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_gpio/gpio.i: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_gpio/gpio.c.i
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_gpio/gpio.i
 
 # target to preprocess a source file
-opt/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
-.PHONY : opt/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_gpio/gpio.c.i:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_gpio/gpio.c.i
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_gpio/gpio.c.i
 
-opt/pico-sdk/src/rp2_common/hardware_gpio/gpio.s: opt/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
-.PHONY : opt/pico-sdk/src/rp2_common/hardware_gpio/gpio.s
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_gpio/gpio.s: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_gpio/gpio.c.s
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_gpio/gpio.s
 
 # target to generate assembly for a file
-opt/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
-.PHONY : opt/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_gpio/gpio.c.s:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_gpio/gpio.c.s
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_gpio/gpio.c.s
 
-opt/pico-sdk/src/rp2_common/hardware_irq/irq.o: opt/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
-.PHONY : opt/pico-sdk/src/rp2_common/hardware_irq/irq.o
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_irq/irq.o: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_irq/irq.c.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_irq/irq.o
 
 # target to build an object file
-opt/pico-sdk/src/rp2_common/hardware_irq/irq.c.o:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
-.PHONY : opt/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_irq/irq.c.o:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_irq/irq.c.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_irq/irq.c.o
 
-opt/pico-sdk/src/rp2_common/hardware_irq/irq.i: opt/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
-.PHONY : opt/pico-sdk/src/rp2_common/hardware_irq/irq.i
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_irq/irq.i: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_irq/irq.c.i
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_irq/irq.i
 
 # target to preprocess a source file
-opt/pico-sdk/src/rp2_common/hardware_irq/irq.c.i:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
-.PHONY : opt/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_irq/irq.c.i:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_irq/irq.c.i
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_irq/irq.c.i
 
-opt/pico-sdk/src/rp2_common/hardware_irq/irq.s: opt/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
-.PHONY : opt/pico-sdk/src/rp2_common/hardware_irq/irq.s
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_irq/irq.s: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_irq/irq.c.s
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_irq/irq.s
 
 # target to generate assembly for a file
-opt/pico-sdk/src/rp2_common/hardware_irq/irq.c.s:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
-.PHONY : opt/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_irq/irq.c.s:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_irq/irq.c.s
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_irq/irq.c.s
 
-opt/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.o: opt/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o
-.PHONY : opt/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.o
-
-# target to build an object file
-opt/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o
-.PHONY : opt/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o
-
-opt/pico-sdk/src/rp2_common/hardware_pll/pll.o: opt/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
-.PHONY : opt/pico-sdk/src/rp2_common/hardware_pll/pll.o
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_irq/irq_handler_chain.o: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_irq/irq_handler_chain.S.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_irq/irq_handler_chain.o
 
 # target to build an object file
-opt/pico-sdk/src/rp2_common/hardware_pll/pll.c.o:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
-.PHONY : opt/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_irq/irq_handler_chain.S.o:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_irq/irq_handler_chain.S.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_irq/irq_handler_chain.S.o
 
-opt/pico-sdk/src/rp2_common/hardware_pll/pll.i: opt/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
-.PHONY : opt/pico-sdk/src/rp2_common/hardware_pll/pll.i
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_pll/pll.o: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_pll/pll.c.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_pll/pll.o
+
+# target to build an object file
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_pll/pll.c.o:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_pll/pll.c.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_pll/pll.c.o
+
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_pll/pll.i: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_pll/pll.c.i
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_pll/pll.i
 
 # target to preprocess a source file
-opt/pico-sdk/src/rp2_common/hardware_pll/pll.c.i:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
-.PHONY : opt/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_pll/pll.c.i:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_pll/pll.c.i
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_pll/pll.c.i
 
-opt/pico-sdk/src/rp2_common/hardware_pll/pll.s: opt/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
-.PHONY : opt/pico-sdk/src/rp2_common/hardware_pll/pll.s
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_pll/pll.s: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_pll/pll.c.s
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_pll/pll.s
 
 # target to generate assembly for a file
-opt/pico-sdk/src/rp2_common/hardware_pll/pll.c.s:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
-.PHONY : opt/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_pll/pll.c.s:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_pll/pll.c.s
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_pll/pll.c.s
 
-opt/pico-sdk/src/rp2_common/hardware_rtc/rtc.o: opt/pico-sdk/src/rp2_common/hardware_rtc/rtc.c.o
-.PHONY : opt/pico-sdk/src/rp2_common/hardware_rtc/rtc.o
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_rtc/rtc.o: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_rtc/rtc.c.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_rtc/rtc.o
 
 # target to build an object file
-opt/pico-sdk/src/rp2_common/hardware_rtc/rtc.c.o:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/hardware_rtc/rtc.c.o
-.PHONY : opt/pico-sdk/src/rp2_common/hardware_rtc/rtc.c.o
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_rtc/rtc.c.o:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_rtc/rtc.c.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_rtc/rtc.c.o
 
-opt/pico-sdk/src/rp2_common/hardware_rtc/rtc.i: opt/pico-sdk/src/rp2_common/hardware_rtc/rtc.c.i
-.PHONY : opt/pico-sdk/src/rp2_common/hardware_rtc/rtc.i
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_rtc/rtc.i: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_rtc/rtc.c.i
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_rtc/rtc.i
 
 # target to preprocess a source file
-opt/pico-sdk/src/rp2_common/hardware_rtc/rtc.c.i:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/hardware_rtc/rtc.c.i
-.PHONY : opt/pico-sdk/src/rp2_common/hardware_rtc/rtc.c.i
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_rtc/rtc.c.i:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_rtc/rtc.c.i
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_rtc/rtc.c.i
 
-opt/pico-sdk/src/rp2_common/hardware_rtc/rtc.s: opt/pico-sdk/src/rp2_common/hardware_rtc/rtc.c.s
-.PHONY : opt/pico-sdk/src/rp2_common/hardware_rtc/rtc.s
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_rtc/rtc.s: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_rtc/rtc.c.s
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_rtc/rtc.s
 
 # target to generate assembly for a file
-opt/pico-sdk/src/rp2_common/hardware_rtc/rtc.c.s:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/hardware_rtc/rtc.c.s
-.PHONY : opt/pico-sdk/src/rp2_common/hardware_rtc/rtc.c.s
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_rtc/rtc.c.s:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_rtc/rtc.c.s
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_rtc/rtc.c.s
 
-opt/pico-sdk/src/rp2_common/hardware_spi/spi.o: opt/pico-sdk/src/rp2_common/hardware_spi/spi.c.o
-.PHONY : opt/pico-sdk/src/rp2_common/hardware_spi/spi.o
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_spi/spi.o: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_spi/spi.c.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_spi/spi.o
 
 # target to build an object file
-opt/pico-sdk/src/rp2_common/hardware_spi/spi.c.o:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/hardware_spi/spi.c.o
-.PHONY : opt/pico-sdk/src/rp2_common/hardware_spi/spi.c.o
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_spi/spi.c.o:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_spi/spi.c.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_spi/spi.c.o
 
-opt/pico-sdk/src/rp2_common/hardware_spi/spi.i: opt/pico-sdk/src/rp2_common/hardware_spi/spi.c.i
-.PHONY : opt/pico-sdk/src/rp2_common/hardware_spi/spi.i
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_spi/spi.i: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_spi/spi.c.i
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_spi/spi.i
 
 # target to preprocess a source file
-opt/pico-sdk/src/rp2_common/hardware_spi/spi.c.i:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/hardware_spi/spi.c.i
-.PHONY : opt/pico-sdk/src/rp2_common/hardware_spi/spi.c.i
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_spi/spi.c.i:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_spi/spi.c.i
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_spi/spi.c.i
 
-opt/pico-sdk/src/rp2_common/hardware_spi/spi.s: opt/pico-sdk/src/rp2_common/hardware_spi/spi.c.s
-.PHONY : opt/pico-sdk/src/rp2_common/hardware_spi/spi.s
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_spi/spi.s: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_spi/spi.c.s
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_spi/spi.s
 
 # target to generate assembly for a file
-opt/pico-sdk/src/rp2_common/hardware_spi/spi.c.s:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/hardware_spi/spi.c.s
-.PHONY : opt/pico-sdk/src/rp2_common/hardware_spi/spi.c.s
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_spi/spi.c.s:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_spi/spi.c.s
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_spi/spi.c.s
 
-opt/pico-sdk/src/rp2_common/hardware_sync/sync.o: opt/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
-.PHONY : opt/pico-sdk/src/rp2_common/hardware_sync/sync.o
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_sync/sync.o: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_sync/sync.c.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_sync/sync.o
 
 # target to build an object file
-opt/pico-sdk/src/rp2_common/hardware_sync/sync.c.o:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
-.PHONY : opt/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_sync/sync.c.o:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_sync/sync.c.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_sync/sync.c.o
 
-opt/pico-sdk/src/rp2_common/hardware_sync/sync.i: opt/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
-.PHONY : opt/pico-sdk/src/rp2_common/hardware_sync/sync.i
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_sync/sync.i: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_sync/sync.c.i
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_sync/sync.i
 
 # target to preprocess a source file
-opt/pico-sdk/src/rp2_common/hardware_sync/sync.c.i:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
-.PHONY : opt/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_sync/sync.c.i:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_sync/sync.c.i
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_sync/sync.c.i
 
-opt/pico-sdk/src/rp2_common/hardware_sync/sync.s: opt/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
-.PHONY : opt/pico-sdk/src/rp2_common/hardware_sync/sync.s
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_sync/sync.s: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_sync/sync.c.s
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_sync/sync.s
 
 # target to generate assembly for a file
-opt/pico-sdk/src/rp2_common/hardware_sync/sync.c.s:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
-.PHONY : opt/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_sync/sync.c.s:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_sync/sync.c.s
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_sync/sync.c.s
 
-opt/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.o: opt/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
-.PHONY : opt/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.o
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.o: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.o
 
 # target to build an object file
-opt/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
-.PHONY : opt/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
 
-opt/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.i: opt/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i
-.PHONY : opt/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.i
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.i: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.i
 
 # target to preprocess a source file
-opt/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i
-.PHONY : opt/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i
 
-opt/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.s: opt/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.s
-.PHONY : opt/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.s
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.s: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.s
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.s
 
 # target to generate assembly for a file
-opt/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.s:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.s
-.PHONY : opt/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.s
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.s:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.s
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.s
 
-opt/pico-sdk/src/rp2_common/hardware_ticks/ticks.o: opt/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
-.PHONY : opt/pico-sdk/src/rp2_common/hardware_ticks/ticks.o
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_ticks/ticks.o: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_ticks/ticks.c.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_ticks/ticks.o
 
 # target to build an object file
-opt/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
-.PHONY : opt/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_ticks/ticks.c.o:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_ticks/ticks.c.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_ticks/ticks.c.o
 
-opt/pico-sdk/src/rp2_common/hardware_ticks/ticks.i: opt/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.i
-.PHONY : opt/pico-sdk/src/rp2_common/hardware_ticks/ticks.i
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_ticks/ticks.i: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_ticks/ticks.c.i
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_ticks/ticks.i
 
 # target to preprocess a source file
-opt/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.i:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.i
-.PHONY : opt/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.i
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_ticks/ticks.c.i:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_ticks/ticks.c.i
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_ticks/ticks.c.i
 
-opt/pico-sdk/src/rp2_common/hardware_ticks/ticks.s: opt/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.s
-.PHONY : opt/pico-sdk/src/rp2_common/hardware_ticks/ticks.s
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_ticks/ticks.s: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_ticks/ticks.c.s
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_ticks/ticks.s
 
 # target to generate assembly for a file
-opt/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.s:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.s
-.PHONY : opt/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.s
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_ticks/ticks.c.s:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_ticks/ticks.c.s
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_ticks/ticks.c.s
 
-opt/pico-sdk/src/rp2_common/hardware_timer/timer.o: opt/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
-.PHONY : opt/pico-sdk/src/rp2_common/hardware_timer/timer.o
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_timer/timer.o: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_timer/timer.c.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_timer/timer.o
 
 # target to build an object file
-opt/pico-sdk/src/rp2_common/hardware_timer/timer.c.o:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
-.PHONY : opt/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_timer/timer.c.o:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_timer/timer.c.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_timer/timer.c.o
 
-opt/pico-sdk/src/rp2_common/hardware_timer/timer.i: opt/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
-.PHONY : opt/pico-sdk/src/rp2_common/hardware_timer/timer.i
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_timer/timer.i: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_timer/timer.c.i
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_timer/timer.i
 
 # target to preprocess a source file
-opt/pico-sdk/src/rp2_common/hardware_timer/timer.c.i:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
-.PHONY : opt/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_timer/timer.c.i:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_timer/timer.c.i
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_timer/timer.c.i
 
-opt/pico-sdk/src/rp2_common/hardware_timer/timer.s: opt/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
-.PHONY : opt/pico-sdk/src/rp2_common/hardware_timer/timer.s
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_timer/timer.s: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_timer/timer.c.s
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_timer/timer.s
 
 # target to generate assembly for a file
-opt/pico-sdk/src/rp2_common/hardware_timer/timer.c.s:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
-.PHONY : opt/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_timer/timer.c.s:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_timer/timer.c.s
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_timer/timer.c.s
 
-opt/pico-sdk/src/rp2_common/hardware_uart/uart.o: opt/pico-sdk/src/rp2_common/hardware_uart/uart.c.o
-.PHONY : opt/pico-sdk/src/rp2_common/hardware_uart/uart.o
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_uart/uart.o: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_uart/uart.c.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_uart/uart.o
 
 # target to build an object file
-opt/pico-sdk/src/rp2_common/hardware_uart/uart.c.o:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/hardware_uart/uart.c.o
-.PHONY : opt/pico-sdk/src/rp2_common/hardware_uart/uart.c.o
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_uart/uart.c.o:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_uart/uart.c.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_uart/uart.c.o
 
-opt/pico-sdk/src/rp2_common/hardware_uart/uart.i: opt/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
-.PHONY : opt/pico-sdk/src/rp2_common/hardware_uart/uart.i
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_uart/uart.i: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_uart/uart.c.i
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_uart/uart.i
 
 # target to preprocess a source file
-opt/pico-sdk/src/rp2_common/hardware_uart/uart.c.i:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
-.PHONY : opt/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_uart/uart.c.i:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_uart/uart.c.i
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_uart/uart.c.i
 
-opt/pico-sdk/src/rp2_common/hardware_uart/uart.s: opt/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
-.PHONY : opt/pico-sdk/src/rp2_common/hardware_uart/uart.s
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_uart/uart.s: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_uart/uart.c.s
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_uart/uart.s
 
 # target to generate assembly for a file
-opt/pico-sdk/src/rp2_common/hardware_uart/uart.c.s:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
-.PHONY : opt/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_uart/uart.c.s:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_uart/uart.c.s
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_uart/uart.c.s
 
-opt/pico-sdk/src/rp2_common/hardware_vreg/vreg.o: opt/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o
-.PHONY : opt/pico-sdk/src/rp2_common/hardware_vreg/vreg.o
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_vreg/vreg.o: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_vreg/vreg.c.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_vreg/vreg.o
 
 # target to build an object file
-opt/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o
-.PHONY : opt/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_vreg/vreg.c.o:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_vreg/vreg.c.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_vreg/vreg.c.o
 
-opt/pico-sdk/src/rp2_common/hardware_vreg/vreg.i: opt/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
-.PHONY : opt/pico-sdk/src/rp2_common/hardware_vreg/vreg.i
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_vreg/vreg.i: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_vreg/vreg.c.i
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_vreg/vreg.i
 
 # target to preprocess a source file
-opt/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
-.PHONY : opt/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_vreg/vreg.c.i:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_vreg/vreg.c.i
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_vreg/vreg.c.i
 
-opt/pico-sdk/src/rp2_common/hardware_vreg/vreg.s: opt/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
-.PHONY : opt/pico-sdk/src/rp2_common/hardware_vreg/vreg.s
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_vreg/vreg.s: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_vreg/vreg.c.s
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_vreg/vreg.s
 
 # target to generate assembly for a file
-opt/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
-.PHONY : opt/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_vreg/vreg.c.s:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_vreg/vreg.c.s
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_vreg/vreg.c.s
 
-opt/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.o: opt/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o
-.PHONY : opt/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.o
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_watchdog/watchdog.o: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_watchdog/watchdog.c.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_watchdog/watchdog.o
 
 # target to build an object file
-opt/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o
-.PHONY : opt/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_watchdog/watchdog.c.o:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_watchdog/watchdog.c.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_watchdog/watchdog.c.o
 
-opt/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.i: opt/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
-.PHONY : opt/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.i
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_watchdog/watchdog.i: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_watchdog/watchdog.c.i
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_watchdog/watchdog.i
 
 # target to preprocess a source file
-opt/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
-.PHONY : opt/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_watchdog/watchdog.c.i:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_watchdog/watchdog.c.i
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_watchdog/watchdog.c.i
 
-opt/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.s: opt/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
-.PHONY : opt/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.s
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_watchdog/watchdog.s: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_watchdog/watchdog.c.s
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_watchdog/watchdog.s
 
 # target to generate assembly for a file
-opt/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
-.PHONY : opt/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_watchdog/watchdog.c.s:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_watchdog/watchdog.c.s
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_watchdog/watchdog.c.s
 
-opt/pico-sdk/src/rp2_common/hardware_xosc/xosc.o: opt/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
-.PHONY : opt/pico-sdk/src/rp2_common/hardware_xosc/xosc.o
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_xosc/xosc.o: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_xosc/xosc.c.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_xosc/xosc.o
 
 # target to build an object file
-opt/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
-.PHONY : opt/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_xosc/xosc.c.o:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_xosc/xosc.c.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_xosc/xosc.c.o
 
-opt/pico-sdk/src/rp2_common/hardware_xosc/xosc.i: opt/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
-.PHONY : opt/pico-sdk/src/rp2_common/hardware_xosc/xosc.i
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_xosc/xosc.i: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_xosc/xosc.c.i
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_xosc/xosc.i
 
 # target to preprocess a source file
-opt/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
-.PHONY : opt/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_xosc/xosc.c.i:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_xosc/xosc.c.i
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_xosc/xosc.c.i
 
-opt/pico-sdk/src/rp2_common/hardware_xosc/xosc.s: opt/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
-.PHONY : opt/pico-sdk/src/rp2_common/hardware_xosc/xosc.s
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_xosc/xosc.s: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_xosc/xosc.c.s
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_xosc/xosc.s
 
 # target to generate assembly for a file
-opt/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
-.PHONY : opt/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_xosc/xosc.c.s:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_xosc/xosc.c.s
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_xosc/xosc.c.s
 
-opt/pico-sdk/src/rp2_common/pico_atomic/atomic.o: opt/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o
-.PHONY : opt/pico-sdk/src/rp2_common/pico_atomic/atomic.o
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_atomic/atomic.o: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_atomic/atomic.c.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_atomic/atomic.o
 
 # target to build an object file
-opt/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o
-.PHONY : opt/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_atomic/atomic.c.o:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_atomic/atomic.c.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_atomic/atomic.c.o
 
-opt/pico-sdk/src/rp2_common/pico_atomic/atomic.i: opt/pico-sdk/src/rp2_common/pico_atomic/atomic.c.i
-.PHONY : opt/pico-sdk/src/rp2_common/pico_atomic/atomic.i
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_atomic/atomic.i: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_atomic/atomic.c.i
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_atomic/atomic.i
 
 # target to preprocess a source file
-opt/pico-sdk/src/rp2_common/pico_atomic/atomic.c.i:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/pico_atomic/atomic.c.i
-.PHONY : opt/pico-sdk/src/rp2_common/pico_atomic/atomic.c.i
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_atomic/atomic.c.i:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_atomic/atomic.c.i
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_atomic/atomic.c.i
 
-opt/pico-sdk/src/rp2_common/pico_atomic/atomic.s: opt/pico-sdk/src/rp2_common/pico_atomic/atomic.c.s
-.PHONY : opt/pico-sdk/src/rp2_common/pico_atomic/atomic.s
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_atomic/atomic.s: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_atomic/atomic.c.s
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_atomic/atomic.s
 
 # target to generate assembly for a file
-opt/pico-sdk/src/rp2_common/pico_atomic/atomic.c.s:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/pico_atomic/atomic.c.s
-.PHONY : opt/pico-sdk/src/rp2_common/pico_atomic/atomic.c.s
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_atomic/atomic.c.s:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_atomic/atomic.c.s
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_atomic/atomic.c.s
 
-opt/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.o: opt/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
-.PHONY : opt/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.o
-
-# target to build an object file
-opt/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
-.PHONY : opt/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
-
-opt/pico-sdk/src/rp2_common/pico_bootrom/bootrom.o: opt/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
-.PHONY : opt/pico-sdk/src/rp2_common/pico_bootrom/bootrom.o
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_bit_ops/bit_ops_aeabi.o: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_bit_ops/bit_ops_aeabi.o
 
 # target to build an object file
-opt/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
-.PHONY : opt/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
 
-opt/pico-sdk/src/rp2_common/pico_bootrom/bootrom.i: opt/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
-.PHONY : opt/pico-sdk/src/rp2_common/pico_bootrom/bootrom.i
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_bootrom/bootrom.o: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_bootrom/bootrom.c.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_bootrom/bootrom.o
+
+# target to build an object file
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_bootrom/bootrom.c.o:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_bootrom/bootrom.c.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_bootrom/bootrom.c.o
+
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_bootrom/bootrom.i: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_bootrom/bootrom.c.i
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_bootrom/bootrom.i
 
 # target to preprocess a source file
-opt/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
-.PHONY : opt/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_bootrom/bootrom.c.i:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_bootrom/bootrom.c.i
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_bootrom/bootrom.c.i
 
-opt/pico-sdk/src/rp2_common/pico_bootrom/bootrom.s: opt/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
-.PHONY : opt/pico-sdk/src/rp2_common/pico_bootrom/bootrom.s
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_bootrom/bootrom.s: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_bootrom/bootrom.c.s
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_bootrom/bootrom.s
 
 # target to generate assembly for a file
-opt/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
-.PHONY : opt/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_bootrom/bootrom.c.s:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_bootrom/bootrom.c.s
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_bootrom/bootrom.c.s
 
-opt/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.o: opt/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o
-.PHONY : opt/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.o
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_bootrom/bootrom_lock.o: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_bootrom/bootrom_lock.c.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_bootrom/bootrom_lock.o
 
 # target to build an object file
-opt/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o
-.PHONY : opt/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_bootrom/bootrom_lock.c.o:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_bootrom/bootrom_lock.c.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_bootrom/bootrom_lock.c.o
 
-opt/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.i: opt/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.i
-.PHONY : opt/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.i
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_bootrom/bootrom_lock.i: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_bootrom/bootrom_lock.c.i
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_bootrom/bootrom_lock.i
 
 # target to preprocess a source file
-opt/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.i:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.i
-.PHONY : opt/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.i
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_bootrom/bootrom_lock.c.i:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_bootrom/bootrom_lock.c.i
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_bootrom/bootrom_lock.c.i
 
-opt/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.s: opt/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.s
-.PHONY : opt/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.s
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_bootrom/bootrom_lock.s: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_bootrom/bootrom_lock.c.s
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_bootrom/bootrom_lock.s
 
 # target to generate assembly for a file
-opt/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.s:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.s
-.PHONY : opt/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.s
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_bootrom/bootrom_lock.c.s:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_bootrom/bootrom_lock.c.s
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_bootrom/bootrom_lock.c.s
 
-opt/pico-sdk/src/rp2_common/pico_clib_interface/cxa_guard.o: opt/pico-sdk/src/rp2_common/pico_clib_interface/cxa_guard.c.o
-.PHONY : opt/pico-sdk/src/rp2_common/pico_clib_interface/cxa_guard.o
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_clib_interface/cxa_guard.o: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_clib_interface/cxa_guard.c.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_clib_interface/cxa_guard.o
 
 # target to build an object file
-opt/pico-sdk/src/rp2_common/pico_clib_interface/cxa_guard.c.o:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/pico_clib_interface/cxa_guard.c.o
-.PHONY : opt/pico-sdk/src/rp2_common/pico_clib_interface/cxa_guard.c.o
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_clib_interface/cxa_guard.c.o:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_clib_interface/cxa_guard.c.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_clib_interface/cxa_guard.c.o
 
-opt/pico-sdk/src/rp2_common/pico_clib_interface/cxa_guard.i: opt/pico-sdk/src/rp2_common/pico_clib_interface/cxa_guard.c.i
-.PHONY : opt/pico-sdk/src/rp2_common/pico_clib_interface/cxa_guard.i
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_clib_interface/cxa_guard.i: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_clib_interface/cxa_guard.c.i
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_clib_interface/cxa_guard.i
 
 # target to preprocess a source file
-opt/pico-sdk/src/rp2_common/pico_clib_interface/cxa_guard.c.i:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/pico_clib_interface/cxa_guard.c.i
-.PHONY : opt/pico-sdk/src/rp2_common/pico_clib_interface/cxa_guard.c.i
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_clib_interface/cxa_guard.c.i:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_clib_interface/cxa_guard.c.i
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_clib_interface/cxa_guard.c.i
 
-opt/pico-sdk/src/rp2_common/pico_clib_interface/cxa_guard.s: opt/pico-sdk/src/rp2_common/pico_clib_interface/cxa_guard.c.s
-.PHONY : opt/pico-sdk/src/rp2_common/pico_clib_interface/cxa_guard.s
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_clib_interface/cxa_guard.s: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_clib_interface/cxa_guard.c.s
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_clib_interface/cxa_guard.s
 
 # target to generate assembly for a file
-opt/pico-sdk/src/rp2_common/pico_clib_interface/cxa_guard.c.s:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/pico_clib_interface/cxa_guard.c.s
-.PHONY : opt/pico-sdk/src/rp2_common/pico_clib_interface/cxa_guard.c.s
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_clib_interface/cxa_guard.c.s:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_clib_interface/cxa_guard.c.s
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_clib_interface/cxa_guard.c.s
 
-opt/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.o: opt/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
-.PHONY : opt/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.o
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_clib_interface/newlib_interface.o: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_clib_interface/newlib_interface.c.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_clib_interface/newlib_interface.o
 
 # target to build an object file
-opt/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
-.PHONY : opt/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_clib_interface/newlib_interface.c.o:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_clib_interface/newlib_interface.c.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_clib_interface/newlib_interface.c.o
 
-opt/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.i: opt/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.i
-.PHONY : opt/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.i
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_clib_interface/newlib_interface.i: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_clib_interface/newlib_interface.c.i
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_clib_interface/newlib_interface.i
 
 # target to preprocess a source file
-opt/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.i:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.i
-.PHONY : opt/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.i
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_clib_interface/newlib_interface.c.i:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_clib_interface/newlib_interface.c.i
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_clib_interface/newlib_interface.c.i
 
-opt/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.s: opt/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.s
-.PHONY : opt/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.s
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_clib_interface/newlib_interface.s: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_clib_interface/newlib_interface.c.s
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_clib_interface/newlib_interface.s
 
 # target to generate assembly for a file
-opt/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.s:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.s
-.PHONY : opt/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.s
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_clib_interface/newlib_interface.c.s:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_clib_interface/newlib_interface.c.s
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_clib_interface/newlib_interface.c.s
 
-opt/pico-sdk/src/rp2_common/pico_crt0/crt0.o: opt/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
-.PHONY : opt/pico-sdk/src/rp2_common/pico_crt0/crt0.o
-
-# target to build an object file
-opt/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
-.PHONY : opt/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
-
-opt/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.o: opt/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o
-.PHONY : opt/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.o
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_crt0/crt0.o: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_crt0/crt0.S.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_crt0/crt0.o
 
 # target to build an object file
-opt/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o
-.PHONY : opt/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_crt0/crt0.S.o:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_crt0/crt0.S.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_crt0/crt0.S.o
 
-opt/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.i: opt/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.i
-.PHONY : opt/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.i
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_cxx_options/new_delete.o: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_cxx_options/new_delete.cpp.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_cxx_options/new_delete.o
+
+# target to build an object file
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_cxx_options/new_delete.cpp.o:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_cxx_options/new_delete.cpp.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_cxx_options/new_delete.cpp.o
+
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_cxx_options/new_delete.i: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_cxx_options/new_delete.cpp.i
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_cxx_options/new_delete.i
 
 # target to preprocess a source file
-opt/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.i:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.i
-.PHONY : opt/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.i
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_cxx_options/new_delete.cpp.i:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_cxx_options/new_delete.cpp.i
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_cxx_options/new_delete.cpp.i
 
-opt/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.s: opt/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.s
-.PHONY : opt/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.s
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_cxx_options/new_delete.s: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_cxx_options/new_delete.cpp.s
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_cxx_options/new_delete.s
 
 # target to generate assembly for a file
-opt/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.s:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.s
-.PHONY : opt/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.s
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_cxx_options/new_delete.cpp.s:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_cxx_options/new_delete.cpp.s
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_cxx_options/new_delete.cpp.s
 
-opt/pico-sdk/src/rp2_common/pico_divider/divider_hardware.o: opt/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o
-.PHONY : opt/pico-sdk/src/rp2_common/pico_divider/divider_hardware.o
-
-# target to build an object file
-opt/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o
-.PHONY : opt/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o
-
-opt/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.o: opt/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
-.PHONY : opt/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.o
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_divider/divider_hardware.o: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_divider/divider_hardware.S.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_divider/divider_hardware.o
 
 # target to build an object file
-opt/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
-.PHONY : opt/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_divider/divider_hardware.S.o:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_divider/divider_hardware.S.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_divider/divider_hardware.S.o
 
-opt/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.o: opt/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
-.PHONY : opt/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.o
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_double/double_aeabi_rp2040.o: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_double/double_aeabi_rp2040.o
 
 # target to build an object file
-opt/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
-.PHONY : opt/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_double/double_aeabi_rp2040.S.o:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
 
-opt/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.i: opt/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.i
-.PHONY : opt/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.i
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_double/double_init_rom_rp2040.o: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_double/double_init_rom_rp2040.o
+
+# target to build an object file
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_double/double_init_rom_rp2040.c.o:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
+
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_double/double_init_rom_rp2040.i: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_double/double_init_rom_rp2040.c.i
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_double/double_init_rom_rp2040.i
 
 # target to preprocess a source file
-opt/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.i:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.i
-.PHONY : opt/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.i
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_double/double_init_rom_rp2040.c.i:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_double/double_init_rom_rp2040.c.i
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_double/double_init_rom_rp2040.c.i
 
-opt/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.s: opt/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.s
-.PHONY : opt/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.s
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_double/double_init_rom_rp2040.s: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_double/double_init_rom_rp2040.c.s
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_double/double_init_rom_rp2040.s
 
 # target to generate assembly for a file
-opt/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.s:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.s
-.PHONY : opt/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.s
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_double/double_init_rom_rp2040.c.s:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_double/double_init_rom_rp2040.c.s
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_double/double_init_rom_rp2040.c.s
 
-opt/pico-sdk/src/rp2_common/pico_double/double_math.o: opt/pico-sdk/src/rp2_common/pico_double/double_math.c.o
-.PHONY : opt/pico-sdk/src/rp2_common/pico_double/double_math.o
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_double/double_math.o: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_double/double_math.c.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_double/double_math.o
 
 # target to build an object file
-opt/pico-sdk/src/rp2_common/pico_double/double_math.c.o:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/pico_double/double_math.c.o
-.PHONY : opt/pico-sdk/src/rp2_common/pico_double/double_math.c.o
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_double/double_math.c.o:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_double/double_math.c.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_double/double_math.c.o
 
-opt/pico-sdk/src/rp2_common/pico_double/double_math.i: opt/pico-sdk/src/rp2_common/pico_double/double_math.c.i
-.PHONY : opt/pico-sdk/src/rp2_common/pico_double/double_math.i
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_double/double_math.i: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_double/double_math.c.i
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_double/double_math.i
 
 # target to preprocess a source file
-opt/pico-sdk/src/rp2_common/pico_double/double_math.c.i:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/pico_double/double_math.c.i
-.PHONY : opt/pico-sdk/src/rp2_common/pico_double/double_math.c.i
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_double/double_math.c.i:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_double/double_math.c.i
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_double/double_math.c.i
 
-opt/pico-sdk/src/rp2_common/pico_double/double_math.s: opt/pico-sdk/src/rp2_common/pico_double/double_math.c.s
-.PHONY : opt/pico-sdk/src/rp2_common/pico_double/double_math.s
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_double/double_math.s: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_double/double_math.c.s
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_double/double_math.s
 
 # target to generate assembly for a file
-opt/pico-sdk/src/rp2_common/pico_double/double_math.c.s:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/pico_double/double_math.c.s
-.PHONY : opt/pico-sdk/src/rp2_common/pico_double/double_math.c.s
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_double/double_math.c.s:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_double/double_math.c.s
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_double/double_math.c.s
 
-opt/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.o: opt/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
-.PHONY : opt/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.o
-
-# target to build an object file
-opt/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
-.PHONY : opt/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
-
-opt/pico-sdk/src/rp2_common/pico_flash/flash.o: opt/pico-sdk/src/rp2_common/pico_flash/flash.c.o
-.PHONY : opt/pico-sdk/src/rp2_common/pico_flash/flash.o
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.o: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.o
 
 # target to build an object file
-opt/pico-sdk/src/rp2_common/pico_flash/flash.c.o:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/pico_flash/flash.c.o
-.PHONY : opt/pico-sdk/src/rp2_common/pico_flash/flash.c.o
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
 
-opt/pico-sdk/src/rp2_common/pico_flash/flash.i: opt/pico-sdk/src/rp2_common/pico_flash/flash.c.i
-.PHONY : opt/pico-sdk/src/rp2_common/pico_flash/flash.i
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_flash/flash.o: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_flash/flash.c.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_flash/flash.o
+
+# target to build an object file
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_flash/flash.c.o:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_flash/flash.c.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_flash/flash.c.o
+
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_flash/flash.i: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_flash/flash.c.i
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_flash/flash.i
 
 # target to preprocess a source file
-opt/pico-sdk/src/rp2_common/pico_flash/flash.c.i:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/pico_flash/flash.c.i
-.PHONY : opt/pico-sdk/src/rp2_common/pico_flash/flash.c.i
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_flash/flash.c.i:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_flash/flash.c.i
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_flash/flash.c.i
 
-opt/pico-sdk/src/rp2_common/pico_flash/flash.s: opt/pico-sdk/src/rp2_common/pico_flash/flash.c.s
-.PHONY : opt/pico-sdk/src/rp2_common/pico_flash/flash.s
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_flash/flash.s: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_flash/flash.c.s
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_flash/flash.s
 
 # target to generate assembly for a file
-opt/pico-sdk/src/rp2_common/pico_flash/flash.c.s:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/pico_flash/flash.c.s
-.PHONY : opt/pico-sdk/src/rp2_common/pico_flash/flash.c.s
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_flash/flash.c.s:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_flash/flash.c.s
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_flash/flash.c.s
 
-opt/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.o: opt/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
-.PHONY : opt/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.o
-
-# target to build an object file
-opt/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
-.PHONY : opt/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
-
-opt/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.o: opt/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
-.PHONY : opt/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.o
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_float/float_aeabi_rp2040.o: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_float/float_aeabi_rp2040.o
 
 # target to build an object file
-opt/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
-.PHONY : opt/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_float/float_aeabi_rp2040.S.o:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
 
-opt/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.i: opt/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.i
-.PHONY : opt/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.i
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_float/float_init_rom_rp2040.o: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_float/float_init_rom_rp2040.o
+
+# target to build an object file
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_float/float_init_rom_rp2040.c.o:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
+
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_float/float_init_rom_rp2040.i: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_float/float_init_rom_rp2040.c.i
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_float/float_init_rom_rp2040.i
 
 # target to preprocess a source file
-opt/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.i:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.i
-.PHONY : opt/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.i
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_float/float_init_rom_rp2040.c.i:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_float/float_init_rom_rp2040.c.i
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_float/float_init_rom_rp2040.c.i
 
-opt/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.s: opt/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.s
-.PHONY : opt/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.s
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_float/float_init_rom_rp2040.s: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_float/float_init_rom_rp2040.c.s
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_float/float_init_rom_rp2040.s
 
 # target to generate assembly for a file
-opt/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.s:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.s
-.PHONY : opt/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.s
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_float/float_init_rom_rp2040.c.s:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_float/float_init_rom_rp2040.c.s
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_float/float_init_rom_rp2040.c.s
 
-opt/pico-sdk/src/rp2_common/pico_float/float_math.o: opt/pico-sdk/src/rp2_common/pico_float/float_math.c.o
-.PHONY : opt/pico-sdk/src/rp2_common/pico_float/float_math.o
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_float/float_math.o: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_float/float_math.c.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_float/float_math.o
 
 # target to build an object file
-opt/pico-sdk/src/rp2_common/pico_float/float_math.c.o:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/pico_float/float_math.c.o
-.PHONY : opt/pico-sdk/src/rp2_common/pico_float/float_math.c.o
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_float/float_math.c.o:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_float/float_math.c.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_float/float_math.c.o
 
-opt/pico-sdk/src/rp2_common/pico_float/float_math.i: opt/pico-sdk/src/rp2_common/pico_float/float_math.c.i
-.PHONY : opt/pico-sdk/src/rp2_common/pico_float/float_math.i
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_float/float_math.i: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_float/float_math.c.i
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_float/float_math.i
 
 # target to preprocess a source file
-opt/pico-sdk/src/rp2_common/pico_float/float_math.c.i:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/pico_float/float_math.c.i
-.PHONY : opt/pico-sdk/src/rp2_common/pico_float/float_math.c.i
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_float/float_math.c.i:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_float/float_math.c.i
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_float/float_math.c.i
 
-opt/pico-sdk/src/rp2_common/pico_float/float_math.s: opt/pico-sdk/src/rp2_common/pico_float/float_math.c.s
-.PHONY : opt/pico-sdk/src/rp2_common/pico_float/float_math.s
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_float/float_math.s: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_float/float_math.c.s
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_float/float_math.s
 
 # target to generate assembly for a file
-opt/pico-sdk/src/rp2_common/pico_float/float_math.c.s:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/pico_float/float_math.c.s
-.PHONY : opt/pico-sdk/src/rp2_common/pico_float/float_math.c.s
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_float/float_math.c.s:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_float/float_math.c.s
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_float/float_math.c.s
 
-opt/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.o: opt/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
-.PHONY : opt/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.o
-
-# target to build an object file
-opt/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
-.PHONY : opt/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
-
-opt/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.o: opt/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o
-.PHONY : opt/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.o
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.o: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.o
 
 # target to build an object file
-opt/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o
-.PHONY : opt/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
 
-opt/pico-sdk/src/rp2_common/pico_malloc/malloc.o: opt/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o
-.PHONY : opt/pico-sdk/src/rp2_common/pico_malloc/malloc.o
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.o: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.o
 
 # target to build an object file
-opt/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o
-.PHONY : opt/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o
 
-opt/pico-sdk/src/rp2_common/pico_malloc/malloc.i: opt/pico-sdk/src/rp2_common/pico_malloc/malloc.c.i
-.PHONY : opt/pico-sdk/src/rp2_common/pico_malloc/malloc.i
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_malloc/malloc.o: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_malloc/malloc.c.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_malloc/malloc.o
+
+# target to build an object file
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_malloc/malloc.c.o:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_malloc/malloc.c.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_malloc/malloc.c.o
+
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_malloc/malloc.i: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_malloc/malloc.c.i
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_malloc/malloc.i
 
 # target to preprocess a source file
-opt/pico-sdk/src/rp2_common/pico_malloc/malloc.c.i:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/pico_malloc/malloc.c.i
-.PHONY : opt/pico-sdk/src/rp2_common/pico_malloc/malloc.c.i
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_malloc/malloc.c.i:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_malloc/malloc.c.i
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_malloc/malloc.c.i
 
-opt/pico-sdk/src/rp2_common/pico_malloc/malloc.s: opt/pico-sdk/src/rp2_common/pico_malloc/malloc.c.s
-.PHONY : opt/pico-sdk/src/rp2_common/pico_malloc/malloc.s
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_malloc/malloc.s: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_malloc/malloc.c.s
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_malloc/malloc.s
 
 # target to generate assembly for a file
-opt/pico-sdk/src/rp2_common/pico_malloc/malloc.c.s:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/pico_malloc/malloc.c.s
-.PHONY : opt/pico-sdk/src/rp2_common/pico_malloc/malloc.c.s
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_malloc/malloc.c.s:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_malloc/malloc.c.s
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_malloc/malloc.c.s
 
-opt/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.o: opt/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
-.PHONY : opt/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.o
-
-# target to build an object file
-opt/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
-.PHONY : opt/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
-
-opt/pico-sdk/src/rp2_common/pico_platform_common/common.o: opt/pico-sdk/src/rp2_common/pico_platform_common/common.c.o
-.PHONY : opt/pico-sdk/src/rp2_common/pico_platform_common/common.o
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_mem_ops/mem_ops_aeabi.o: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_mem_ops/mem_ops_aeabi.o
 
 # target to build an object file
-opt/pico-sdk/src/rp2_common/pico_platform_common/common.c.o:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/pico_platform_common/common.c.o
-.PHONY : opt/pico-sdk/src/rp2_common/pico_platform_common/common.c.o
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
 
-opt/pico-sdk/src/rp2_common/pico_platform_common/common.i: opt/pico-sdk/src/rp2_common/pico_platform_common/common.c.i
-.PHONY : opt/pico-sdk/src/rp2_common/pico_platform_common/common.i
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_platform_common/common.o: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_platform_common/common.c.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_platform_common/common.o
+
+# target to build an object file
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_platform_common/common.c.o:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_platform_common/common.c.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_platform_common/common.c.o
+
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_platform_common/common.i: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_platform_common/common.c.i
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_platform_common/common.i
 
 # target to preprocess a source file
-opt/pico-sdk/src/rp2_common/pico_platform_common/common.c.i:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/pico_platform_common/common.c.i
-.PHONY : opt/pico-sdk/src/rp2_common/pico_platform_common/common.c.i
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_platform_common/common.c.i:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_platform_common/common.c.i
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_platform_common/common.c.i
 
-opt/pico-sdk/src/rp2_common/pico_platform_common/common.s: opt/pico-sdk/src/rp2_common/pico_platform_common/common.c.s
-.PHONY : opt/pico-sdk/src/rp2_common/pico_platform_common/common.s
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_platform_common/common.s: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_platform_common/common.c.s
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_platform_common/common.s
 
 # target to generate assembly for a file
-opt/pico-sdk/src/rp2_common/pico_platform_common/common.c.s:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/pico_platform_common/common.c.s
-.PHONY : opt/pico-sdk/src/rp2_common/pico_platform_common/common.c.s
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_platform_common/common.c.s:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_platform_common/common.c.s
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_platform_common/common.c.s
 
-opt/pico-sdk/src/rp2_common/pico_platform_panic/custom_panic_function.o: opt/pico-sdk/src/rp2_common/pico_platform_panic/custom_panic_function.S.o
-.PHONY : opt/pico-sdk/src/rp2_common/pico_platform_panic/custom_panic_function.o
-
-# target to build an object file
-opt/pico-sdk/src/rp2_common/pico_platform_panic/custom_panic_function.S.o:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/pico_platform_panic/custom_panic_function.S.o
-.PHONY : opt/pico-sdk/src/rp2_common/pico_platform_panic/custom_panic_function.S.o
-
-opt/pico-sdk/src/rp2_common/pico_platform_panic/panic.o: opt/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
-.PHONY : opt/pico-sdk/src/rp2_common/pico_platform_panic/panic.o
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_platform_panic/custom_panic_function.o: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_platform_panic/custom_panic_function.S.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_platform_panic/custom_panic_function.o
 
 # target to build an object file
-opt/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
-.PHONY : opt/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_platform_panic/custom_panic_function.S.o:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_platform_panic/custom_panic_function.S.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_platform_panic/custom_panic_function.S.o
 
-opt/pico-sdk/src/rp2_common/pico_platform_panic/panic.i: opt/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.i
-.PHONY : opt/pico-sdk/src/rp2_common/pico_platform_panic/panic.i
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_platform_panic/panic.o: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_platform_panic/panic.c.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_platform_panic/panic.o
+
+# target to build an object file
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_platform_panic/panic.c.o:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_platform_panic/panic.c.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_platform_panic/panic.c.o
+
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_platform_panic/panic.i: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_platform_panic/panic.c.i
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_platform_panic/panic.i
 
 # target to preprocess a source file
-opt/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.i:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.i
-.PHONY : opt/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.i
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_platform_panic/panic.c.i:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_platform_panic/panic.c.i
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_platform_panic/panic.c.i
 
-opt/pico-sdk/src/rp2_common/pico_platform_panic/panic.s: opt/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.s
-.PHONY : opt/pico-sdk/src/rp2_common/pico_platform_panic/panic.s
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_platform_panic/panic.s: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_platform_panic/panic.c.s
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_platform_panic/panic.s
 
 # target to generate assembly for a file
-opt/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.s:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.s
-.PHONY : opt/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.s
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_platform_panic/panic.c.s:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_platform_panic/panic.c.s
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_platform_panic/panic.c.s
 
-opt/pico-sdk/src/rp2_common/pico_printf/printf.o: opt/pico-sdk/src/rp2_common/pico_printf/printf.c.o
-.PHONY : opt/pico-sdk/src/rp2_common/pico_printf/printf.o
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_printf/printf.o: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_printf/printf.c.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_printf/printf.o
 
 # target to build an object file
-opt/pico-sdk/src/rp2_common/pico_printf/printf.c.o:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/pico_printf/printf.c.o
-.PHONY : opt/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_printf/printf.c.o:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_printf/printf.c.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_printf/printf.c.o
 
-opt/pico-sdk/src/rp2_common/pico_printf/printf.i: opt/pico-sdk/src/rp2_common/pico_printf/printf.c.i
-.PHONY : opt/pico-sdk/src/rp2_common/pico_printf/printf.i
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_printf/printf.i: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_printf/printf.c.i
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_printf/printf.i
 
 # target to preprocess a source file
-opt/pico-sdk/src/rp2_common/pico_printf/printf.c.i:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/pico_printf/printf.c.i
-.PHONY : opt/pico-sdk/src/rp2_common/pico_printf/printf.c.i
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_printf/printf.c.i:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_printf/printf.c.i
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_printf/printf.c.i
 
-opt/pico-sdk/src/rp2_common/pico_printf/printf.s: opt/pico-sdk/src/rp2_common/pico_printf/printf.c.s
-.PHONY : opt/pico-sdk/src/rp2_common/pico_printf/printf.s
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_printf/printf.s: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_printf/printf.c.s
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_printf/printf.s
 
 # target to generate assembly for a file
-opt/pico-sdk/src/rp2_common/pico_printf/printf.c.s:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/pico_printf/printf.c.s
-.PHONY : opt/pico-sdk/src/rp2_common/pico_printf/printf.c.s
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_printf/printf.c.s:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_printf/printf.c.s
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_printf/printf.c.s
 
-opt/pico-sdk/src/rp2_common/pico_runtime/runtime.o: opt/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
-.PHONY : opt/pico-sdk/src/rp2_common/pico_runtime/runtime.o
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_runtime/runtime.o: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_runtime/runtime.c.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_runtime/runtime.o
 
 # target to build an object file
-opt/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
-.PHONY : opt/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_runtime/runtime.c.o:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_runtime/runtime.c.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_runtime/runtime.c.o
 
-opt/pico-sdk/src/rp2_common/pico_runtime/runtime.i: opt/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
-.PHONY : opt/pico-sdk/src/rp2_common/pico_runtime/runtime.i
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_runtime/runtime.i: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_runtime/runtime.c.i
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_runtime/runtime.i
 
 # target to preprocess a source file
-opt/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
-.PHONY : opt/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_runtime/runtime.c.i:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_runtime/runtime.c.i
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_runtime/runtime.c.i
 
-opt/pico-sdk/src/rp2_common/pico_runtime/runtime.s: opt/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
-.PHONY : opt/pico-sdk/src/rp2_common/pico_runtime/runtime.s
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_runtime/runtime.s: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_runtime/runtime.c.s
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_runtime/runtime.s
 
 # target to generate assembly for a file
-opt/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
-.PHONY : opt/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_runtime/runtime.c.s:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_runtime/runtime.c.s
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_runtime/runtime.c.s
 
-opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.o: opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-.PHONY : opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.o
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_runtime_init/runtime_init.o: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_runtime_init/runtime_init.c.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_runtime_init/runtime_init.o
 
 # target to build an object file
-opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-.PHONY : opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_runtime_init/runtime_init.c.o:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_runtime_init/runtime_init.c.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_runtime_init/runtime_init.c.o
 
-opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.i: opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.i
-.PHONY : opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.i
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_runtime_init/runtime_init.i: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_runtime_init/runtime_init.c.i
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_runtime_init/runtime_init.i
 
 # target to preprocess a source file
-opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.i:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.i
-.PHONY : opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.i
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_runtime_init/runtime_init.c.i:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_runtime_init/runtime_init.c.i
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_runtime_init/runtime_init.c.i
 
-opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.s: opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.s
-.PHONY : opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.s
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_runtime_init/runtime_init.s: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_runtime_init/runtime_init.c.s
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_runtime_init/runtime_init.s
 
 # target to generate assembly for a file
-opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.s:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.s
-.PHONY : opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.s
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_runtime_init/runtime_init.c.s:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_runtime_init/runtime_init.c.s
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_runtime_init/runtime_init.c.s
 
-opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.o: opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
-.PHONY : opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.o
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_runtime_init/runtime_init_clocks.o: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_runtime_init/runtime_init_clocks.o
 
 # target to build an object file
-opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
-.PHONY : opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
 
-opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.i: opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i
-.PHONY : opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.i
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_runtime_init/runtime_init_clocks.i: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_runtime_init/runtime_init_clocks.i
 
 # target to preprocess a source file
-opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i
-.PHONY : opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i
 
-opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.s: opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.s
-.PHONY : opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.s
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_runtime_init/runtime_init_clocks.s: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.s
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_runtime_init/runtime_init_clocks.s
 
 # target to generate assembly for a file
-opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.s:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.s
-.PHONY : opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.s
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.s:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.s
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.s
 
-opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.o: opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o
-.PHONY : opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.o
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.o: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.o
 
 # target to build an object file
-opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o
-.PHONY : opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o
 
-opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.i: opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i
-.PHONY : opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.i
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.i: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.i
 
 # target to preprocess a source file
-opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i
-.PHONY : opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i
 
-opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.s: opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.s
-.PHONY : opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.s
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.s: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.s
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.s
 
 # target to generate assembly for a file
-opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.s:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.s
-.PHONY : opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.s
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.s:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.s
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.s
 
-opt/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.o: opt/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
-.PHONY : opt/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.o
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.o: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.o
 
 # target to build an object file
-opt/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
-.PHONY : opt/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
 
-opt/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.i: opt/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i
-.PHONY : opt/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.i
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.i: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.i
 
 # target to preprocess a source file
-opt/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i
-.PHONY : opt/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i
 
-opt/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.s: opt/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.s
-.PHONY : opt/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.s
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.s: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.s
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.s
 
 # target to generate assembly for a file
-opt/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.s:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.s
-.PHONY : opt/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.s
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.s:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.s
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.s
 
-opt/pico-sdk/src/rp2_common/pico_stdio/stdio.o: opt/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
-.PHONY : opt/pico-sdk/src/rp2_common/pico_stdio/stdio.o
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_stdio/stdio.o: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_stdio/stdio.c.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_stdio/stdio.o
 
 # target to build an object file
-opt/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
-.PHONY : opt/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_stdio/stdio.c.o:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_stdio/stdio.c.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_stdio/stdio.c.o
 
-opt/pico-sdk/src/rp2_common/pico_stdio/stdio.i: opt/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
-.PHONY : opt/pico-sdk/src/rp2_common/pico_stdio/stdio.i
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_stdio/stdio.i: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_stdio/stdio.c.i
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_stdio/stdio.i
 
 # target to preprocess a source file
-opt/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
-.PHONY : opt/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_stdio/stdio.c.i:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_stdio/stdio.c.i
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_stdio/stdio.c.i
 
-opt/pico-sdk/src/rp2_common/pico_stdio/stdio.s: opt/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
-.PHONY : opt/pico-sdk/src/rp2_common/pico_stdio/stdio.s
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_stdio/stdio.s: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_stdio/stdio.c.s
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_stdio/stdio.s
 
 # target to generate assembly for a file
-opt/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
-.PHONY : opt/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_stdio/stdio.c.s:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_stdio/stdio.c.s
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_stdio/stdio.c.s
 
-opt/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.o: opt/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o
-.PHONY : opt/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.o
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_stdio_uart/stdio_uart.o: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_stdio_uart/stdio_uart.c.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_stdio_uart/stdio_uart.o
 
 # target to build an object file
-opt/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o
-.PHONY : opt/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_stdio_uart/stdio_uart.c.o:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_stdio_uart/stdio_uart.c.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_stdio_uart/stdio_uart.c.o
 
-opt/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.i: opt/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
-.PHONY : opt/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.i
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_stdio_uart/stdio_uart.i: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_stdio_uart/stdio_uart.i
 
 # target to preprocess a source file
-opt/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
-.PHONY : opt/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_stdio_uart/stdio_uart.c.i:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
 
-opt/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.s: opt/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
-.PHONY : opt/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.s
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_stdio_uart/stdio_uart.s: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_stdio_uart/stdio_uart.s
 
 # target to generate assembly for a file
-opt/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
-.PHONY : opt/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_stdio_uart/stdio_uart.c.s:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
 
-opt/pico-sdk/src/rp2_common/pico_stdlib/stdlib.o: opt/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o
-.PHONY : opt/pico-sdk/src/rp2_common/pico_stdlib/stdlib.o
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_stdlib/stdlib.o: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_stdlib/stdlib.c.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_stdlib/stdlib.o
 
 # target to build an object file
-opt/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o
-.PHONY : opt/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_stdlib/stdlib.c.o:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_stdlib/stdlib.c.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_stdlib/stdlib.c.o
 
-opt/pico-sdk/src/rp2_common/pico_stdlib/stdlib.i: opt/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
-.PHONY : opt/pico-sdk/src/rp2_common/pico_stdlib/stdlib.i
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_stdlib/stdlib.i: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_stdlib/stdlib.c.i
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_stdlib/stdlib.i
 
 # target to preprocess a source file
-opt/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
-.PHONY : opt/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_stdlib/stdlib.c.i:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_stdlib/stdlib.c.i
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_stdlib/stdlib.c.i
 
-opt/pico-sdk/src/rp2_common/pico_stdlib/stdlib.s: opt/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
-.PHONY : opt/pico-sdk/src/rp2_common/pico_stdlib/stdlib.s
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_stdlib/stdlib.s: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_stdlib/stdlib.c.s
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_stdlib/stdlib.s
 
 # target to generate assembly for a file
-opt/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
-.PHONY : opt/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_stdlib/stdlib.c.s:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_stdlib/stdlib.c.s
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_stdlib/stdlib.c.s
 
-opt/pico-sdk/src/rp2_common/pico_thread_local/thread_local.o: opt/pico-sdk/src/rp2_common/pico_thread_local/thread_local.c.o
-.PHONY : opt/pico-sdk/src/rp2_common/pico_thread_local/thread_local.o
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_thread_local/thread_local.o: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_thread_local/thread_local.c.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_thread_local/thread_local.o
 
 # target to build an object file
-opt/pico-sdk/src/rp2_common/pico_thread_local/thread_local.c.o:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/pico_thread_local/thread_local.c.o
-.PHONY : opt/pico-sdk/src/rp2_common/pico_thread_local/thread_local.c.o
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_thread_local/thread_local.c.o:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_thread_local/thread_local.c.o
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_thread_local/thread_local.c.o
 
-opt/pico-sdk/src/rp2_common/pico_thread_local/thread_local.i: opt/pico-sdk/src/rp2_common/pico_thread_local/thread_local.c.i
-.PHONY : opt/pico-sdk/src/rp2_common/pico_thread_local/thread_local.i
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_thread_local/thread_local.i: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_thread_local/thread_local.c.i
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_thread_local/thread_local.i
 
 # target to preprocess a source file
-opt/pico-sdk/src/rp2_common/pico_thread_local/thread_local.c.i:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/pico_thread_local/thread_local.c.i
-.PHONY : opt/pico-sdk/src/rp2_common/pico_thread_local/thread_local.c.i
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_thread_local/thread_local.c.i:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_thread_local/thread_local.c.i
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_thread_local/thread_local.c.i
 
-opt/pico-sdk/src/rp2_common/pico_thread_local/thread_local.s: opt/pico-sdk/src/rp2_common/pico_thread_local/thread_local.c.s
-.PHONY : opt/pico-sdk/src/rp2_common/pico_thread_local/thread_local.s
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_thread_local/thread_local.s: home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_thread_local/thread_local.c.s
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_thread_local/thread_local.s
 
 # target to generate assembly for a file
-opt/pico-sdk/src/rp2_common/pico_thread_local/thread_local.c.s:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/opt/pico-sdk/src/rp2_common/pico_thread_local/thread_local.c.s
-.PHONY : opt/pico-sdk/src/rp2_common/pico_thread_local/thread_local.c.s
+home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_thread_local/thread_local.c.s:
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_thread_local/thread_local.c.s
+.PHONY : home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_thread_local/thread_local.c.s
 
 # Help Target
 help:
@@ -1540,171 +1540,171 @@ help:
 	@echo "... LCD_Touch.o"
 	@echo "... LCD_Touch.i"
 	@echo "... LCD_Touch.s"
-	@echo "... opt/pico-sdk/src/common/hardware_claim/claim.o"
-	@echo "... opt/pico-sdk/src/common/hardware_claim/claim.i"
-	@echo "... opt/pico-sdk/src/common/hardware_claim/claim.s"
-	@echo "... opt/pico-sdk/src/common/pico_sync/critical_section.o"
-	@echo "... opt/pico-sdk/src/common/pico_sync/critical_section.i"
-	@echo "... opt/pico-sdk/src/common/pico_sync/critical_section.s"
-	@echo "... opt/pico-sdk/src/common/pico_sync/lock_core.o"
-	@echo "... opt/pico-sdk/src/common/pico_sync/lock_core.i"
-	@echo "... opt/pico-sdk/src/common/pico_sync/lock_core.s"
-	@echo "... opt/pico-sdk/src/common/pico_sync/mutex.o"
-	@echo "... opt/pico-sdk/src/common/pico_sync/mutex.i"
-	@echo "... opt/pico-sdk/src/common/pico_sync/mutex.s"
-	@echo "... opt/pico-sdk/src/common/pico_sync/sem.o"
-	@echo "... opt/pico-sdk/src/common/pico_sync/sem.i"
-	@echo "... opt/pico-sdk/src/common/pico_sync/sem.s"
-	@echo "... opt/pico-sdk/src/common/pico_time/time.o"
-	@echo "... opt/pico-sdk/src/common/pico_time/time.i"
-	@echo "... opt/pico-sdk/src/common/pico_time/time.s"
-	@echo "... opt/pico-sdk/src/common/pico_time/timeout_helper.o"
-	@echo "... opt/pico-sdk/src/common/pico_time/timeout_helper.i"
-	@echo "... opt/pico-sdk/src/common/pico_time/timeout_helper.s"
-	@echo "... opt/pico-sdk/src/common/pico_util/datetime.o"
-	@echo "... opt/pico-sdk/src/common/pico_util/datetime.i"
-	@echo "... opt/pico-sdk/src/common/pico_util/datetime.s"
-	@echo "... opt/pico-sdk/src/common/pico_util/fixed_bitset.o"
-	@echo "... opt/pico-sdk/src/common/pico_util/fixed_bitset.i"
-	@echo "... opt/pico-sdk/src/common/pico_util/fixed_bitset.s"
-	@echo "... opt/pico-sdk/src/common/pico_util/pheap.o"
-	@echo "... opt/pico-sdk/src/common/pico_util/pheap.i"
-	@echo "... opt/pico-sdk/src/common/pico_util/pheap.s"
-	@echo "... opt/pico-sdk/src/common/pico_util/queue.o"
-	@echo "... opt/pico-sdk/src/common/pico_util/queue.i"
-	@echo "... opt/pico-sdk/src/common/pico_util/queue.s"
-	@echo "... opt/pico-sdk/src/rp2040/pico_platform/platform.o"
-	@echo "... opt/pico-sdk/src/rp2040/pico_platform/platform.i"
-	@echo "... opt/pico-sdk/src/rp2040/pico_platform/platform.s"
-	@echo "... opt/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.o"
-	@echo "... opt/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.i"
-	@echo "... opt/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.s"
-	@echo "... opt/pico-sdk/src/rp2_common/hardware_clocks/clocks.o"
-	@echo "... opt/pico-sdk/src/rp2_common/hardware_clocks/clocks.i"
-	@echo "... opt/pico-sdk/src/rp2_common/hardware_clocks/clocks.s"
-	@echo "... opt/pico-sdk/src/rp2_common/hardware_divider/divider.o"
-	@echo "... opt/pico-sdk/src/rp2_common/hardware_gpio/gpio.o"
-	@echo "... opt/pico-sdk/src/rp2_common/hardware_gpio/gpio.i"
-	@echo "... opt/pico-sdk/src/rp2_common/hardware_gpio/gpio.s"
-	@echo "... opt/pico-sdk/src/rp2_common/hardware_irq/irq.o"
-	@echo "... opt/pico-sdk/src/rp2_common/hardware_irq/irq.i"
-	@echo "... opt/pico-sdk/src/rp2_common/hardware_irq/irq.s"
-	@echo "... opt/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.o"
-	@echo "... opt/pico-sdk/src/rp2_common/hardware_pll/pll.o"
-	@echo "... opt/pico-sdk/src/rp2_common/hardware_pll/pll.i"
-	@echo "... opt/pico-sdk/src/rp2_common/hardware_pll/pll.s"
-	@echo "... opt/pico-sdk/src/rp2_common/hardware_rtc/rtc.o"
-	@echo "... opt/pico-sdk/src/rp2_common/hardware_rtc/rtc.i"
-	@echo "... opt/pico-sdk/src/rp2_common/hardware_rtc/rtc.s"
-	@echo "... opt/pico-sdk/src/rp2_common/hardware_spi/spi.o"
-	@echo "... opt/pico-sdk/src/rp2_common/hardware_spi/spi.i"
-	@echo "... opt/pico-sdk/src/rp2_common/hardware_spi/spi.s"
-	@echo "... opt/pico-sdk/src/rp2_common/hardware_sync/sync.o"
-	@echo "... opt/pico-sdk/src/rp2_common/hardware_sync/sync.i"
-	@echo "... opt/pico-sdk/src/rp2_common/hardware_sync/sync.s"
-	@echo "... opt/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.o"
-	@echo "... opt/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.i"
-	@echo "... opt/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.s"
-	@echo "... opt/pico-sdk/src/rp2_common/hardware_ticks/ticks.o"
-	@echo "... opt/pico-sdk/src/rp2_common/hardware_ticks/ticks.i"
-	@echo "... opt/pico-sdk/src/rp2_common/hardware_ticks/ticks.s"
-	@echo "... opt/pico-sdk/src/rp2_common/hardware_timer/timer.o"
-	@echo "... opt/pico-sdk/src/rp2_common/hardware_timer/timer.i"
-	@echo "... opt/pico-sdk/src/rp2_common/hardware_timer/timer.s"
-	@echo "... opt/pico-sdk/src/rp2_common/hardware_uart/uart.o"
-	@echo "... opt/pico-sdk/src/rp2_common/hardware_uart/uart.i"
-	@echo "... opt/pico-sdk/src/rp2_common/hardware_uart/uart.s"
-	@echo "... opt/pico-sdk/src/rp2_common/hardware_vreg/vreg.o"
-	@echo "... opt/pico-sdk/src/rp2_common/hardware_vreg/vreg.i"
-	@echo "... opt/pico-sdk/src/rp2_common/hardware_vreg/vreg.s"
-	@echo "... opt/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.o"
-	@echo "... opt/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.i"
-	@echo "... opt/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.s"
-	@echo "... opt/pico-sdk/src/rp2_common/hardware_xosc/xosc.o"
-	@echo "... opt/pico-sdk/src/rp2_common/hardware_xosc/xosc.i"
-	@echo "... opt/pico-sdk/src/rp2_common/hardware_xosc/xosc.s"
-	@echo "... opt/pico-sdk/src/rp2_common/pico_atomic/atomic.o"
-	@echo "... opt/pico-sdk/src/rp2_common/pico_atomic/atomic.i"
-	@echo "... opt/pico-sdk/src/rp2_common/pico_atomic/atomic.s"
-	@echo "... opt/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.o"
-	@echo "... opt/pico-sdk/src/rp2_common/pico_bootrom/bootrom.o"
-	@echo "... opt/pico-sdk/src/rp2_common/pico_bootrom/bootrom.i"
-	@echo "... opt/pico-sdk/src/rp2_common/pico_bootrom/bootrom.s"
-	@echo "... opt/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.o"
-	@echo "... opt/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.i"
-	@echo "... opt/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.s"
-	@echo "... opt/pico-sdk/src/rp2_common/pico_clib_interface/cxa_guard.o"
-	@echo "... opt/pico-sdk/src/rp2_common/pico_clib_interface/cxa_guard.i"
-	@echo "... opt/pico-sdk/src/rp2_common/pico_clib_interface/cxa_guard.s"
-	@echo "... opt/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.o"
-	@echo "... opt/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.i"
-	@echo "... opt/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.s"
-	@echo "... opt/pico-sdk/src/rp2_common/pico_crt0/crt0.o"
-	@echo "... opt/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.o"
-	@echo "... opt/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.i"
-	@echo "... opt/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.s"
-	@echo "... opt/pico-sdk/src/rp2_common/pico_divider/divider_hardware.o"
-	@echo "... opt/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.o"
-	@echo "... opt/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.o"
-	@echo "... opt/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.i"
-	@echo "... opt/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.s"
-	@echo "... opt/pico-sdk/src/rp2_common/pico_double/double_math.o"
-	@echo "... opt/pico-sdk/src/rp2_common/pico_double/double_math.i"
-	@echo "... opt/pico-sdk/src/rp2_common/pico_double/double_math.s"
-	@echo "... opt/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.o"
-	@echo "... opt/pico-sdk/src/rp2_common/pico_flash/flash.o"
-	@echo "... opt/pico-sdk/src/rp2_common/pico_flash/flash.i"
-	@echo "... opt/pico-sdk/src/rp2_common/pico_flash/flash.s"
-	@echo "... opt/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.o"
-	@echo "... opt/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.o"
-	@echo "... opt/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.i"
-	@echo "... opt/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.s"
-	@echo "... opt/pico-sdk/src/rp2_common/pico_float/float_math.o"
-	@echo "... opt/pico-sdk/src/rp2_common/pico_float/float_math.i"
-	@echo "... opt/pico-sdk/src/rp2_common/pico_float/float_math.s"
-	@echo "... opt/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.o"
-	@echo "... opt/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.o"
-	@echo "... opt/pico-sdk/src/rp2_common/pico_malloc/malloc.o"
-	@echo "... opt/pico-sdk/src/rp2_common/pico_malloc/malloc.i"
-	@echo "... opt/pico-sdk/src/rp2_common/pico_malloc/malloc.s"
-	@echo "... opt/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.o"
-	@echo "... opt/pico-sdk/src/rp2_common/pico_platform_common/common.o"
-	@echo "... opt/pico-sdk/src/rp2_common/pico_platform_common/common.i"
-	@echo "... opt/pico-sdk/src/rp2_common/pico_platform_common/common.s"
-	@echo "... opt/pico-sdk/src/rp2_common/pico_platform_panic/custom_panic_function.o"
-	@echo "... opt/pico-sdk/src/rp2_common/pico_platform_panic/panic.o"
-	@echo "... opt/pico-sdk/src/rp2_common/pico_platform_panic/panic.i"
-	@echo "... opt/pico-sdk/src/rp2_common/pico_platform_panic/panic.s"
-	@echo "... opt/pico-sdk/src/rp2_common/pico_printf/printf.o"
-	@echo "... opt/pico-sdk/src/rp2_common/pico_printf/printf.i"
-	@echo "... opt/pico-sdk/src/rp2_common/pico_printf/printf.s"
-	@echo "... opt/pico-sdk/src/rp2_common/pico_runtime/runtime.o"
-	@echo "... opt/pico-sdk/src/rp2_common/pico_runtime/runtime.i"
-	@echo "... opt/pico-sdk/src/rp2_common/pico_runtime/runtime.s"
-	@echo "... opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.o"
-	@echo "... opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.i"
-	@echo "... opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.s"
-	@echo "... opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.o"
-	@echo "... opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.i"
-	@echo "... opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.s"
-	@echo "... opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.o"
-	@echo "... opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.i"
-	@echo "... opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.s"
-	@echo "... opt/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.o"
-	@echo "... opt/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.i"
-	@echo "... opt/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.s"
-	@echo "... opt/pico-sdk/src/rp2_common/pico_stdio/stdio.o"
-	@echo "... opt/pico-sdk/src/rp2_common/pico_stdio/stdio.i"
-	@echo "... opt/pico-sdk/src/rp2_common/pico_stdio/stdio.s"
-	@echo "... opt/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.o"
-	@echo "... opt/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.i"
-	@echo "... opt/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.s"
-	@echo "... opt/pico-sdk/src/rp2_common/pico_stdlib/stdlib.o"
-	@echo "... opt/pico-sdk/src/rp2_common/pico_stdlib/stdlib.i"
-	@echo "... opt/pico-sdk/src/rp2_common/pico_stdlib/stdlib.s"
-	@echo "... opt/pico-sdk/src/rp2_common/pico_thread_local/thread_local.o"
-	@echo "... opt/pico-sdk/src/rp2_common/pico_thread_local/thread_local.i"
-	@echo "... opt/pico-sdk/src/rp2_common/pico_thread_local/thread_local.s"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/common/hardware_claim/claim.o"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/common/hardware_claim/claim.i"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/common/hardware_claim/claim.s"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/common/pico_sync/critical_section.o"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/common/pico_sync/critical_section.i"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/common/pico_sync/critical_section.s"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/common/pico_sync/lock_core.o"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/common/pico_sync/lock_core.i"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/common/pico_sync/lock_core.s"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/common/pico_sync/mutex.o"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/common/pico_sync/mutex.i"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/common/pico_sync/mutex.s"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/common/pico_sync/sem.o"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/common/pico_sync/sem.i"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/common/pico_sync/sem.s"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/common/pico_time/time.o"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/common/pico_time/time.i"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/common/pico_time/time.s"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/common/pico_time/timeout_helper.o"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/common/pico_time/timeout_helper.i"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/common/pico_time/timeout_helper.s"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/common/pico_util/datetime.o"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/common/pico_util/datetime.i"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/common/pico_util/datetime.s"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/common/pico_util/fixed_bitset.o"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/common/pico_util/fixed_bitset.i"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/common/pico_util/fixed_bitset.s"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/common/pico_util/pheap.o"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/common/pico_util/pheap.i"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/common/pico_util/pheap.s"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/common/pico_util/queue.o"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/common/pico_util/queue.i"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/common/pico_util/queue.s"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2040/pico_platform/platform.o"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2040/pico_platform/platform.i"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2040/pico_platform/platform.s"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_boot_lock/boot_lock.o"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_boot_lock/boot_lock.i"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_boot_lock/boot_lock.s"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_clocks/clocks.o"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_clocks/clocks.i"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_clocks/clocks.s"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_divider/divider.o"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_gpio/gpio.o"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_gpio/gpio.i"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_gpio/gpio.s"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_irq/irq.o"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_irq/irq.i"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_irq/irq.s"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_irq/irq_handler_chain.o"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_pll/pll.o"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_pll/pll.i"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_pll/pll.s"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_rtc/rtc.o"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_rtc/rtc.i"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_rtc/rtc.s"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_spi/spi.o"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_spi/spi.i"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_spi/spi.s"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_sync/sync.o"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_sync/sync.i"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_sync/sync.s"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.o"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.i"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.s"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_ticks/ticks.o"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_ticks/ticks.i"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_ticks/ticks.s"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_timer/timer.o"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_timer/timer.i"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_timer/timer.s"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_uart/uart.o"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_uart/uart.i"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_uart/uart.s"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_vreg/vreg.o"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_vreg/vreg.i"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_vreg/vreg.s"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_watchdog/watchdog.o"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_watchdog/watchdog.i"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_watchdog/watchdog.s"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_xosc/xosc.o"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_xosc/xosc.i"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/hardware_xosc/xosc.s"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_atomic/atomic.o"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_atomic/atomic.i"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_atomic/atomic.s"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_bit_ops/bit_ops_aeabi.o"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_bootrom/bootrom.o"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_bootrom/bootrom.i"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_bootrom/bootrom.s"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_bootrom/bootrom_lock.o"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_bootrom/bootrom_lock.i"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_bootrom/bootrom_lock.s"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_clib_interface/cxa_guard.o"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_clib_interface/cxa_guard.i"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_clib_interface/cxa_guard.s"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_clib_interface/newlib_interface.o"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_clib_interface/newlib_interface.i"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_clib_interface/newlib_interface.s"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_crt0/crt0.o"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_cxx_options/new_delete.o"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_cxx_options/new_delete.i"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_cxx_options/new_delete.s"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_divider/divider_hardware.o"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_double/double_aeabi_rp2040.o"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_double/double_init_rom_rp2040.o"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_double/double_init_rom_rp2040.i"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_double/double_init_rom_rp2040.s"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_double/double_math.o"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_double/double_math.i"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_double/double_math.s"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.o"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_flash/flash.o"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_flash/flash.i"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_flash/flash.s"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_float/float_aeabi_rp2040.o"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_float/float_init_rom_rp2040.o"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_float/float_init_rom_rp2040.i"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_float/float_init_rom_rp2040.s"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_float/float_math.o"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_float/float_math.i"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_float/float_math.s"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.o"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.o"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_malloc/malloc.o"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_malloc/malloc.i"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_malloc/malloc.s"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_mem_ops/mem_ops_aeabi.o"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_platform_common/common.o"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_platform_common/common.i"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_platform_common/common.s"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_platform_panic/custom_panic_function.o"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_platform_panic/panic.o"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_platform_panic/panic.i"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_platform_panic/panic.s"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_printf/printf.o"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_printf/printf.i"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_printf/printf.s"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_runtime/runtime.o"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_runtime/runtime.i"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_runtime/runtime.s"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_runtime_init/runtime_init.o"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_runtime_init/runtime_init.i"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_runtime_init/runtime_init.s"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_runtime_init/runtime_init_clocks.o"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_runtime_init/runtime_init_clocks.i"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_runtime_init/runtime_init_clocks.s"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.o"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.i"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.s"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.o"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.i"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.s"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_stdio/stdio.o"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_stdio/stdio.i"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_stdio/stdio.s"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_stdio_uart/stdio_uart.o"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_stdio_uart/stdio_uart.i"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_stdio_uart/stdio_uart.s"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_stdlib/stdlib.o"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_stdlib/stdlib.i"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_stdlib/stdlib.s"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_thread_local/thread_local.o"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_thread_local/thread_local.i"
+	@echo "... home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_thread_local/thread_local.s"
 .PHONY : help
 
 
@@ -1716,6 +1716,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

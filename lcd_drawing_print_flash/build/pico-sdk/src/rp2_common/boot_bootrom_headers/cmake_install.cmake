@@ -1,4 +1,4 @@
-# Install script for directory: /opt/pico-sdk/src/rp2_common/boot_bootrom_headers
+# Install script for directory: /home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/boot_bootrom_headers
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

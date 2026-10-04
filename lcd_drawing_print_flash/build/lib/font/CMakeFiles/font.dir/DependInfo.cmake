@@ -8,11 +8,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/root/lab_1_1/lcd_sd_card_example/lib/font/font12.c" "lib/font/CMakeFiles/font.dir/font12.c.o" "gcc" "lib/font/CMakeFiles/font.dir/font12.c.o.d"
-  "/root/lab_1_1/lcd_sd_card_example/lib/font/font16.c" "lib/font/CMakeFiles/font.dir/font16.c.o" "gcc" "lib/font/CMakeFiles/font.dir/font16.c.o.d"
-  "/root/lab_1_1/lcd_sd_card_example/lib/font/font20.c" "lib/font/CMakeFiles/font.dir/font20.c.o" "gcc" "lib/font/CMakeFiles/font.dir/font20.c.o.d"
-  "/root/lab_1_1/lcd_sd_card_example/lib/font/font24.c" "lib/font/CMakeFiles/font.dir/font24.c.o" "gcc" "lib/font/CMakeFiles/font.dir/font24.c.o.d"
-  "/root/lab_1_1/lcd_sd_card_example/lib/font/font8.c" "lib/font/CMakeFiles/font.dir/font8.c.o" "gcc" "lib/font/CMakeFiles/font.dir/font8.c.o.d"
+  "/home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/lib/font/font12.c" "lib/font/CMakeFiles/font.dir/font12.c.o" "gcc" "lib/font/CMakeFiles/font.dir/font12.c.o.d"
+  "/home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/lib/font/font16.c" "lib/font/CMakeFiles/font.dir/font16.c.o" "gcc" "lib/font/CMakeFiles/font.dir/font16.c.o.d"
+  "/home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/lib/font/font20.c" "lib/font/CMakeFiles/font.dir/font20.c.o" "gcc" "lib/font/CMakeFiles/font.dir/font20.c.o.d"
+  "/home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/lib/font/font24.c" "lib/font/CMakeFiles/font.dir/font24.c.o" "gcc" "lib/font/CMakeFiles/font.dir/font24.c.o.d"
+  "/home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/lib/font/font8.c" "lib/font/CMakeFiles/font.dir/font8.c.o" "gcc" "lib/font/CMakeFiles/font.dir/font8.c.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

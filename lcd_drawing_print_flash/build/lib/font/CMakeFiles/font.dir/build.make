@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/lab_1_1/lcd_sd_card_example
+CMAKE_SOURCE_DIR = /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/lab_1_1/lcd_sd_card_example/build
+CMAKE_BINARY_DIR = /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build
 
 # Include any dependencies generated for this target.
 include lib/font/CMakeFiles/font.dir/depend.make
@@ -70,74 +70,74 @@ include lib/font/CMakeFiles/font.dir/progress.make
 include lib/font/CMakeFiles/font.dir/flags.make
 
 lib/font/CMakeFiles/font.dir/font12.c.o: lib/font/CMakeFiles/font.dir/flags.make
-lib/font/CMakeFiles/font.dir/font12.c.o: /root/lab_1_1/lcd_sd_card_example/lib/font/font12.c
+lib/font/CMakeFiles/font.dir/font12.c.o: /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/lib/font/font12.c
 lib/font/CMakeFiles/font.dir/font12.c.o: lib/font/CMakeFiles/font.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/root/lab_1_1/lcd_sd_card_example/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object lib/font/CMakeFiles/font.dir/font12.c.o"
-	cd /root/lab_1_1/lcd_sd_card_example/build/lib/font && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/font/CMakeFiles/font.dir/font12.c.o -MF CMakeFiles/font.dir/font12.c.o.d -o CMakeFiles/font.dir/font12.c.o -c /root/lab_1_1/lcd_sd_card_example/lib/font/font12.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object lib/font/CMakeFiles/font.dir/font12.c.o"
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build/lib/font && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/font/CMakeFiles/font.dir/font12.c.o -MF CMakeFiles/font.dir/font12.c.o.d -o CMakeFiles/font.dir/font12.c.o -c /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/lib/font/font12.c
 
 lib/font/CMakeFiles/font.dir/font12.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/font.dir/font12.c.i"
-	cd /root/lab_1_1/lcd_sd_card_example/build/lib/font && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/lab_1_1/lcd_sd_card_example/lib/font/font12.c > CMakeFiles/font.dir/font12.c.i
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build/lib/font && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/lib/font/font12.c > CMakeFiles/font.dir/font12.c.i
 
 lib/font/CMakeFiles/font.dir/font12.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/font.dir/font12.c.s"
-	cd /root/lab_1_1/lcd_sd_card_example/build/lib/font && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/lab_1_1/lcd_sd_card_example/lib/font/font12.c -o CMakeFiles/font.dir/font12.c.s
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build/lib/font && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/lib/font/font12.c -o CMakeFiles/font.dir/font12.c.s
 
 lib/font/CMakeFiles/font.dir/font16.c.o: lib/font/CMakeFiles/font.dir/flags.make
-lib/font/CMakeFiles/font.dir/font16.c.o: /root/lab_1_1/lcd_sd_card_example/lib/font/font16.c
+lib/font/CMakeFiles/font.dir/font16.c.o: /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/lib/font/font16.c
 lib/font/CMakeFiles/font.dir/font16.c.o: lib/font/CMakeFiles/font.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/root/lab_1_1/lcd_sd_card_example/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object lib/font/CMakeFiles/font.dir/font16.c.o"
-	cd /root/lab_1_1/lcd_sd_card_example/build/lib/font && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/font/CMakeFiles/font.dir/font16.c.o -MF CMakeFiles/font.dir/font16.c.o.d -o CMakeFiles/font.dir/font16.c.o -c /root/lab_1_1/lcd_sd_card_example/lib/font/font16.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object lib/font/CMakeFiles/font.dir/font16.c.o"
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build/lib/font && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/font/CMakeFiles/font.dir/font16.c.o -MF CMakeFiles/font.dir/font16.c.o.d -o CMakeFiles/font.dir/font16.c.o -c /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/lib/font/font16.c
 
 lib/font/CMakeFiles/font.dir/font16.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/font.dir/font16.c.i"
-	cd /root/lab_1_1/lcd_sd_card_example/build/lib/font && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/lab_1_1/lcd_sd_card_example/lib/font/font16.c > CMakeFiles/font.dir/font16.c.i
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build/lib/font && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/lib/font/font16.c > CMakeFiles/font.dir/font16.c.i
 
 lib/font/CMakeFiles/font.dir/font16.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/font.dir/font16.c.s"
-	cd /root/lab_1_1/lcd_sd_card_example/build/lib/font && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/lab_1_1/lcd_sd_card_example/lib/font/font16.c -o CMakeFiles/font.dir/font16.c.s
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build/lib/font && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/lib/font/font16.c -o CMakeFiles/font.dir/font16.c.s
 
 lib/font/CMakeFiles/font.dir/font20.c.o: lib/font/CMakeFiles/font.dir/flags.make
-lib/font/CMakeFiles/font.dir/font20.c.o: /root/lab_1_1/lcd_sd_card_example/lib/font/font20.c
+lib/font/CMakeFiles/font.dir/font20.c.o: /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/lib/font/font20.c
 lib/font/CMakeFiles/font.dir/font20.c.o: lib/font/CMakeFiles/font.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/root/lab_1_1/lcd_sd_card_example/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object lib/font/CMakeFiles/font.dir/font20.c.o"
-	cd /root/lab_1_1/lcd_sd_card_example/build/lib/font && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/font/CMakeFiles/font.dir/font20.c.o -MF CMakeFiles/font.dir/font20.c.o.d -o CMakeFiles/font.dir/font20.c.o -c /root/lab_1_1/lcd_sd_card_example/lib/font/font20.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object lib/font/CMakeFiles/font.dir/font20.c.o"
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build/lib/font && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/font/CMakeFiles/font.dir/font20.c.o -MF CMakeFiles/font.dir/font20.c.o.d -o CMakeFiles/font.dir/font20.c.o -c /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/lib/font/font20.c
 
 lib/font/CMakeFiles/font.dir/font20.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/font.dir/font20.c.i"
-	cd /root/lab_1_1/lcd_sd_card_example/build/lib/font && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/lab_1_1/lcd_sd_card_example/lib/font/font20.c > CMakeFiles/font.dir/font20.c.i
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build/lib/font && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/lib/font/font20.c > CMakeFiles/font.dir/font20.c.i
 
 lib/font/CMakeFiles/font.dir/font20.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/font.dir/font20.c.s"
-	cd /root/lab_1_1/lcd_sd_card_example/build/lib/font && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/lab_1_1/lcd_sd_card_example/lib/font/font20.c -o CMakeFiles/font.dir/font20.c.s
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build/lib/font && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/lib/font/font20.c -o CMakeFiles/font.dir/font20.c.s
 
 lib/font/CMakeFiles/font.dir/font24.c.o: lib/font/CMakeFiles/font.dir/flags.make
-lib/font/CMakeFiles/font.dir/font24.c.o: /root/lab_1_1/lcd_sd_card_example/lib/font/font24.c
+lib/font/CMakeFiles/font.dir/font24.c.o: /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/lib/font/font24.c
 lib/font/CMakeFiles/font.dir/font24.c.o: lib/font/CMakeFiles/font.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/root/lab_1_1/lcd_sd_card_example/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object lib/font/CMakeFiles/font.dir/font24.c.o"
-	cd /root/lab_1_1/lcd_sd_card_example/build/lib/font && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/font/CMakeFiles/font.dir/font24.c.o -MF CMakeFiles/font.dir/font24.c.o.d -o CMakeFiles/font.dir/font24.c.o -c /root/lab_1_1/lcd_sd_card_example/lib/font/font24.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object lib/font/CMakeFiles/font.dir/font24.c.o"
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build/lib/font && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/font/CMakeFiles/font.dir/font24.c.o -MF CMakeFiles/font.dir/font24.c.o.d -o CMakeFiles/font.dir/font24.c.o -c /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/lib/font/font24.c
 
 lib/font/CMakeFiles/font.dir/font24.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/font.dir/font24.c.i"
-	cd /root/lab_1_1/lcd_sd_card_example/build/lib/font && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/lab_1_1/lcd_sd_card_example/lib/font/font24.c > CMakeFiles/font.dir/font24.c.i
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build/lib/font && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/lib/font/font24.c > CMakeFiles/font.dir/font24.c.i
 
 lib/font/CMakeFiles/font.dir/font24.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/font.dir/font24.c.s"
-	cd /root/lab_1_1/lcd_sd_card_example/build/lib/font && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/lab_1_1/lcd_sd_card_example/lib/font/font24.c -o CMakeFiles/font.dir/font24.c.s
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build/lib/font && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/lib/font/font24.c -o CMakeFiles/font.dir/font24.c.s
 
 lib/font/CMakeFiles/font.dir/font8.c.o: lib/font/CMakeFiles/font.dir/flags.make
-lib/font/CMakeFiles/font.dir/font8.c.o: /root/lab_1_1/lcd_sd_card_example/lib/font/font8.c
+lib/font/CMakeFiles/font.dir/font8.c.o: /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/lib/font/font8.c
 lib/font/CMakeFiles/font.dir/font8.c.o: lib/font/CMakeFiles/font.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/root/lab_1_1/lcd_sd_card_example/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object lib/font/CMakeFiles/font.dir/font8.c.o"
-	cd /root/lab_1_1/lcd_sd_card_example/build/lib/font && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/font/CMakeFiles/font.dir/font8.c.o -MF CMakeFiles/font.dir/font8.c.o.d -o CMakeFiles/font.dir/font8.c.o -c /root/lab_1_1/lcd_sd_card_example/lib/font/font8.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object lib/font/CMakeFiles/font.dir/font8.c.o"
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build/lib/font && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/font/CMakeFiles/font.dir/font8.c.o -MF CMakeFiles/font.dir/font8.c.o.d -o CMakeFiles/font.dir/font8.c.o -c /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/lib/font/font8.c
 
 lib/font/CMakeFiles/font.dir/font8.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/font.dir/font8.c.i"
-	cd /root/lab_1_1/lcd_sd_card_example/build/lib/font && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/lab_1_1/lcd_sd_card_example/lib/font/font8.c > CMakeFiles/font.dir/font8.c.i
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build/lib/font && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/lib/font/font8.c > CMakeFiles/font.dir/font8.c.i
 
 lib/font/CMakeFiles/font.dir/font8.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/font.dir/font8.c.s"
-	cd /root/lab_1_1/lcd_sd_card_example/build/lib/font && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/lab_1_1/lcd_sd_card_example/lib/font/font8.c -o CMakeFiles/font.dir/font8.c.s
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build/lib/font && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/lib/font/font8.c -o CMakeFiles/font.dir/font8.c.s
 
 # Object files for target font
 font_OBJECTS = \
@@ -157,19 +157,19 @@ lib/font/libfont.a: lib/font/CMakeFiles/font.dir/font24.c.o
 lib/font/libfont.a: lib/font/CMakeFiles/font.dir/font8.c.o
 lib/font/libfont.a: lib/font/CMakeFiles/font.dir/build.make
 lib/font/libfont.a: lib/font/CMakeFiles/font.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/root/lab_1_1/lcd_sd_card_example/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C static library libfont.a"
-	cd /root/lab_1_1/lcd_sd_card_example/build/lib/font && $(CMAKE_COMMAND) -P CMakeFiles/font.dir/cmake_clean_target.cmake
-	cd /root/lab_1_1/lcd_sd_card_example/build/lib/font && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/font.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C static library libfont.a"
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build/lib/font && $(CMAKE_COMMAND) -P CMakeFiles/font.dir/cmake_clean_target.cmake
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build/lib/font && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/font.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 lib/font/CMakeFiles/font.dir/build: lib/font/libfont.a
 .PHONY : lib/font/CMakeFiles/font.dir/build
 
 lib/font/CMakeFiles/font.dir/clean:
-	cd /root/lab_1_1/lcd_sd_card_example/build/lib/font && $(CMAKE_COMMAND) -P CMakeFiles/font.dir/cmake_clean.cmake
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build/lib/font && $(CMAKE_COMMAND) -P CMakeFiles/font.dir/cmake_clean.cmake
 .PHONY : lib/font/CMakeFiles/font.dir/clean
 
 lib/font/CMakeFiles/font.dir/depend:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/lab_1_1/lcd_sd_card_example /root/lab_1_1/lcd_sd_card_example/lib/font /root/lab_1_1/lcd_sd_card_example/build /root/lab_1_1/lcd_sd_card_example/build/lib/font /root/lab_1_1/lcd_sd_card_example/build/lib/font/CMakeFiles/font.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/lib/font /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build/lib/font /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build/lib/font/CMakeFiles/font.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : lib/font/CMakeFiles/font.dir/depend
 

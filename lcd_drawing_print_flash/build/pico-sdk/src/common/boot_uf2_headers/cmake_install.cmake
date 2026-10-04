@@ -1,4 +1,4 @@
-# Install script for directory: /opt/pico-sdk/src/common/boot_uf2_headers
+# Install script for directory: /home/student/.pico-sdk/sdk/2.3.1/src/common/boot_uf2_headers
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

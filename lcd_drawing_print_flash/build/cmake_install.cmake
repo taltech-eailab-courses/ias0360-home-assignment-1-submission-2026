@@ -1,4 +1,4 @@
-# Install script for directory: /root/lab_1_1/lcd_sd_card_example
+# Install script for directory: /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,11 +39,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/root/lab_1_1/lcd_sd_card_example/build/pico-sdk/cmake_install.cmake")
-  include("/root/lab_1_1/lcd_sd_card_example/build/lib/config/cmake_install.cmake")
-  include("/root/lab_1_1/lcd_sd_card_example/build/lib/lcd/cmake_install.cmake")
-  include("/root/lab_1_1/lcd_sd_card_example/build/lib/font/cmake_install.cmake")
-  include("/root/lab_1_1/lcd_sd_card_example/build/build/cmake_install.cmake")
+  include("/home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build/pico-sdk/cmake_install.cmake")
+  include("/home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build/lib/config/cmake_install.cmake")
+  include("/home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build/lib/lcd/cmake_install.cmake")
+  include("/home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build/lib/font/cmake_install.cmake")
+  include("/home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build/build/cmake_install.cmake")
 
 endif()
 
@@ -55,5 +55,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/root/lab_1_1/lcd_sd_card_example/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

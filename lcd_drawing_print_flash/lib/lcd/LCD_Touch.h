@@ -68,8 +68,8 @@ void TP_Dialog(void);
 void TP_Save(void);
 void TP_DrawBoard(void);
 
-bool TP_IsSavePending(void); // ajout de ma part - Indique si une sauvegarde est en cours
-void TP_SetSavePending(bool pending); // ajout de ma part - Indique si une sauvegarde est en cours
+bool TP_IsSavePending(void); // my add : for the save pening animation
+void TP_SetSavePending(bool pending); // same
 
 void TP_HideSaveButton(void); // for showing that saving is in progress
 void TP_ShowSaveButton(void); // for showing that saving is in progress

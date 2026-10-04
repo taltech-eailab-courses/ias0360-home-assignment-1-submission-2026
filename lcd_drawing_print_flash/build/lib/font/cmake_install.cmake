@@ -1,4 +1,4 @@
-# Install script for directory: /root/lab_1_1/lcd_sd_card_example/lib/font
+# Install script for directory: /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/lib/font
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

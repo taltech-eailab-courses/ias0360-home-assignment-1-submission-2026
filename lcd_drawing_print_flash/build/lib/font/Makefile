@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/lab_1_1/lcd_sd_card_example
+CMAKE_SOURCE_DIR = /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/lab_1_1/lcd_sd_card_example/build
+CMAKE_BINARY_DIR = /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(CMAKE_COMMAND) -E cmake_progress_start /root/lab_1_1/lcd_sd_card_example/build/CMakeFiles /root/lab_1_1/lcd_sd_card_example/build/lib/font//CMakeFiles/progress.marks
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/font/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/lab_1_1/lcd_sd_card_example/build/CMakeFiles 0
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build/CMakeFiles /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build/lib/font//CMakeFiles/progress.marks
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/font/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/font/clean
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/font/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,22 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/font/preinstall
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/font/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/font/preinstall
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/font/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 lib/font/CMakeFiles/font.dir/rule:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/font/CMakeFiles/font.dir/rule
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/font/CMakeFiles/font.dir/rule
 .PHONY : lib/font/CMakeFiles/font.dir/rule
 
 # Convenience name for target.
@@ -127,7 +127,7 @@ font: lib/font/CMakeFiles/font.dir/rule
 
 # fast build rule for target.
 font/fast:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/font/CMakeFiles/font.dir/build.make lib/font/CMakeFiles/font.dir/build
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/font/CMakeFiles/font.dir/build.make lib/font/CMakeFiles/font.dir/build
 .PHONY : font/fast
 
 font12.o: font12.c.o
@@ -135,7 +135,7 @@ font12.o: font12.c.o
 
 # target to build an object file
 font12.c.o:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/font/CMakeFiles/font.dir/build.make lib/font/CMakeFiles/font.dir/font12.c.o
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/font/CMakeFiles/font.dir/build.make lib/font/CMakeFiles/font.dir/font12.c.o
 .PHONY : font12.c.o
 
 font12.i: font12.c.i
@@ -143,7 +143,7 @@ font12.i: font12.c.i
 
 # target to preprocess a source file
 font12.c.i:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/font/CMakeFiles/font.dir/build.make lib/font/CMakeFiles/font.dir/font12.c.i
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/font/CMakeFiles/font.dir/build.make lib/font/CMakeFiles/font.dir/font12.c.i
 .PHONY : font12.c.i
 
 font12.s: font12.c.s
@@ -151,7 +151,7 @@ font12.s: font12.c.s
 
 # target to generate assembly for a file
 font12.c.s:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/font/CMakeFiles/font.dir/build.make lib/font/CMakeFiles/font.dir/font12.c.s
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/font/CMakeFiles/font.dir/build.make lib/font/CMakeFiles/font.dir/font12.c.s
 .PHONY : font12.c.s
 
 font16.o: font16.c.o
@@ -159,7 +159,7 @@ font16.o: font16.c.o
 
 # target to build an object file
 font16.c.o:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/font/CMakeFiles/font.dir/build.make lib/font/CMakeFiles/font.dir/font16.c.o
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/font/CMakeFiles/font.dir/build.make lib/font/CMakeFiles/font.dir/font16.c.o
 .PHONY : font16.c.o
 
 font16.i: font16.c.i
@@ -167,7 +167,7 @@ font16.i: font16.c.i
 
 # target to preprocess a source file
 font16.c.i:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/font/CMakeFiles/font.dir/build.make lib/font/CMakeFiles/font.dir/font16.c.i
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/font/CMakeFiles/font.dir/build.make lib/font/CMakeFiles/font.dir/font16.c.i
 .PHONY : font16.c.i
 
 font16.s: font16.c.s
@@ -175,7 +175,7 @@ font16.s: font16.c.s
 
 # target to generate assembly for a file
 font16.c.s:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/font/CMakeFiles/font.dir/build.make lib/font/CMakeFiles/font.dir/font16.c.s
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/font/CMakeFiles/font.dir/build.make lib/font/CMakeFiles/font.dir/font16.c.s
 .PHONY : font16.c.s
 
 font20.o: font20.c.o
@@ -183,7 +183,7 @@ font20.o: font20.c.o
 
 # target to build an object file
 font20.c.o:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/font/CMakeFiles/font.dir/build.make lib/font/CMakeFiles/font.dir/font20.c.o
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/font/CMakeFiles/font.dir/build.make lib/font/CMakeFiles/font.dir/font20.c.o
 .PHONY : font20.c.o
 
 font20.i: font20.c.i
@@ -191,7 +191,7 @@ font20.i: font20.c.i
 
 # target to preprocess a source file
 font20.c.i:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/font/CMakeFiles/font.dir/build.make lib/font/CMakeFiles/font.dir/font20.c.i
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/font/CMakeFiles/font.dir/build.make lib/font/CMakeFiles/font.dir/font20.c.i
 .PHONY : font20.c.i
 
 font20.s: font20.c.s
@@ -199,7 +199,7 @@ font20.s: font20.c.s
 
 # target to generate assembly for a file
 font20.c.s:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/font/CMakeFiles/font.dir/build.make lib/font/CMakeFiles/font.dir/font20.c.s
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/font/CMakeFiles/font.dir/build.make lib/font/CMakeFiles/font.dir/font20.c.s
 .PHONY : font20.c.s
 
 font24.o: font24.c.o
@@ -207,7 +207,7 @@ font24.o: font24.c.o
 
 # target to build an object file
 font24.c.o:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/font/CMakeFiles/font.dir/build.make lib/font/CMakeFiles/font.dir/font24.c.o
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/font/CMakeFiles/font.dir/build.make lib/font/CMakeFiles/font.dir/font24.c.o
 .PHONY : font24.c.o
 
 font24.i: font24.c.i
@@ -215,7 +215,7 @@ font24.i: font24.c.i
 
 # target to preprocess a source file
 font24.c.i:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/font/CMakeFiles/font.dir/build.make lib/font/CMakeFiles/font.dir/font24.c.i
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/font/CMakeFiles/font.dir/build.make lib/font/CMakeFiles/font.dir/font24.c.i
 .PHONY : font24.c.i
 
 font24.s: font24.c.s
@@ -223,7 +223,7 @@ font24.s: font24.c.s
 
 # target to generate assembly for a file
 font24.c.s:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/font/CMakeFiles/font.dir/build.make lib/font/CMakeFiles/font.dir/font24.c.s
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/font/CMakeFiles/font.dir/build.make lib/font/CMakeFiles/font.dir/font24.c.s
 .PHONY : font24.c.s
 
 font8.o: font8.c.o
@@ -231,7 +231,7 @@ font8.o: font8.c.o
 
 # target to build an object file
 font8.c.o:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/font/CMakeFiles/font.dir/build.make lib/font/CMakeFiles/font.dir/font8.c.o
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/font/CMakeFiles/font.dir/build.make lib/font/CMakeFiles/font.dir/font8.c.o
 .PHONY : font8.c.o
 
 font8.i: font8.c.i
@@ -239,7 +239,7 @@ font8.i: font8.c.i
 
 # target to preprocess a source file
 font8.c.i:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/font/CMakeFiles/font.dir/build.make lib/font/CMakeFiles/font.dir/font8.c.i
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/font/CMakeFiles/font.dir/build.make lib/font/CMakeFiles/font.dir/font8.c.i
 .PHONY : font8.c.i
 
 font8.s: font8.c.s
@@ -247,7 +247,7 @@ font8.s: font8.c.s
 
 # target to generate assembly for a file
 font8.c.s:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(MAKE) $(MAKESILENT) -f lib/font/CMakeFiles/font.dir/build.make lib/font/CMakeFiles/font.dir/font8.c.s
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(MAKE) $(MAKESILENT) -f lib/font/CMakeFiles/font.dir/build.make lib/font/CMakeFiles/font.dir/font8.c.s
 .PHONY : font8.c.s
 
 # Help Target
@@ -285,6 +285,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /root/lab_1_1/lcd_sd_card_example/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/student/Documents/ENSIBS/TALTECH/MACHINE_EMBEDDED/ias0360-home-assignment-1-submission-2026/lcd_drawing_print_flash/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

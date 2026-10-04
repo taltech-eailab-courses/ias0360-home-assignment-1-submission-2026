@@ -1,4 +1,4 @@
-# Install script for directory: /opt/pico-sdk/src/rp2_common/pico_i2c_slave
+# Install script for directory: /home/student/.pico-sdk/sdk/2.3.1/src/rp2_common/pico_i2c_slave
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
