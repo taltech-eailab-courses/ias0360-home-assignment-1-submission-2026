@@ -1,0 +1,9 @@
+build/
+.cache/
+__pycache__/
+*.py[cod]
+
+# IEEE paper
+report/
+
+.DS_Store
